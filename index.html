@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="style.css" />
     </head>
 
-    <body>
-        <header>
+    <body><!--corps/contenu de la page-->
+
+        <header><!--En-tête-->
             <img src="Reservia@3x.png" /><!--Logo-->
             <nav class="menu"><!--Menu-->
                 <ul>
-                    <li><a href="#hébergements">Hébergements</a></li><!--ancre vers hébergemnts-->
+                    <li><a href="#hébergements">Hébergements</a></li><!--ancre vers hébergements-->
                     <li><a href="#activités">Activités</a></li><!--ancre vers activités-->
                     <li>S'inscrire</li>
                 </ul>
@@ -20,14 +21,12 @@
 
         <section><!--Section Recherche-->
             <h1>Trouver votre hébergement pour des vacances de rêve</h1><br>
-            <p>En plein centre ville ou  en pleine nature</p><br>
+            <p>En plein centre ville ou en pleine nature</p><br>
             
             <form><!--Barre de recherche-->
-              <div>
                 <img src="icon/map-marker.svg"><!--Icon marker map-->
                 <input type="search" id="Destination" name="q" placeholder="Marseille, France"><!--Champ de saisie-->
                 <button>Rechercher</button>
-              </div>
             </form>
 
             <h2>Filtres</h2>
@@ -42,41 +41,39 @@
         </section>
 
         <section><!--Section Hébergements-->
-            <div class="hébergements à marseille">
-                <balise id="hébergements"><h1>Hébergements à Marseille</h1></balise><br>
-            </div><!--titre + ancre hébergement menu-->
-            <div class="hébergements photos">
-                <figure><!--photo chambre + nom/prix/note-->
-                    <img src="images/Cannebière.jpg"><br>
-                    <h2>Auberge la Cannebière</h2><br>
-                    <p>Nuit à partir de 25€</p><br>
-                    <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
+                <balise id="hébergements"><h1>Hébergements à Marseille</h1></balise><br><!--titre + ancre hébergement menu-->
+            <div class="hébergements photos"><!--photos chambres + noms/prix/notes-->
+                <figure>
+                    <img src="images/Cannebière.jpg"><br><!--photo chambre-->
+                    <h2>Auberge la Cannebière</h2><br><!--nom hébergement-->
+                    <p>Nuit à partir de 25€</p><br><!--prix hébergement-->
+                    <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><!--note étoiles-->
                 </figure>
-                <figure><!--photo chambre + nom/prix/note-->
+                <figure>
                     <img src="images/port.jpg"><br>
                     <h2>Hôtel du port</h2><br>
                     <p>Nuit à partir de 51€</p><br>
                     <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
                 </figure>
-                <figure><!--photo chambre + nom/prix/note-->
+                <figure>
                     <img src="images/mouettes.jpg"><br>
                     <h2>Hôtel Les Mouettes</h2><br>
                     <p>Nuit à partir de 76€</p><br>
                     <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
                 </figure>
-                <figure><!--photo chambre + nom/prix/note-->
+                <figure>
                     <img src="images/mer.jpg"><br>
                     <h2>Hôtel de la mer</h2><br>
                     <p>Nuit à partir de 46€</p><br>
                     <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
                 </figure>
-                <figure><!--photo chambre + nom/prix/note-->
+                <figure>
                     <img src="images/panier.jpg"><br>
                     <h2>Auberge Le Panier</h2><br>
                     <p>Nuit à partir de 23€</p><br>
                     <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
                 </figure>
-                <figure><!--photo chambre + nom/prix/note-->
+                <figure>
                     <img src="images/amina.jpg"><br>
                     <h2>Hôtel chez Amina</h2><br>
                     <p>Nuit à partir de 96€</p><br>
@@ -87,16 +84,16 @@
         </section>
 
         <section><!--Section Populaires-->
-            <div class="hébergements à marseille">
+            <div class="titre hébergements à marseille"><!--titre-->
                 <h1>Les plus populaires</h1>
                 <img src="icon/populaire.svg"><br>
-            </div><!--titre-->
-            <div class="populaires photos">
-                <figure><!--photo chambre + nom/prix/note-->
-                    <img src="images/Soleil.jpg"><br>
-                    <h2>Hôtel Le Soleil du matin</h2><br>
-                    <p>Nuit à partir de 128€</p><br>
-                    <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
+            </div>
+            <div class="populaires photos"><!--photos chambres + noms/prix/notes-->
+                <figure>
+                    <img src="images/Soleil.jpg"><br><!--photo chambre-->
+                    <h2>Hôtel Le Soleil du matin</h2><br><!--nom hébergement-->
+                    <p>Nuit à partir de 128€</p><br><!--prix hébergement-->
+                    <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><!--note étoiles-->
                 </figure>
                 <figure>
                     <img src="images/eau.jpg">
@@ -115,13 +112,11 @@
         </section>
 
         <section><!--Section Activités-->
-            <div class="activités à marseille">
-                <balise id="activités"><h1>Activités à Marseille</h1></balise><br>
-            </div><!--titre + ancre activités menu-->
-            <div class="activités photos">
+                <balise id="activités"><h1>Activités à Marseille</h1></balise><br><!--titre + ancre activités menu-->
+            <div class="activités photos"><!--photos lieux + noms lieux-->
                 <figure>
-                    <img src="images/vieuxport.jpg">
-                    <h2>Vieux Port</h2>
+                    <img src="images/vieuxport.jpg"><!--photo lieu-->
+                    <h2>Vieux Port</h2><!--nom lieu-->
                 </figure>
                 <figure>
                     <img src="images/pomègues.jpg">
@@ -146,7 +141,31 @@
             </div>
         </section>
 
-        
-
+        <footer><!--Pied de page-->
+            <div class="pied de page"><!--cadre pied de page-->
+                <div class="A propos"><!--colonne A Propos-->
+                    <h2>A propos</h2><!--titre colonne-->
+                    <ul><!--contenu A propos-->
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div class="Nos hébergements"><!--colonne Nos hébergements-->
+                    <h2>Nos hébergements</h2>
+                    <ul>
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+                </div>
+                <div class="Assistance"><!--colonne Assistance-->
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
     </body>
