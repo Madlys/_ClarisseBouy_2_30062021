@@ -24,35 +24,50 @@
 */*police*/
 {
 	font-family: "Raleway", sans-serif;
-	margin-top: 47px;
+	
+}
+
+a/*tous les liens cliquables de la page*/
+{
+	text-decoration: none;/*perd soulignement défini par défaut*/
+	color: black;/*perd couleur définie bleu par défaut*/
 }
 
 header
 {
-	background-color: red;
 	display: flex;
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
 	justify-content: space-between;/*espace entre le logo et le menu; chacun à une extrémité*/
-}
-
-.logo/*bloc logo*/
-{
-	display: flex;
-	align-content: center;/*centré sur l'axe vertical*/
+	margin-right: 76px;/*marge ext droite du bloc*/
+	margin-top: 51px;/*marge ext haute du bloc*/
+	margin-left: 54px;/*marge ext gauche du bloc*/
+	height: 29px;/*largeur*/
 }
 
 .reservia/*logo (image)*/
 {
 	width: 94px;/*hauteur*/
 	height: 29px;/*largeur*/
-	margin-left: 59px;/*marge ext gauche*/
 }
 
-.menu
+.menu/*hébergements,activités,s'inscrire*/
 {
 	display: flex;
 	justify-content: space-between;/*espace entre les mots*/
-	margin-right: 77px;/*marge ext droite du bloc*/
 	width: 381px;/*largeur totale du bloc*/
+	height: 10px;/*hauteur totale du bloc*/
+	position: relative;/*position du texte par rapport au bloc*/
+	bottom: 45%;/*espace de 45% en dessous du texte dans l'espace du bloc*/
+	font-size: 12px;/*taille police*/
+	font-family: "Raleway-ExtaBold";/*police*/
+	font-weight: bold;/*police en gras*/
+	color: #0065FC;/*couleur police en bleu*/
 }
+
+
+
+
+
+
+
 
