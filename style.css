@@ -38,36 +38,35 @@ header
 	display: flex;
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
 	justify-content: space-between;/*espace entre le logo et le menu; chacun à une extrémité*/
-	margin-right: 76px;/*marge ext droite du bloc*/
+	margin-right: 77px;/*marge ext droite du bloc*/
 	margin-top: 51px;/*marge ext haute du bloc*/
-	margin-left: 54px;/*marge ext gauche du bloc*/
-	height: 29px;/*largeur*/
-}
+	margin-left: 53px;/*marge ext gauche du bloc*/
+}	
 
 .reservia/*logo (image)*/
 {
-	width: 94px;/*hauteur*/
-	height: 29px;/*largeur*/
+	width: 25%;/*largeur par rapport au bloc menu*/
+	height: 181,25%;/*hauteur par rapport au bloc menu*/
 }
 
 .menu/*hébergements,activités,s'inscrire*/
 {
 	display: flex;
 	justify-content: space-between;/*espace entre les mots*/
-	width: 381px;/*largeur totale du bloc*/
-	height: 10px;/*hauteur totale du bloc*/
-	position: relative;/*position du texte par rapport au bloc*/
-	bottom: 45%;/*espace de 45% en dessous du texte dans l'espace du bloc*/
-	font-size: 12px;/*taille police*/
-	font-family: "Raleway-ExtaBold";/*police*/
-	font-weight: bold;/*police en gras*/
+	width: 29%;/*largeur totale du bloc par rapport au bloc header*/
+	height: 53%;/*hauteur totale du bloc par rapport au bloc header*/
+	font-size: 16px;/*taille police*/
+	
+}
+
+#sinscrire
+{
 	color: #0065FC;/*couleur police en bleu*/
+	font-weight: bold;/*en gras*/
 }
 
 
-
-
-
-
-
-
+h1
+{
+	font-size: 21px;
+}
