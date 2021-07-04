@@ -1,0 +1,58 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("static/Raleway-Thin.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraLight.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Light.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Regular.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Medium.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-SemiBold.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Bold.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraBold.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Black.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ThinItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraLightItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-LightItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Italic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-MediumItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-SemiBoldItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-BoldItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraBoldItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-BlackItalic.ttf)") format("truetype");
+}
+
+
+*/*police*/
+{
+	font-family: "Raleway", sans-serif;
+	margin-top: 47px;
+}
+
+header
+{
+	background-color: red;
+	display: flex;
+	flex-direction: row;/*disposition des éléments sur la même ligne*/
+	justify-content: space-between;/*espace entre le logo et le menu; chacun à une extrémité*/
+}
+
+.logo/*bloc logo*/
+{
+	display: flex;
+	align-content: center;/*centré sur l'axe vertical*/
+}
+
+.reservia/*logo (image)*/
+{
+	width: 94px;/*hauteur*/
+	height: 29px;/*largeur*/
+	margin-left: 59px;/*marge ext gauche*/
+}
+
+.menu
+{
+	display: flex;
+	justify-content: space-between;/*espace entre les mots*/
+	margin-right: 77px;/*marge ext droite du bloc*/
+	width: 381px;/*largeur totale du bloc*/
+}
+
