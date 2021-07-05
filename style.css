@@ -119,16 +119,15 @@ header
 {
 	width: 52px;/*largeur bloc*/
 	height: 51px;/*hauteur bloc*/
-	padding-left: 19px;/*marge int gauche (entre bord gauche du bloc et icône)*/
-	position: relative;
+	position: relative;/*devient l'espace de réf de l'icon marker map*/ 
 }
 
 .iconmarkermap/*icône marker map*/
 {
 	width: 13px;/*largeur icône*/
 	height: 18px;/*hauteur icône*/
-	position: absolute;
-	top: 17px; right: 20px; bottom: 16px; left: 19px;
+	position: absolute;/*placement dans espace de réf (blockicon)*/
+	top: 17px;/*distance haut*/ right: 20px;/*...droite*/ bottom: 16px;/*...bas*/ left: 19px;/*...gauche*/
 }
 
 section input/*bloc de saisie*/
@@ -145,10 +144,101 @@ section input/*bloc de saisie*/
 .rechercher/*bouton rechercher*/
 {
 	color: white;/*couleur texte*/
-	background-color: #0065FC;/*couleur fond*/
+	background-color: #0065FC;/*couleur fond bleu*/
 	width: 134px;/*largeur bloc*/
 	height: 51px;/*hauteur bloc*/
 	border: none;/*pas de contour apparent*/
 	border-top-right-radius: 15px;/*coin haut droit arrondi à 15%*/
 	border-bottom-right-radius: 15px;/*coin bas droit arrondi à 15%*/
+}
+
+
+
+/*-----------------------------------Filtres---------------------------------*/
+
+.filtres/*blocfiltres*/
+{
+	margin: 31px 448px 0 63px;/*marge ext*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#economique
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 2px solid #F2F2F2;
+	border-radius: 30%;
+	width: 194px;
+	height: 50px;
+}
+
+#billet/*icon billet*/
+{
+	color: #0065FC;/*couleur icon bleu*/
+	width: 18px;/*largeur icon*/
+	height: 17px;/*hauteur icon*/
+	border: 1px solid #DEEBFF;
+	background-color: #DEEBFF;
+	border-radius: 90%;
+	padding: 17px 16px 16px 16px;
+	margin: 0 29px 0 48px;
+}
+
+#enfant/*icon enfant*/
+{
+	color: #0065FC;/*couleur icon bleu*/
+	width: 15px;/*largeur icon*/
+	height: 21px;/*hauteur icon*/
+	border: 1px solid #DEEBFF;
+	background-color: #DEEBFF;
+	border-radius: 90%;
+	padding: 15px 18px 14px 17px;
+	margin: 0 31px 0 65px;
+}
+
+#coeur/*icon coeur*/
+{
+	color: #0065FC;/*couleur icon bleu*/
+	width: 19px;/*largeur icon*/
+	height: 19px;/*hauteur icon*/
+	border: 1px solid #DEEBFF;
+	background-color: #DEEBFF;
+	border-radius: 90%;
+	padding: 17px 15px 14px 16px;
+	margin: 0 28px 0 63px;
+}
+
+#chien/*icon chien*/
+{
+	color: #0065FC;/*couleur icon bleu*/
+	width: 18px;/*largeur icon*/
+	height: 21px;/*hauteur icon*/
+	border: 1px solid #DEEBFF;
+	background-color: #DEEBFF;
+	border-radius: 90%;
+	padding: 15px 16px 14px 16px;
+	margin: 0 28px 0 57px;
+}
+
+#info/*icon info*/
+{
+	color: #0065FC;/*couleur icon bleu*/
+	width: 4px;/*largeur icon*/
+	height: 12px;/*hauteur icon*/
+	margin-right: 14px;/*marge ext droite (entre icon info et texte)*/
+	padding: 5px 8px 4px 8px;/*marge int (entre icon info et bordure)*/
+	border: 2px solid #F2F2F2;/*bordure grise continue de 2px dépaisseur*/
+	border-radius: 90%;/*angles bordure arrondis à 90%*/
+}
+
+.infotexte/*icon info + texte*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	align-items: center;/*éléments centrés sur l'axe verticale*/
+	margin-left: 61px;/*marge ext grauche (entre icon info et bord de la page)*/
+	margin-top: 35px;/*marge ext haut (entre ce bloc et bloc filtres)
 }
