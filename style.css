@@ -1,3 +1,6 @@
+
+/*---------------------Police: directives FontFace--------------------*/
+
 @font-face {
 	font-family: "Raleway";
 	src: url("static/Raleway-Thin.ttf") format("truetype"),
@@ -21,10 +24,30 @@
 }
 
 
-*/*police*/
+/*--------------------------Règles générales---------------------------*/
+
+body/*Sur toute la page*/
 {
-	font-family: "Raleway", sans-serif;
-	
+	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
+}
+
+h1/*titres principaux des sections*/
+{
+	font-size: 21px;/*taille de la police*/
+	font-family: "Raleway-Bold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+}
+
+h2/*Autres titres*/
+{
+	font-size: 16px;/*taille de la police*/
+	font-family: "Raleway-Bold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+}
+
+p/*texte de base*/
+{
+	font-size: 16px;/*taille de la police*/
 }
 
 a/*tous les liens cliquables de la page*/
@@ -33,9 +56,13 @@ a/*tous les liens cliquables de la page*/
 	color: black;/*perd couleur définie bleu par défaut*/
 }
 
+
+
+/*-------------------------------En-tête----------------------------------*/
+
 header
 {
-	display: flex;
+	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
 	justify-content: space-between;/*espace entre le logo et le menu; chacun à une extrémité*/
 	margin-right: 77px;/*marge ext droite du bloc*/
@@ -51,12 +78,10 @@ header
 
 .menu/*hébergements,activités,s'inscrire*/
 {
-	display: flex;
+	display: flex;/*disposition flexbox*/
 	justify-content: space-between;/*espace entre les mots*/
 	width: 29%;/*largeur totale du bloc par rapport au bloc header*/
 	height: 53%;/*hauteur totale du bloc par rapport au bloc header*/
-	font-size: 16px;/*taille police*/
-	
 }
 
 #sinscrire
@@ -66,7 +91,64 @@ header
 }
 
 
-h1
+
+/*--------------------------Barre de recherche ---------------------------*/
+
+.vacancesdereve/*titre barre de recherche*/
 {
-	font-size: 21px;
+	line-height: 16px;/*espace entre les lignes de texte*/
+	margin-left: 55px;/*marge ext gauche du bloc*/
+	margin-top: 50px;/*marge ext entre ce bloc et le bloc header*/
+}
+
+.barrederecherche
+{
+	background-color: #F2F2F2;/*fond du bloc gris*/
+	border: 1px solid #F2F2F2;/*bordure 1px d'épaisseur, ligne continue, grise*/
+	width: 419px;/*largeur bloc*/
+	height: 50px;/*hauteur bloc*/
+	margin-top: 19px;/*marge ext haute (entre barre de recherche et titre)*/
+	margin-left: 54px;/*marge ext gauche (entre barre de recherche et bord de la page)*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	align-items: center;/*éléments centrés sur l'axe vertical*/
+	border-radius: 15px;/*coins arrondis à 15%*/
+}
+
+.blockicon/*icône marker map bloc*/
+{
+	width: 52px;/*largeur bloc*/
+	height: 51px;/*hauteur bloc*/
+	padding-left: 19px;/*marge int gauche (entre bord gauche du bloc et icône)*/
+	position: relative;
+}
+
+.iconmarkermap/*icône marker map*/
+{
+	width: 13px;/*largeur icône*/
+	height: 18px;/*hauteur icône*/
+	position: absolute;
+	top: 17px; right: 20px; bottom: 16px; left: 19px;
+}
+
+section input/*bloc de saisie*/
+{
+	font-size: 16px;/*taille de la police*/
+	font-family: "Raleway-Bold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+	padding-left: 17px;/*marge int gauche (entre cadre et écriture)*/
+	width: 234px;/*largeur bloc*/
+	height: 49px;/*hauteur bloc*/
+	border: none;/*pas de contour apparent*/
+}
+
+.rechercher/*bouton rechercher*/
+{
+	color: white;/*couleur texte*/
+	background-color: #0065FC;/*couleur fond*/
+	width: 134px;/*largeur bloc*/
+	height: 51px;/*hauteur bloc*/
+	border: none;/*pas de contour apparent*/
+	border-top-right-radius: 15px;/*coin haut droit arrondi à 15%*/
+	border-bottom-right-radius: 15px;/*coin bas droit arrondi à 15%*/
 }
