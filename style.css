@@ -156,23 +156,34 @@ section input/*bloc de saisie*/
 
 /*-----------------------------------Filtres---------------------------------*/
 
-.filtres/*blocfiltres*/
+.filtres/*bloc filtres*/
 {
+	width: 929px;/*largeur*/
 	margin: 31px 448px 0 63px;/*marge ext*/
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	align-items: center;/*éléments centrés sur l'axe vertical*/
+	justify-content: space-between;
+
 }
 
-#economique
+.filtre/*intitulés filtres*/
 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	border: 2px solid #F2F2F2;
-	border-radius: 30%;
-	width: 194px;
-	height: 50px;
+	display: flex;/*disposition flexbox*/
+	align-items: center;/*éléments centrés sur l'axe vertical*/
+	border: 2px solid #F2F2F2;/*cadre ligne continue épaisseure 2px grise*/
+	border-radius: 30px;/*coins arrondis*/
+	height: 50px;/*hauteur du cadre*/
+	width: 100%;/*occupe toute la largeur de son bloc*/ 
+	padding-left: 63px;/*marge int gauche*/
+}
+
+#economique/*bloc filtre économique*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	width: 194px;/*largeur*/
+	position: relative;/*devient l'espace de réf de son icon*/
 }
 
 #billet/*icon billet*/
@@ -180,23 +191,43 @@ section input/*bloc de saisie*/
 	color: #0065FC;/*couleur icon bleu*/
 	width: 18px;/*largeur icon*/
 	height: 17px;/*hauteur icon*/
-	border: 1px solid #DEEBFF;
-	background-color: #DEEBFF;
-	border-radius: 90%;
-	padding: 17px 16px 16px 16px;
-	margin: 0 29px 0 48px;
+	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
+	background-color: #DEEBFF;/*fond bleu clair*/
+	border-radius: 90%;/*coins arrondis (forme un cercle)*/
+	padding: 17px 16px 16px 16px;/*marges int*/
+	margin-right: 29px;
+	position: absolute;/*positon dans son bloc filtre*/
+	left: 0;/*tout à gauche*/
 }
+
+#familial/*bloc filtre familial*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	width: 152px;/*largeur*/
+	position: relative;/*devient l'espace de réf de son icon*/
+}
+
 
 #enfant/*icon enfant*/
 {
 	color: #0065FC;/*couleur icon bleu*/
 	width: 15px;/*largeur icon*/
 	height: 21px;/*hauteur icon*/
-	border: 1px solid #DEEBFF;
-	background-color: #DEEBFF;
-	border-radius: 90%;
-	padding: 15px 18px 14px 17px;
-	margin: 0 31px 0 65px;
+	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
+	background-color: #DEEBFF;/*fond bleu clair*/
+	border-radius: 90%;/*coins arrondis (forme un cercle)*/
+	padding: 15px 18px 14px 17px;/*marges int*/
+	position: absolute;/*positon dans son bloc filtre*/
+	left: 0;/*tout à gauche*/
+}
+
+#romantique/*bloc filtre romantique*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	width: 184px;/*largeur*/
+	position: relative;/*devient l'espace de réf de l'icon*/
 }
 
 #coeur/*icon coeur*/
@@ -204,11 +235,20 @@ section input/*bloc de saisie*/
 	color: #0065FC;/*couleur icon bleu*/
 	width: 19px;/*largeur icon*/
 	height: 19px;/*hauteur icon*/
-	border: 1px solid #DEEBFF;
-	background-color: #DEEBFF;
-	border-radius: 90%;
-	padding: 17px 15px 14px 16px;
-	margin: 0 28px 0 63px;
+	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
+	background-color: #DEEBFF;/*fond bleu clair*/
+	border-radius: 90%;/*coins arrondis (forme un cercle)*/
+	padding: 17px 15px 14px 16px;/*marges int*/
+	position: absolute;/*positon dans son bloc filtre*/
+	left: 0;/*tout à gauche*/
+}
+
+#animaux/*bloc filtre animaux autorisés*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	width: 242px;/*largeur*/
+	position: relative;/*devient l'espace de réf de l'icon*/
 }
 
 #chien/*icon chien*/
@@ -216,12 +256,15 @@ section input/*bloc de saisie*/
 	color: #0065FC;/*couleur icon bleu*/
 	width: 18px;/*largeur icon*/
 	height: 21px;/*hauteur icon*/
-	border: 1px solid #DEEBFF;
-	background-color: #DEEBFF;
-	border-radius: 90%;
-	padding: 15px 16px 14px 16px;
-	margin: 0 28px 0 57px;
+	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
+	background-color: #DEEBFF;/*fond bleu clair*/
+	border-radius: 90%;/*coins arrondis (forme un cercle)*/
+	padding: 15px 16px 14px 16px;/*marges int*/
+	position: absolute;/*positon dans son bloc filtre*/
+	left: 0;/*tout à gauche*/
 }
+
+/*---------------------------Info------------------------------*/
 
 #info/*icon info*/
 {
