@@ -47,8 +47,8 @@
                 <h2>Filtres</h2>
                 <div id="economique"><!--filtre économique-->
                     <img id="billet" src="icon/billet.svg"><!--icon-->
-                    <div class="filtre"><!--bloc titre-->
-                        <h2>Economique</h2><!--titre-->
+                    <div class="filtre"><!--bloc intitulé-->
+                        <h2>Economique</h2><!--intitulé-->
                     </div>
                 </div>
                 <div id="familial"><!--filtre familial-->
@@ -85,57 +85,91 @@
             <!--------------------Hébergements------------------>
 
             <section><!--Section Hébergements-->
-                    <balise id="hébergements"><h1>Hébergements à Marseille</h1></balise><br><!--titre + ancre hébergement menu-->
-                <div class="hébergements photos"><!--photos chambres + noms/prix/notes-->
-                    <figure>
-                        <a href="/auberge-la-cannebiere/infos/"><!--carte intégralement cliquable-->
-                            <img src="images/Cannebière.jpg"><br><!--photo chambre-->
-                            <h2>Auberge la Cannebière</h2><br><!--nom hébergement-->
-                            <p>Nuit à partir de 25€</p><br><!--prix hébergement-->
-                            <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><!--note étoiles-->
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="/hotel-du-port/infos/">
-                            <img src="images/port.jpg"><br>
-                            <h2>Hôtel du port</h2><br>
-                            <p>Nuit à partir de 51€</p><br>
-                            <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="/hotel-les-mouettes/infos/">
-                            <img src="images/mouettes.jpg"><br>
-                            <h2>Hôtel Les Mouettes</h2><br>
-                            <p>Nuit à partir de 76€</p><br>
-                            <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="/hotel-de-la-mer/infos/">
-                            <img src="images/mer.jpg"><br>
-                            <h2>Hôtel de la mer</h2><br>
-                            <p>Nuit à partir de 46€</p><br>
-                            <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="/auberg-le-panier/infos/">
-                            <img src="images/panier.jpg"><br>
-                            <h2>Auberge Le Panier</h2><br>
-                            <p>Nuit à partir de 23€</p><br>
-                            <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="/hotel-chez-amina/infos/">
-                            <img src="images/amina.jpg"><br>
-                            <h2>Hôtel chez Amina</h2><br>
-                            <p>Nuit à partir de 96€</p><br>
-                            <img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg"><img src="icon/star.svg">
-                        </a>
-                    </figure>
-                    <h2>Afficher plus</h2>
+                <div class="hebergements"><!--bloc gris hébergements (titre + cartes + afficherplus)-->
+
+                    <div id="titrehebergements">
+                        <balise id="hébergements"><h1>Hébergements à Marseille</h1></balise><!--titre + ancre hébergement menu-->
+                    </div>
+
+                    <div id="carteshebergements"><!--photos chambres + noms/prix/notes-->
+                        <figure>
+                            <a class="cartes" href="/auberge-la-cannebiere/infos/"><!--carte intégralement cliquable-->
+                                <img class="photos" src="images/Cannebière.jpg"><!--photo chambre-->
+                                <div class="description"><!--bloc description de l'hébegement-->
+                                    <h2>Auberge la Cannebière</h2><!--nom hébergement-->
+                                    <p>Nuit à partir de 25€</p><!--prix hébergement-->
+                                </div>
+                                <div class="note"><!--bloc note étoiles-->
+                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg"><!--note étoiles-->
+                                </div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cartes" href="/hotel-du-port/infos/">
+                                <img class="photos" src="images/port.jpg">
+                                <div class="description">
+                                    <h2>Hôtel du port</h2>
+                                    <p>Nuit à partir de 51€</p>
+                                </div>
+                                <div class="note">
+                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg">
+                                </div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cartes" href="/hotel-les-mouettes/infos/">
+                                <img class="photos" src="images/mouettes.jpg">
+                                <div class="description">
+                                    <h2>Hôtel Les Mouettes</h2>
+                                    <p>Nuit à partir de 76€</p>
+                                </div>
+                                <div class="note">
+                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
+                                </div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cartes" href="/hotel-de-la-mer/infos/">
+                                <img class="photos" src="images/mer.jpg">
+                                <div class="description">
+                                    <h2>Hôtel de la mer</h2>
+                                    <p>Nuit à partir de 46€</p>
+                                </div>
+                                <div class="note">
+                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
+                                </div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cartes" href="/auberg-le-panier/infos/">
+                                <img class="photos" src="images/panier.jpg">
+                                <div class="description">
+                                    <h2>Auberge Le Panier</h2>
+                                    <p>Nuit à partir de 23€</p>
+                                </div>
+                                <div class="note">
+                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
+                                </div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cartes" href="/hotel-chez-amina/infos/">
+                                <img class="photos" src="images/amina.jpg">
+                                <div class="description">
+                                    <h2>Hôtel chez Amina</h2>
+                                    <p>Nuit à partir de 96€</p>
+                                </div>
+                                <div class="note">
+                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg">
+                                </div>
+                            </a>
+                        </figure>
+                    </div>
+                        
+                    <div id="afficherplus">
+                        <h2>Afficher plus</h2>
+                    </div>
+
                 </div>
             </section>
 
