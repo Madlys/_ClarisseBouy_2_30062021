@@ -34,14 +34,21 @@ body/*Sur toute la page*/
 h1/*titres principaux des sections*/
 {
 	font-size: 21px;/*taille de la police*/
-	font-family: "Raleway-Bold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
 }
 
-h2/*Autres titres*/
+h2/*Sous-titres*/
+{
+	font-size: 18px;/*taille de la police*/
+	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+}
+
+h3/*Titres de photos*/
 {
 	font-size: 16px;/*taille de la police*/
-	font-family: "Raleway-Bold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
 }
 
@@ -289,12 +296,13 @@ section input/*bloc de saisie*/
 	align-items: center;/*éléments centrés sur l'axe verticale*/
 	margin-left: 61px;/*marge ext grauche (entre icon info et bord de la page)*/
 	margin-top: 35px;/*marge ext haut (entre ce bloc et bloc filtres)*/
+	height: 24px;/*hauteur*/
+	margin-bottom: 37px;
 }
 
 
 
 /*--------------------------------Hébergements----------------------------------*/
-
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
@@ -304,6 +312,7 @@ section input/*bloc de saisie*/
 	border-radius: 20px;/*coins arrondis*/
 	padding: 47px 9px 46px 0;/*marge int*/
 	margin-left: 50px;/*marge ext gauche*/
+	position: relative;/*devient l'espace de réf des cartes hébergements*/ 
 }
 
 #titrehebergements/*titre*/
@@ -311,43 +320,64 @@ section input/*bloc de saisie*/
 	margin-left: 40px;/*marge ext gauche (entre bord section et titre)*/
 }
 
-#carteshebergements/*bloc cartes*/
-{
-	background-color: pink;
-	display: flex;/*disposition flexbox*/
-	flex-direction: row;/*éléments à la suite sur une même ligne*/
-	flex-wrap: wrap;/*plusieurs lignes*/
-	width: 800px;/*largeur*/
-	height: 428px;/*hauteur*/
-	margin: 44px 31px 61px 40px;/*marges ext*/
-	position: relative;/*devient l'espace de référence des cartes*/
-}
-
 .cartes/*cartes (photo + description)*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: column;/*éléments à la suite en colonne*/
 	width: 246px;/*largeur carte*/
-	height: 199px;/*hauteur carte*/
+	height: 31,79%;/*hauteur carte*/
 	border-radius: 20px;/*coins arrondis*/
 	background-color: white;/*fond blanc*/
 	padding: 5px 5px 11px 5px;/*marge int*/
-	position: absolute;/*position selon l'espace de référence*/
-	
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+#cannebiere/*carte la Cannebière*/
+{
+	position: absolute;/*position dans le bloc section hébergements*/
+	top: 91px;/*distance haut*/
+}
+
+#port/*carte Hôtel du port*/
+{
+	position: absolute;/*position dans le bloc section hébergements*/
+	left: 277px; top: 91px;/*distance gauche et haut*/
+}
+
+#mouettes/*carte Les mouettes*/
+{
+	position: absolute;/*position dans le bloc section hébergements*/
+	left: 554px; top: 91px;/*distance gauche et haut*/
+}
+
+#mer/*carte Hôtel de la mer*/
+{
+	position: absolute;/*position dans le bloc section hébergements*/
+	top: 320px;/*distance haut*/
+}
+
+#panier/*carte Le Panier*/
+{
+	position: absolute;/*position dans le bloc section hébergements*/
+	left: 277px; top: 320px;/*distance gauche et haut*/
+}
+
+#amina/*carte chez Amina*/
+{
+	position: absolute;/*position dans le bloc section hébergements*/
+	left: 554px; top: 320px;/*distance gauche et haut*/
 }
 
 .photos/*photos d'hébergements*/
 {
-	width: 236px;/*largeur*/
+	width: 100%;/*occupe toute la largeur de la carte (-marge int carte)*/
 	height: 114px;/*hauteur*/
-	border-radius: 20px 20px 0 0;/*coins supérieurs arrondis*/
-	display: flex;/*dispositon flexbox*/
-	flex-direction: column;/*éléments à la suite en colonne*/
+	border-radius: 15px 15px 0 0;/*coins supérieurs arrondis*/
 }
 
 .description/*bloc description de l'hébegement*/
 {
-	margin: 12px 0 8px 12px;/*marges ext*/
+	margin: 12px 0 0 12px;/*marges ext*/
 	line-height: 7px;/*espace entre les deux lignes*/
 }
 
@@ -382,5 +412,6 @@ section input/*bloc de saisie*/
 
 #afficherplus
 {
-	margin: 13px 0 0 4px;/*marge ext*/
+	position: absolute;
+	left: 44px; bottom: 46px;
 }
