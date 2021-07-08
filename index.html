@@ -176,56 +176,59 @@
             <!--------------------------Populaires---------------------->
 
             <section><!--Section Populaires-->
-                 <div class="populaires"><!--bloc gris populaires (titre + cartes)-->
+                <div class="populaires"><!--bloc gris populaires (titre + cartes)-->
                     <div id="titrepopulaire"><!--titre-->
                         <h1>Les plus populaires</h1>
                         <img class="iconpopulaire" src="icon/populaire.svg">
                     </div>
-                    <figure>
-                        <a class="cartes2" href="/hotel-le-soleil-du-matin/infos/"><!--carte intégralement cliquable-->
-                            <img class="photos2" src="images/Soleil.jpg"><!--photo chambre-->
-                            <div class="sansphoto">
-                                <div class="description2">
-                                    <h3>Hôtel Le Soleil du </h3><!--nom hébergement-->
-                                    <h3>matin</h3>
-                                    <p>Nuit à partir de 128€</p><!--prix hébergement-->
+
+                    <div id="cartespopulaires"><!--photos chambres + noms/prix/notes-->
+                        <figure class="cartes2">
+                            <a href="/hotel-le-soleil-du-matin/infos/"><!--carte intégralement cliquable-->
+                                <img class="photos2" src="images/Soleil.jpg"><!--photo chambre-->
+                                <div class="sansphoto">
+                                    <div class="description2">
+                                        <h3>Hôtel Le Soleil du </h3><!--nom hébergement-->
+                                        <h3>matin</h3>
+                                        <p>Nuit à partir de 128€</p><!--prix hébergement-->
+                                    </div>
+                                    <div class="note2"><!--note étoiles-->
+                                        <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg">
+                                    </div>
                                 </div>
-                                <div class="note"><!--note étoiles-->
-                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg">
+                            </a>
+                        </figure>
+                        <figure class="cartes2">
+                            <a href="/au-coeur-de-leau/infos/">
+                                <img class="photos2" src="images/eau.jpg">
+                                <div class="sansphoto">
+                                    <div class="description2">
+                                        <h3>Au coeur de l'eau</h3>
+                                        <h3>Chambre d'hôtes</h3>
+                                        <p>Nuit à partir de 71€</p>
+                                    </div>
+                                    <div class="note2">
+                                        <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a class="cartes2" href="/au-coeur-de-leau/infos/">
-                            <img class="photos2" src="images/eau.jpg">
-                            <div class="sansphoto">
-                                <div class="description2">
-                                    <h3>Au coeur de l'eau</h3>
-                                    <h3>Chambre d'hôtes</h3>
-                                    <p>Nuit à partir de 71€</p>
+                            </a>
+                        </figure>
+                        <figure class="cartes2">
+                            <a href="hotel-tout-bleu-et-blanc/infos/">
+                                <img class="photos2" src="images/bleu.jpg">
+                                <div class="sansphoto">
+                                    <div class="description2">
+                                        <h3>Hôtel Tout Bleu et </h3>
+                                        <h3>Blanc</h3>
+                                        <p>Nuit à partir de 68€</p>
+                                    </div>
+                                    <div class="note2">
+                                        <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
+                                    </div>
                                 </div>
-                                <div class="note">
-                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
-                                </div>
-                            </div>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a class="cartes2" href="hotel-tout-bleu-et-blanc/infos/">
-                            <img class="photos2" src="images/bleu.jpg">
-                            <div class="sansphoto">
-                                <div class="description2">
-                                    <h3>Hôtel Tout Bleu et </h3>
-                                    <h3>Blanc</h3>
-                                    <p>Nuit à partir de 68€</p>
-                                </div>
-                                <div class="note">
-                                    <img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="bluestar" src="icon/star.svg"><img class="greystar" src="icon/star.svg">
-                                </div>
-                            </div>
-                        </a>
-                    </figure>
+                            </a>
+                        </figure>
+                    </div>
                 </div>
             </section>
         </div>
@@ -233,54 +236,56 @@
         <!--------------------------Activités-------------------------->
 
         <section><!--Section Activités-->
-            <div class="activites"><!--bloc gris activités (titre + cartes)-->
-                    <balise id="activités"><h1>Activités à Marseille</h1></balise><br><!--titre + ancre activités menu-->
+                    <balise id="activités"><h1>Activités à Marseille</h1></balise><!--titre + ancre activités menu-->
                 <div class="cartesactivités"><!--photos lieux + noms lieux-->
                     <figure class="grandescartes">
-                        <a  href="/vieux-port/infos/"><!--carte intégralement cliquable-->
-                            <img class="" src="images/vieuxport.jpg"><!--photo lieu-->
+                        <a href="/vieux-port/infos/"><!--carte intégralement cliquable-->
+                            <img class="grandesphotos" src="images/vieuxport.jpg"><!--photo lieu-->
                             <h3 class="description3">Vieux Port</h3><!--nom lieu-->
                         </a>
                     </figure>
-                    <figure>
-                        <a class="photos3" href="/fort-de-pomegues/infos/">
-                            <img src="images/pomègues.jpg">
-                            <h3 class="description3">Fort de Pomègues</h3>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a class="photos3" href="/ile-de-frioul/infos/">
-                            <img src="images/frioul.jpg">
-                            <h3 class="description3">Ile de Frioul</h3>
-                        </a>
-                    </figure>
+                    <div class="souscarte">
+                        <figure id="cartepomegues">
+                            <a href="/fort-de-pomegues/infos/">
+                                <img id="photopomegues" src="images/pomègues.jpg">
+                                <h3 class="description3">Fort de Pomègues</h3>
+                            </a>
+                        </figure>
+                        <figure id="cartefrioul">
+                            <a href="/ile-de-frioul/infos/">
+                                <img id="photofrioul" src="images/frioul.jpg">
+                                <h3 class="description3">Ile de Frioul</h3>
+                            </a>
+                        </figure>
+                    </div>
                     <figure class="grandescartes">
                         <a href="/parc-national-des-calanques/infos/">
                             <img class="grandesphotos" src="images/calanques.jpg">
                             <h3 class="description3">Parc National des Calanques</h3>
                         </a>
                     </figure>
-                    <figure>
-                        <a class="photos3" href="/notre-dame-de-la-garde/infos/">
-                            <img src="images/notredame.jpg">
-                            <h3 class="description3">Notre-Dame-de-la-Garde</h3>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a class="photos3" href="/parc-longchamp/infos/">
-                            <img src="images/longchamp.jpg">
-                            <h3 class="description3">Parc Longchamp</h3>
-                        </a>
-                    </figure>
-                </div>
-            </div>    
+                    <div class="souscarte">
+                        <figure id="cartenotredame">
+                            <a href="/notre-dame-de-la-garde/infos/">
+                                <img id="photonotredame" src="images/notredame.jpg">
+                                <h3 class="description3">Notre-Dame-de-la-Garde</h3>
+                            </a>
+                        </figure>
+                        <figure id="cartelongchamp">
+                            <a href="/parc-longchamp/infos/">
+                                <img id="photolongchamp" src="images/longchamp.jpg">
+                                <h3 class="description3">Parc Longchamp</h3>
+                            </a>
+                        </figure>
+                    </div>
+                </div>    
         </section>
 
         <!--------------------------Pied de page------------------------>
 
-        <footer><!--Pied de page-->
-            <div class="pied de page"><!--cadre pied de page-->
-                <div class="A propos"><!--colonne A Propos-->
+        <footer class="pieddepage"><!--Pied de page-->
+            <div class="colonnes"><!--cadre pied de page-->
+                <div class="colonne">
                     <h2>A propos</h2><!--titre colonne-->
                     <ul><!--contenu A propos-->
                         <li>Fonctionnement du site</li>
@@ -288,14 +293,14 @@
                         <li>Données et confidentialité</li>
                     </ul>
                 </div>
-                <div class="Nos hébergements"><!--colonne Nos hébergements-->
+                <div class="colonne">
                     <h2>Nos hébergements</h2>
                     <ul>
                         <li>Charte qualité</li>
                         <li>Soumettre votre hôtel</li>
                     </ul>
                 </div>
-                <div class="Assistance"><!--colonne Assistance-->
+                <div class="colonne">
                     <h2>Assistance</h2>
                     <ul>
                         <li>Centre d'aide</li>

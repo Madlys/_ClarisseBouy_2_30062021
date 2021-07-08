@@ -418,19 +418,20 @@ section input/*bloc de saisie*/
 /*-----------------------------------Populaires----------------------------------*/
 
 
-.populaires/*bloc section populaires (titre + cartes)*/
+.populaires/*bloc gris section populaires (titre + cartes)*/
 {
 	width: 420px;/*largeur*/
 	height: 626px;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 20px;/*coins arrondis*/
+	padding: 46px 0 34px 0;/*marge int */
 }
 
 #titrepopulaire/*bloc titre + icône*/
 {
 	height: 18px;/*hauteur bloc*/
 	width: 343px;/*largeur bloc*/
-	margin: 44px 0 31px 38px;/*marges ext*/
+	margin: 0 39px 0 38px;/*marges ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments alignés sur une même ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
@@ -442,7 +443,17 @@ section input/*bloc de saisie*/
 	height: 18px;/*hauteur icône*/
 }
 
-.cartes2/*cartes populaires (photo + desciption + note)*/
+#cartespopulaires/*bloc cartes*/
+{
+	width: 343px;/*largeur*/
+	height: 498px;/*hauteur*/
+	margin: 26px 40px 0 37px;/*marges ext*/
+	display: flex;/*dispositon flexbox*/
+	flex-direction: column;/*en colonne*/
+	align-items: center;/*élément alignés au centre sur l'axe horizontal*/
+}
+
+.cartes2/*cartes blanches populaires (photo + desciption + note)*/
 {
 	width: 343px;/*largeur cartes*/
 	height: 144px;/*hauteur cartes*/
@@ -457,14 +468,30 @@ section input/*bloc de saisie*/
 	height: 134px;/*hauteur photos*/
 	float: left;
 	border-radius: 15px 0 0 15px;/*coins gauches arrondis*/
-	margin-right: 20px;
+	margin: 5px 0 5px 5px;/*marges ext (entre photo et bords carte)*/
+}
+
+.sansphoto/*description + note*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: column;/*en colonne*/
+	margin-top: 19px;/*marge ext haute*/
 }
 
 .description2/*description photos*/
 {
+	height: 58px;/*hauteur*/
+	margin-left: 20px;/*marge ext gauche (entre photo et description)*/
+}
+
+.note2/*bloc note étoiles*/
+{	
+	width: 68px;/*largeur bloc*/
+	height: 12px;/*hauteur bloc*/
 	display: flex;/*disposition flexbox*/
-	flex-direction: column;/*éléments en colonne*/
-	line-height: 12px;/*espace entre les deux lignes*/
+	flex-direction: row;/*éléments à la suite sur la même ligne*/
+	justify-items: space-between;/*espace entre chaque éléments*/
+	margin: 41px 0 0 21px;/*marge ext*/
 }
 
 
@@ -472,7 +499,7 @@ section input/*bloc de saisie*/
 
 .toushebergements/*bloc section hebergements et populaires*/
 {
-	display: flex;/*disposition felxbox*/
+	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
 	width: 1340px;/*largeur*/
@@ -482,7 +509,28 @@ section input/*bloc de saisie*/
 
 /*----------------------------------------Activités-----------------------------------------------*/
 
+#activités/*titre section activités*/
+{
+	margin: 65px 0 22px 50px;/*marge ext*/
+}
 
+.cartesactivités/*bloc cartes*/
+{
+	height: 446px;/*hauteur*/
+	width: 1337px;/*largeur*/
+	margin-left: 50px;/*marge ext gauche (entre bord page et bloc cartes)*/
+	display: flex;/*dispositon flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	align-items: center;/*éléments alignés sur l'axe vertical*/
+}
+
+.souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
+{
+	display: flex;/*dispositon flexbox*/
+	flex-direction: column;/*en colonne*/
+	justify-content: space-between;/*espace entre les éléments*/
+	align-items: center;/*éléments alignés sur l'axe horizontal*/
+}
 
 .grandescartes/*carte vieux port + carte calanques*/
 {
@@ -503,3 +551,107 @@ section input/*bloc de saisie*/
 {
 	margin: 22px 0 18px 19px;/*marge ext (entre bord carte et description)*/
 }
+
+#cartepomegues/*carte Fort de Pomègues (photo + descptiption)*/
+{
+	width: 301px;/*largeur*/
+	height: 237px;/*hauteur*/
+	border-radius: 20px;/*coins arrondis*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+#photopomegues/*photo Fort de Pomègues*/
+{
+	width: 301px;/*largeur*/
+	height: 181px;/*hauteur*/
+	border-radius: 20px 20px 0 0;/*coins supérieurs arrondis*/
+}
+
+#cartefrioul/*carte Ile de Frioul (photo + descptiption)*/
+{
+	width: 301px;/*largeur*/
+	height: 166px;/*hauteur*/
+	border-radius: 20px;/*coins arrondis*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+#photofrioul/*photo Ile de Frioul*/
+{
+	width: 301px;/*largeur*/
+	height: 110px;/*hauteur*/
+	border-radius: 20px 20px 0 0;/*coins supérieurs arrondis*/
+}
+
+#cartenotredame/*carte Notre Dame (photo + descptiption)*/
+{
+	width: 302px;/*largeur*/
+	height: 196px;/*hauteur*/
+	border-radius: 20px;/*coins arrondis*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+#photonotredame/*photo Notre Dame*/
+{
+	width: 302px;/*largeur*/
+	height: 140px;/*hauteur*/
+	border-radius: 20px 20px 0 0;/*coins supérieurs arrondis*/
+}
+
+#cartelongchamp/*carte Parc Longchamps (photo + descptiption)*/
+{
+	width: 302px;/*largeur*/
+	height: 209px;/*hauteur*/
+	border-radius: 20px;/*coins arrondis*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+#photolongchamp/*photo Parc Longchamps*/
+{
+	width: 302px;/*largeur*/
+	height: 153px;/*hauteur*/
+	border-radius: 20px 20px 0 0;/*coins supérieurs arrondis*/
+}
+
+
+
+
+/*----------------------------------------Pied de Page-----------------------------------------------*/
+
+.pieddepage/*footer*/
+{
+	background-color: #F2F2F2;/*fond gris*/
+	margin-top: 60px;/*marge ext haute (entre bloc activités et pied de page)*/
+	height: 218px;/*hauteur*/
+	width: 100%;/*toute la largeur de la page*/
+}
+
+.colonnes/*bloc colonnes*/
+{
+	width: 71,04%;/*largeur*/
+	height: 119px;/*hauteur*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments alignés sur une même ligne*/
+	justify-content: space-between;/*espace entre éléments*/
+	margin: 49px 368px 51px 50px;/*marges ext*/
+}
+
+.colonne
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ul/*liste d'éléments par partie*/
+{
+	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
+	font-size: 16px;/*taille de la police*/
+	list-style-type: none;/*pas de puce*/
+}
+
+li/*éléments listes*/
+{
+	margin-bottom: 15px;/*espace entre lignes*/
+	margin-left: -40px;/*rattrapage marge puces*/
+}
+
