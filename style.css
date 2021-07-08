@@ -50,6 +50,7 @@ h3/*Titres de photos*/
 	font-size: 16px;/*taille de la police*/
 	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
+	line-height: 6px;/*espace entre les deux lignes*/
 }
 
 p/*texte de base*/
@@ -311,7 +312,6 @@ section input/*bloc de saisie*/
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 20px;/*coins arrondis*/
 	padding: 47px 9px 46px 0;/*marge int*/
-	margin-left: 50px;/*marge ext gauche*/
 	position: relative;/*devient l'espace de réf des cartes hébergements*/ 
 }
 
@@ -408,10 +408,98 @@ section input/*bloc de saisie*/
 	height: 12px;/*hauteur*/
 }
 
-
-
 #afficherplus
 {
 	position: absolute;
 	left: 44px; bottom: 46px;
+}
+
+
+/*-----------------------------------Populaires----------------------------------*/
+
+
+.populaires/*bloc section populaires (titre + cartes)*/
+{
+	width: 420px;/*largeur*/
+	height: 626px;/*hauteur*/
+	background-color: #F2F2F2;/*fond gris*/
+	border-radius: 20px;/*coins arrondis*/
+}
+
+#titrepopulaire/*bloc titre + icône*/
+{
+	height: 18px;/*hauteur bloc*/
+	width: 343px;/*largeur bloc*/
+	margin: 44px 0 31px 38px;/*marges ext*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments alignés sur une même ligne*/
+	justify-content: space-between;/*espace entre les éléments*/
+	align-items: center;/*au centre sur l'axe vertical*/
+}
+.iconpopulaire
+{
+	width: 22px;/*largeur icône*/
+	height: 18px;/*hauteur icône*/
+}
+
+.cartes2/*cartes populaires (photo + desciption + note)*/
+{
+	width: 343px;/*largeur cartes*/
+	height: 144px;/*hauteur cartes*/
+	border-radius: 20px;/*coins arrondis*/
+	background-color: white;/*couleur de fond*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+.photos2/*photos populaires*/
+{
+	width: 127px;/*largeur photos*/
+	height: 134px;/*hauteur photos*/
+	float: left;
+	border-radius: 15px 0 0 15px;/*coins gauches arrondis*/
+	margin-right: 20px;
+}
+
+.description2/*description photos*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: column;/*éléments en colonne*/
+	line-height: 12px;/*espace entre les deux lignes*/
+}
+
+
+/*-----------------------------Hébergements et Populaires------------------------------*/
+
+.toushebergements/*bloc section hebergements et populaires*/
+{
+	display: flex;/*disposition felxbox*/
+	flex-direction: row;/*éléments à la suite sur une ligne*/
+	justify-content: space-between;/*espace entre les éléments*/
+	width: 1340px;/*largeur*/
+	margin-left: 50px;/*marge ext gauche (entre bloc et bord page)*/
+}
+
+
+/*----------------------------------------Activités-----------------------------------------------*/
+
+
+
+.grandescartes/*carte vieux port + carte calanques*/
+{
+	width: 302px;/*largeur*/
+	height: 446px;/*hauteur*/
+	border-radius: 20px;/*coins arrondis*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+.grandesphotos/*photo vieux port + photo calanques*/
+{
+	width: 302px;/*largeur*/
+	height: 390px;/*hauteur*/
+	border-radius: 20px 20px 0 0;/*coins supérieurs arrondis*/
+}
+
+.description3/*descriptions photos activités*/
+{
+	margin: 22px 0 18px 19px;/*marge ext (entre bord carte et description)*/
 }
