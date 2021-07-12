@@ -1,0 +1,271 @@
+/*---------------------Police: directives FontFace--------------------*/
+
+@font-face {
+	font-family: "Raleway";
+	src: url("static/Raleway-Thin.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraLight.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Light.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Regular.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Medium.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-SemiBold.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Bold.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraBold.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Black.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ThinItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraLightItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-LightItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-Italic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-MediumItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-SemiBoldItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-BoldItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-ExtraBoldItalic.ttf") format("truetype"),
+		  url("Raleway/static/Raleway-BlackItalic.ttf)") format("truetype");
+}
+
+
+/*--------------------------Règles générales---------------------------*/
+
+body/*Sur toute la page*/
+{
+	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
+}
+
+h1/*titres principaux des sections*/
+{
+	font-size: 21px;/*taille de la police*/
+	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+}
+
+h2/*Sous-titres*/
+{
+	font-size: 18px;/*taille de la police*/
+	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+}
+
+h3/*Titres de photos*/
+{
+	font-size: 16px;/*taille de la police*/
+	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
+	font-weight: bold;/*en gras*/
+	line-height: 6px;/*espace entre les deux lignes*/
+}
+
+p/*texte de base*/
+{
+	font-size: 16px;/*taille de la police*/
+}
+
+a/*tous les liens cliquables de la page*/
+{
+	text-decoration: none;/*perd soulignement défini par défaut*/
+	color: black;/*perd couleur définie bleu par défaut*/
+}
+
+
+
+
+/*-------------------------------En-tête----------------------------------*/
+
+
+header
+{
+	margin: 32px 21px 0 20px;/*marge ext*/
+}	
+
+.reservia/*logo (image)*/
+{
+	width: 96px;/*largeur*/
+	height: 29px;/*hauteur*/
+}
+
+.menu/*hébergements,activités,s'inscrire*/
+{
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	width: 70px;/*largeur totale du bloc par rapport au bloc header*/
+	height: 29px;/*hauteur totale du bloc par rapport au bloc header*/
+	margin-left: 168px;/*marge ext gauche (entre texte et logo)*/
+}
+
+.menutablette/*Hebergements + activités*/
+{
+	border-bottom: 3px solid #F2F2F2;/*texte souligné en gris*/
+	padding-bottom: 13px;/*marge int bas (entre ligne et texte)*/
+}
+
+.menutablette:active/*effet click*/
+{
+	color: #0065FC;/*texte devient bleu*/ 
+	border-bottom: 3px solid #0065FC;/*texte souligné en bleu*/
+}
+
+
+/*--------------------------Barre de recherche ---------------------------*/
+
+.vacancesdereve/*titre barre de recherche*/
+{
+	width: 292px;/*largeur bloc*/
+	height: 79px;/*hauteur cadre*/
+	margin-left: 20px;/*marge ext gauche du bloc*/
+	margin-top: 36px;/*marge ext entre ce bloc et le bloc header*/
+}
+
+.barrederecherche
+{
+	width: 334px;/*largeur bloc*/
+	margin-top: 35px;/*marge ext haute (entre barre de recherche et titre)*/
+	margin-left: 21px;/*marge ext gauche (entre barre de recherche et bord de la page)*/
+}
+
+section input/*bloc de saisie*/
+{
+	width: 230px;/*largeur bloc*/
+}
+
+.rechercher/*bouton rechercher*/
+{
+	width: 51px;/*largeur bloc*/
+	border-radius: 15px;/*coins arrondis*/
+}
+
+
+/*-----------------------------------Filtres---------------------------------*/
+
+.filtres/*bloc filtres*/
+{
+	width: 328px;/*largeur*/
+	height: 209px;/*hauteur*/
+	margin: 36px 27px 0 20px;/*marge ext*/
+	flex-wrap: wrap;
+}
+
+.filtres h2
+{
+	margin-right: 272px;/*marge ext droite (entre fin texte et bord bloc filtre)*/
+}
+
+#economique/*bloc filtre économique*/
+{
+	width: 177px;/*largeur*/
+}
+
+#familial/*bloc filtre familial*/
+{
+	width: 141px;/*largeur*/
+}
+
+#romantique/*bloc filtre romantique*/
+{
+	width: 169px;/*largeur*/
+}
+
+#animaux/*bloc filtre animaux autorisés*/
+{
+	width: 220px;/*largeur*/
+}
+
+
+
+/*---------------------------Info------------------------------*/
+
+.infotexte/*icon info + texte*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+	align-content: flex-start;/*éléments centrés sur l'axe verticale*/
+	margin-left: 20px;/*marge ext grauche (entre icon info et bord de la page)*/
+	margin-top: 31px;/*marge ext haut (entre ce bloc et bloc filtres)*/
+	height: 41px;/*hauteur*/
+	width: 331px;/*largeur*/
+}
+
+
+
+/*--------------------------------Hébergements----------------------------------*/
+
+.hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
+{
+	background-color: white;/*fond gris*/
+	border-radius: 20px;/*coins arrondis*/
+	padding: 47px 40px 46px 40px;/*marge int*/
+}
+
+.carteshebergements/*bloc cartes*/
+{
+	width: 800px;/*largeur bloc*/
+	height: 428px;/*hauteur bloc*/
+	margin: 23px 0 43px 0;/*marge ext*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*élément à la suite sur une ligne*/
+	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
+	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
+	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
+}
+
+#titrehebergements/*titre*/
+{
+	margin-left: 1px;/*marge ext gauche supplémentaire (entre bord section et titre)*/
+}
+
+.cartes/*cartes (photo + description)*/
+{
+	display: flex;/*disposition flexbox*/
+	flex-direction: column;/*éléments à la suite en colonne*/
+	align-items: center;/*éléments centrés sur l'axe horizontal*/
+	justify-content: center;/*éléments centrés sur l'axe vertical*/
+	padding-bottom: 11px;/*marge int bas (entre bord carte et note étoiles)*/
+	width: 246px;/*largeur carte*/
+	height: 199px;/*hauteur carte*/
+	border-radius: 20px;/*coins arrondis*/
+	background-color: white;/*fond blanc*/
+	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+}
+
+.photos/*photos d'hébergements*/
+{
+	width: 236px;/*largeur*/
+	height: 114px;/*hauteur*/
+	border-radius: 15px 15px 0 0;/*coins supérieurs arrondis*/
+	margin: 5px 5px 0 5px;/*marge ext (entre bords carte et bords photos)*/
+}
+
+.description/*bloc description de l'hébegement*/
+{
+	margin: 12px 0 0 17px;/*marges ext*/
+	line-height: 7px;/*espace entre lignes de texte*/
+}
+
+
+/*----------Note-------------*/
+
+.note/*bloc note étoiles*/
+{
+	width: 68px;/*largeur bloc*/
+	height: 12px;/*hauteur bloc*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur la même ligne*/
+	justify-items: space-between;/*espace entre chaque éléments*/
+	margin-left: 16px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
+}
+
+.bluestar/*étoiles bleues*/
+{
+	color: #0065FC;/*couleur bleue*/
+	width: 12px;/*largeur*/
+	height: 12px;/*hauteur*/
+}
+
+.greystar/*étoiles grises*/
+{
+	color: #F2F2F2;/*couleur grise*/
+	width: 12px;/*largeur*/
+	height: 12px;/*hauteur*/
+}
+
+#afficherplus
+{
+	margin-left: 4px;/*marge ext gauche supplémentaire (entre bord bloc hébérgements et texte)*/
+}
+

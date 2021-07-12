@@ -72,7 +72,6 @@ header
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
-	justify-content: space-between;/*espace entre le logo et le menu; chacun à une extrémité*/
 	margin-right: 77px;/*marge ext droite du bloc*/
 	margin-top: 51px;/*marge ext haute du bloc*/
 	margin-left: 53px;/*marge ext gauche du bloc*/
@@ -88,8 +87,8 @@ header
 {
 	display: flex;/*disposition flexbox*/
 	justify-content: space-between;/*espace entre les mots*/
-	width: 29%;/*largeur totale du bloc par rapport au bloc header*/
-	height: 53%;/*hauteur totale du bloc par rapport au bloc header*/
+	width: 380px;/*largeur totale du bloc par rapport au bloc header*/
+	height: 16px;/*hauteur totale du bloc par rapport au bloc header*/
 }
 
 #sinscrire
@@ -120,7 +119,7 @@ header
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
-	border-radius: 15px;/*coins arrondis à 15%*/
+	border-radius: 15px;/*coins arrondis*/
 }
 
 .blockicon/*icône marker map bloc*/
@@ -156,8 +155,8 @@ section input/*bloc de saisie*/
 	width: 134px;/*largeur bloc*/
 	height: 51px;/*hauteur bloc*/
 	border: none;/*pas de contour apparent*/
-	border-top-right-radius: 15px;/*coin haut droit arrondi à 15%*/
-	border-bottom-right-radius: 15px;/*coin bas droit arrondi à 15%*/
+	border-top-right-radius: 15px;/*coin haut droit arrondi*/
+	border-bottom-right-radius: 15px;/*coin bas droit arrondi*/
 }
 
 
@@ -182,7 +181,7 @@ section input/*bloc de saisie*/
 	border: 2px solid #F2F2F2;/*cadre ligne continue épaisseure 2px grise*/
 	border-radius: 30px;/*coins arrondis*/
 	height: 50px;/*hauteur du cadre*/
-	width: 100%;/*occupe toute la largeur de son bloc*/ 
+	width: 100%;/*occupe toute la largeur de son bloc*/
 	padding-left: 63px;/*marge int gauche*/
 }
 
@@ -284,7 +283,7 @@ section input/*bloc de saisie*/
 	color: #0065FC;/*couleur icon bleu*/
 	width: 4px;/*largeur icon*/
 	height: 12px;/*hauteur icon*/
-	margin-right: 14px;/*marge ext droite (entre icon info et texte)*/
+	margin-right: 12px;/*marge ext droite (entre icon info et texte)*/
 	padding: 5px 8px 4px 8px;/*marge int (entre icon info et bordure)*/
 	border: 2px solid #F2F2F2;/*bordure grise continue de 2px dépaisseur*/
 	border-radius: 90%;/*angles bordure arrondis à 90%*/
@@ -307,78 +306,55 @@ section input/*bloc de saisie*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
-	width: 880px;/*largeur bloc*/
-	height: 626px;/*hauteur bloc*/
+	height: 625px;
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 20px;/*coins arrondis*/
-	padding: 47px 9px 46px 0;/*marge int*/
-	position: relative;/*devient l'espace de réf des cartes hébergements*/ 
+	padding: 47px 40px 46px 40px;/*marge int*/
+}
+
+.carteshebergements/*bloc cartes*/
+{
+	width: 800px;/*largeur bloc*/
+	height: 428px;/*hauteur bloc*/
+	margin: 23px 0 43px 0;/*marge ext*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*élément à la suite sur une ligne*/
+	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
+	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
+	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
 }
 
 #titrehebergements/*titre*/
 {
-	margin-left: 40px;/*marge ext gauche (entre bord section et titre)*/
+	margin-left: 1px;/*marge ext gauche supplémentaire (entre bord section et titre)*/
 }
 
 .cartes/*cartes (photo + description)*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: column;/*éléments à la suite en colonne*/
+	align-items: center;/*éléments centrés sur l'axe horizontal*/
+	justify-content: center;/*éléments centrés sur l'axe vertical*/
+	padding-bottom: 11px;/*marge int bas (entre bord carte et note étoiles)*/
 	width: 246px;/*largeur carte*/
-	height: 31,79%;/*hauteur carte*/
+	height: 199px;/*hauteur carte*/
 	border-radius: 20px;/*coins arrondis*/
 	background-color: white;/*fond blanc*/
-	padding: 5px 5px 11px 5px;/*marge int*/
 	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
-}
-
-#cannebiere/*carte la Cannebière*/
-{
-	position: absolute;/*position dans le bloc section hébergements*/
-	top: 91px;/*distance haut*/
-}
-
-#port/*carte Hôtel du port*/
-{
-	position: absolute;/*position dans le bloc section hébergements*/
-	left: 277px; top: 91px;/*distance gauche et haut*/
-}
-
-#mouettes/*carte Les mouettes*/
-{
-	position: absolute;/*position dans le bloc section hébergements*/
-	left: 554px; top: 91px;/*distance gauche et haut*/
-}
-
-#mer/*carte Hôtel de la mer*/
-{
-	position: absolute;/*position dans le bloc section hébergements*/
-	top: 320px;/*distance haut*/
-}
-
-#panier/*carte Le Panier*/
-{
-	position: absolute;/*position dans le bloc section hébergements*/
-	left: 277px; top: 320px;/*distance gauche et haut*/
-}
-
-#amina/*carte chez Amina*/
-{
-	position: absolute;/*position dans le bloc section hébergements*/
-	left: 554px; top: 320px;/*distance gauche et haut*/
 }
 
 .photos/*photos d'hébergements*/
 {
-	width: 100%;/*occupe toute la largeur de la carte (-marge int carte)*/
+	width: 236px;/*largeur*/
 	height: 114px;/*hauteur*/
 	border-radius: 15px 15px 0 0;/*coins supérieurs arrondis*/
+	margin: 5px 5px 0 5px;/*marge ext (entre bords carte et bords photos)*/
 }
 
 .description/*bloc description de l'hébegement*/
 {
-	margin: 12px 0 0 12px;/*marges ext*/
-	line-height: 7px;/*espace entre les deux lignes*/
+	margin: 12px 0 0 17px;/*marges ext*/
+	line-height: 7px;/*espace entre lignes de texte*/
 }
 
 
@@ -391,7 +367,7 @@ section input/*bloc de saisie*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
 	justify-items: space-between;/*espace entre chaque éléments*/
-	margin-left: 11px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
+	margin-left: 16px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
 }
 
 .bluestar/*étoiles bleues*/
@@ -410,8 +386,7 @@ section input/*bloc de saisie*/
 
 #afficherplus
 {
-	position: absolute;
-	left: 44px; bottom: 46px;
+	margin-left: 4px;/*marge ext gauche supplémentaire (entre bord bloc hébérgements et texte)*/
 }
 
 
@@ -420,23 +395,27 @@ section input/*bloc de saisie*/
 
 .populaires/*bloc gris section populaires (titre + cartes)*/
 {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	justify-content: center;
 	width: 420px;/*largeur*/
-	height: 626px;/*hauteur*/
+	height: 625px;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 20px;/*coins arrondis*/
-	padding: 46px 0 34px 0;/*marge int */
 }
 
 #titrepopulaire/*bloc titre + icône*/
 {
 	height: 18px;/*hauteur bloc*/
 	width: 343px;/*largeur bloc*/
-	margin: 0 39px 0 38px;/*marges ext*/
+	margin: 46px 39px 0 38px;/*marges ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments alignés sur une même ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
 	align-items: center;/*au centre sur l'axe vertical*/
 }
+
 .iconpopulaire
 {
 	width: 22px;/*largeur icône*/
@@ -445,9 +424,11 @@ section input/*bloc de saisie*/
 
 #cartespopulaires/*bloc cartes*/
 {
+	display: flex;/*disposition flexbox*/
+	justify-content: space-evenly;/*éléments espacés equitablement*/
 	width: 343px;/*largeur*/
 	height: 498px;/*hauteur*/
-	margin: 26px 40px 0 37px;/*marges ext*/
+	margin: 26px 40px 34px 37px;/*marges ext*/
 	display: flex;/*dispositon flexbox*/
 	flex-direction: column;/*en colonne*/
 	align-items: center;/*élément alignés au centre sur l'axe horizontal*/
@@ -499,29 +480,31 @@ section input/*bloc de saisie*/
 
 .toushebergements/*bloc section hebergements et populaires*/
 {
+	width: 1340px;/*largeur*/
+	height: 625px;/*hauteur*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
-	width: 1340px;/*largeur*/
-	margin-left: 50px;/*marge ext gauche (entre bloc et bord page)*/
+	margin-left: 50px;/*marge ext gauche*/
 }
 
 
 /*----------------------------------------Activités-----------------------------------------------*/
 
-#activités/*titre section activités*/
+.activités/*bloc section activtés*/
 {
-	margin: 65px 0 22px 50px;/*marge ext*/
+	width: 1336px;/*largeur*/
+	margin: 65px 53px 60px 50px;
 }
 
 .cartesactivités/*bloc cartes*/
 {
-	height: 446px;/*hauteur*/
-	width: 1337px;/*largeur*/
-	margin-left: 50px;/*marge ext gauche (entre bord page et bloc cartes)*/
-	display: flex;/*dispositon flexbox*/
-	flex-direction: row;/*éléments à la suite sur une même ligne*/
-	align-items: center;/*éléments alignés sur l'axe vertical*/
+	background-color: pink;
+	height: 470px;/*hauteur*/
+	width: 1500px;/*largeur*/
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur une ligne*/
+	margin-top: 30px;/*marge ext haute*/
 }
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
@@ -569,7 +552,7 @@ section input/*bloc de saisie*/
 
 #cartefrioul/*carte Ile de Frioul (photo + descptiption)*/
 {
-	width: 301px;/*largeur*/
+	width: 302px;/*largeur*/
 	height: 166px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
 	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
@@ -622,24 +605,12 @@ section input/*bloc de saisie*/
 	background-color: #F2F2F2;/*fond gris*/
 	margin-top: 60px;/*marge ext haute (entre bloc activités et pied de page)*/
 	height: 218px;/*hauteur*/
-	width: 100%;/*toute la largeur de la page*/
-}
-
-.colonnes/*bloc colonnes*/
-{
-	width: 71,04%;/*largeur*/
-	height: 119px;/*hauteur*/
-	display: flex;/*disposition flexbox*/
-	flex-direction: row;/*éléments alignés sur une même ligne*/
-	justify-content: space-between;/*espace entre éléments*/
-	margin: 49px 368px 51px 50px;/*marges ext*/
-}
-
-.colonne
-{
+	width: 1440px;/*largeur*/
+	padding: 48px 368px 51px 50px;/*marges int*/
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	align-content: space-between;
 }
 
 ul/*liste d'éléments par partie*/
@@ -654,4 +625,3 @@ li/*éléments listes*/
 	margin-bottom: 15px;/*espace entre lignes*/
 	margin-left: -40px;/*rattrapage marge puces*/
 }
-
