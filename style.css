@@ -87,9 +87,10 @@ header
 {
 	display: flex;/*disposition flexbox*/
 	justify-content: space-between;/*espace entre les mots*/
-	width: 380px;/*largeur totale du bloc par rapport au bloc header*/
-	height: 16px;/*hauteur totale du bloc par rapport au bloc header*/
+	width: 380px;/*largeur totale du bloc*/
+	height: 16px;/*hauteur totale du bloc*/
 }
+
 
 #sinscrire
 {
@@ -129,7 +130,7 @@ header
 	position: relative;/*devient l'espace de réf de l'icon marker map*/ 
 }
 
-.iconmarkermap/*icône marker map*/
+.fa-map-marker-alt/*icône marker map*/
 {
 	width: 13px;/*largeur icône*/
 	height: 18px;/*hauteur icône*/
@@ -148,7 +149,7 @@ section input/*bloc de saisie*/
 	border: none;/*pas de contour apparent*/
 }
 
-.rechercher/*bouton rechercher*/
+span.rechercher/*bouton rechercher avec texte*/
 {
 	color: white;/*couleur texte*/
 	background-color: #0065FC;/*couleur fond bleu*/
@@ -159,6 +160,10 @@ section input/*bloc de saisie*/
 	border-bottom-right-radius: 15px;/*coin bas droit arrondi*/
 }
 
+i.fa-search/*bouton rechercher avec icon*/
+{
+    display: none;/*disparaît*/
+}
 
 
 /*-----------------------------------Filtres---------------------------------*/
@@ -178,7 +183,7 @@ section input/*bloc de saisie*/
 {
 	display: flex;/*disposition flexbox*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
-	border: 2px solid #F2F2F2;/*cadre ligne continue épaisseure 2px grise*/
+	border: 2px solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
 	border-radius: 30px;/*coins arrondis*/
 	height: 50px;/*hauteur du cadre*/
 	width: 100%;/*occupe toute la largeur de son bloc*/
@@ -198,9 +203,8 @@ section input/*bloc de saisie*/
 	position: relative;/*devient l'espace de réf de son icon*/
 }
 
-#billet/*icon billet*/
+.fa-money-bill-wave/*icon billet*/
 {
-	color: #0065FC;/*couleur icon bleu*/
 	width: 18px;/*largeur icon*/
 	height: 17px;/*hauteur icon*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
@@ -221,7 +225,7 @@ section input/*bloc de saisie*/
 }
 
 
-#enfant/*icon enfant*/
+.fa-child/*icon enfant*/
 {
 	color: #0065FC;/*couleur icon bleu*/
 	width: 15px;/*largeur icon*/
@@ -242,7 +246,7 @@ section input/*bloc de saisie*/
 	position: relative;/*devient l'espace de réf de l'icon*/
 }
 
-#coeur/*icon coeur*/
+.fa-heart/*icon coeur*/
 {
 	color: #0065FC;/*couleur icon bleu*/
 	width: 19px;/*largeur icon*/
@@ -263,7 +267,7 @@ section input/*bloc de saisie*/
 	position: relative;/*devient l'espace de réf de l'icon*/
 }
 
-#chien/*icon chien*/
+.fa-dog/*icon chien*/
 {
 	color: #0065FC;/*couleur icon bleu*/
 	width: 18px;/*largeur icon*/
@@ -278,7 +282,7 @@ section input/*bloc de saisie*/
 
 /*---------------------------Info------------------------------*/
 
-#info/*icon info*/
+.fa-info/*icon info*/
 {
 	color: #0065FC;/*couleur icon bleu*/
 	width: 4px;/*largeur icon*/
@@ -294,10 +298,8 @@ section input/*bloc de saisie*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe verticale*/
-	margin-left: 61px;/*marge ext grauche (entre icon info et bord de la page)*/
-	margin-top: 35px;/*marge ext haut (entre ce bloc et bloc filtres)*/
+	margin: 35px 0 37px 61px;/*marge ext*/
 	height: 24px;/*hauteur*/
-	margin-bottom: 37px;
 }
 
 
@@ -309,25 +311,29 @@ section input/*bloc de saisie*/
 	height: 625px;
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 20px;/*coins arrondis*/
-	padding: 47px 40px 46px 40px;/*marge int*/
+	position: absolute;/*position en fonction du bloc de référence*/
+	left: 0; top: 0;/*tout en haut à gauche*/
+}
+
+#titrehebergements/*titre*/
+{
+	margin-top: 47px;
+	margin-left: 41px;/*marge ext gauche (entre bord section et titre)*/
 }
 
 .carteshebergements/*bloc cartes*/
 {
 	width: 800px;/*largeur bloc*/
 	height: 428px;/*hauteur bloc*/
-	margin: 23px 0 43px 0;/*marge ext*/
+	margin: 23px 40px 43px 40px;/*marge ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*élément à la suite sur une ligne*/
 	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
 	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
 	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
+	gap: 30px 31px;/*espace entre cartes*/
 }
 
-#titrehebergements/*titre*/
-{
-	margin-left: 1px;/*marge ext gauche supplémentaire (entre bord section et titre)*/
-}
 
 .cartes/*cartes (photo + description)*/
 {
@@ -335,7 +341,6 @@ section input/*bloc de saisie*/
 	flex-direction: column;/*éléments à la suite en colonne*/
 	align-items: center;/*éléments centrés sur l'axe horizontal*/
 	justify-content: center;/*éléments centrés sur l'axe vertical*/
-	padding-bottom: 11px;/*marge int bas (entre bord carte et note étoiles)*/
 	width: 246px;/*largeur carte*/
 	height: 199px;/*hauteur carte*/
 	border-radius: 20px;/*coins arrondis*/
@@ -353,6 +358,7 @@ section input/*bloc de saisie*/
 
 .description/*bloc description de l'hébegement*/
 {
+	height: 37px;
 	margin: 12px 0 0 17px;/*marges ext*/
 	line-height: 7px;/*espace entre lignes de texte*/
 }
@@ -368,18 +374,11 @@ section input/*bloc de saisie*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
 	justify-items: space-between;/*espace entre chaque éléments*/
 	margin-left: 16px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
+	margin-bottom: 11px;/*marge ext bas (entre bord carte et note étoiles)*/
 }
 
-.bluestar/*étoiles bleues*/
+.fa-star/*étoile*/
 {
-	color: #0065FC;/*couleur bleue*/
-	width: 12px;/*largeur*/
-	height: 12px;/*hauteur*/
-}
-
-.greystar/*étoiles grises*/
-{
-	color: #F2F2F2;/*couleur grise*/
 	width: 12px;/*largeur*/
 	height: 12px;/*hauteur*/
 }
@@ -395,10 +394,10 @@ section input/*bloc de saisie*/
 
 .populaires/*bloc gris section populaires (titre + cartes)*/
 {
-	display: flex;
-	flex-direction: column;
-	align-content: space-between;
-	justify-content: center;
+	display: flex;/*disposition flexbox*/
+	flex-direction: column;/*éléments à la suite sur la même colonne*/
+	align-content: space-between;/*espace entre chaque éléments*/
+	justify-content: center;/*éléments centrés sur l'axe vertical*/
 	width: 420px;/*largeur*/
 	height: 625px;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
@@ -416,7 +415,7 @@ section input/*bloc de saisie*/
 	align-items: center;/*au centre sur l'axe vertical*/
 }
 
-.iconpopulaire
+.fa-chart-line/*icon populaire*/
 {
 	width: 22px;/*largeur icône*/
 	height: 18px;/*hauteur icône*/
@@ -425,13 +424,12 @@ section input/*bloc de saisie*/
 #cartespopulaires/*bloc cartes*/
 {
 	display: flex;/*disposition flexbox*/
+	flex-direction: column;/*en colonne*/
+	align-items: center;/*élément alignés au centre sur l'axe horizontal*/
 	justify-content: space-evenly;/*éléments espacés equitablement*/
 	width: 343px;/*largeur*/
 	height: 498px;/*hauteur*/
 	margin: 26px 40px 34px 37px;/*marges ext*/
-	display: flex;/*dispositon flexbox*/
-	flex-direction: column;/*en colonne*/
-	align-items: center;/*élément alignés au centre sur l'axe horizontal*/
 }
 
 .cartes2/*cartes blanches populaires (photo + desciption + note)*/
@@ -456,6 +454,7 @@ section input/*bloc de saisie*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: column;/*en colonne*/
+	align-items: start;
 	margin-top: 19px;/*marge ext haute*/
 }
 
@@ -486,6 +485,7 @@ section input/*bloc de saisie*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
 	margin-left: 50px;/*marge ext gauche*/
+	position: relative;/*devient l'espace de référence de son contenu*/
 }
 
 
@@ -493,15 +493,14 @@ section input/*bloc de saisie*/
 
 .activités/*bloc section activtés*/
 {
-	width: 1336px;/*largeur*/
+	width: 1337px;/*largeur*/
 	margin: 65px 53px 60px 50px;
 }
 
 .cartesactivités/*bloc cartes*/
 {
-	background-color: pink;
-	height: 470px;/*hauteur*/
-	width: 1500px;/*largeur*/
+	height: 445px;/*hauteur*/
+	width: 1337px;/*largeur*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	margin-top: 30px;/*marge ext haute*/
@@ -509,9 +508,10 @@ section input/*bloc de saisie*/
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 {
+	height: 445px;
+	width: 302px;
 	display: flex;/*dispositon flexbox*/
 	flex-direction: column;/*en colonne*/
-	justify-content: space-between;/*espace entre les éléments*/
 	align-items: center;/*éléments alignés sur l'axe horizontal*/
 }
 
@@ -532,7 +532,7 @@ section input/*bloc de saisie*/
 
 .description3/*descriptions photos activités*/
 {
-	margin: 22px 0 18px 19px;/*marge ext (entre bord carte et description)*/
+	margin: 22px 0 21px 20px;/*marge ext*/
 }
 
 #cartepomegues/*carte Fort de Pomègues (photo + descptiption)*/
@@ -597,7 +597,7 @@ section input/*bloc de saisie*/
 
 
 
-
+ 
 /*----------------------------------------Pied de Page-----------------------------------------------*/
 
 .pieddepage/*footer*/
@@ -606,7 +606,6 @@ section input/*bloc de saisie*/
 	margin-top: 60px;/*marge ext haute (entre bloc activités et pied de page)*/
 	height: 218px;/*hauteur*/
 	width: 1440px;/*largeur*/
-	padding: 48px 368px 51px 50px;/*marges int*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

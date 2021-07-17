@@ -74,33 +74,11 @@ header
 	margin: 32px 21px 0 20px;/*marge ext*/
 }	
 
-.reservia/*logo (image)*/
-{
-	width: 96px;/*largeur*/
-	height: 29px;/*hauteur*/
-}
-
 .menu/*hébergements,activités,s'inscrire*/
 {
-	flex-direction: row-reverse;
-	justify-content: flex-end;
-	width: 70px;/*largeur totale du bloc par rapport au bloc header*/
-	height: 29px;/*hauteur totale du bloc par rapport au bloc header*/
+	display: inline-block;
 	margin-left: 168px;/*marge ext gauche (entre texte et logo)*/
 }
-
-.menutablette/*Hebergements + activités*/
-{
-	border-bottom: 3px solid #F2F2F2;/*texte souligné en gris*/
-	padding-bottom: 13px;/*marge int bas (entre ligne et texte)*/
-}
-
-.menutablette:active/*effet click*/
-{
-	color: #0065FC;/*texte devient bleu*/ 
-	border-bottom: 3px solid #0065FC;/*texte souligné en bleu*/
-}
-
 
 /*--------------------------Barre de recherche ---------------------------*/
 
@@ -124,12 +102,23 @@ section input/*bloc de saisie*/
 	width: 230px;/*largeur bloc*/
 }
 
-.rechercher/*bouton rechercher*/
+span.rechercher/*bouton rechercher avec texte*/
 {
-	width: 51px;/*largeur bloc*/
-	border-radius: 15px;/*coins arrondis*/
+	display: none;/*diparaît*/
 }
 
+i.fa-search/*bouton rechercher avec icon*/
+{
+	display: inline-block;/*visible*/
+	color: white;/*couleur texte*/
+	background-color: #0065FC;/*couleur fond bleu*/
+	width: 17px;/*largeur bloc*/
+	height: 17px;/*hauteur bloc*/
+	border-radius: 15px;/*coins arrondis*/
+	border: none;
+	border: 1px solid #0065FC;/*contour ligne continue épaisseure 1px bleue clair*/
+	text-align: center;
+}
 
 /*-----------------------------------Filtres---------------------------------*/
 
@@ -187,85 +176,163 @@ section input/*bloc de saisie*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
-	background-color: white;/*fond gris*/
-	border-radius: 20px;/*coins arrondis*/
-	padding: 47px 40px 46px 40px;/*marge int*/
-}
-
-.carteshebergements/*bloc cartes*/
-{
-	width: 800px;/*largeur bloc*/
-	height: 428px;/*hauteur bloc*/
-	margin: 23px 0 43px 0;/*marge ext*/
-	display: flex;/*disposition flexbox*/
-	flex-direction: row;/*élément à la suite sur une ligne*/
-	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
-	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
-	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
+	background-color: white;/*fond blanc = pas de fond*/
+	padding: 42px 20px 20px 34px;/*marge int*/
 }
 
 #titrehebergements/*titre*/
 {
-	margin-left: 1px;/*marge ext gauche supplémentaire (entre bord section et titre)*/
+	margin-left: 0;/*marge ext gauche (entre bord section et titre)*/
+}
+
+.carteshebergements/*bloc cartes*/
+{
+	width: 335px;/*largeur bloc*/
+	height: 1254px;/*hauteur bloc*/
+	margin-top: 19px;/*marge ext haute (entre bolc carte et titre)*/
+	flex-direction: column;/*élément à la suite sur une colonne*/
+	flex-wrap: nowrap;/*élément flex en une seule colonne*/
+	margin-left: 0;
 }
 
 .cartes/*cartes (photo + description)*/
 {
-	display: flex;/*disposition flexbox*/
-	flex-direction: column;/*éléments à la suite en colonne*/
-	align-items: center;/*éléments centrés sur l'axe horizontal*/
-	justify-content: center;/*éléments centrés sur l'axe vertical*/
-	padding-bottom: 11px;/*marge int bas (entre bord carte et note étoiles)*/
-	width: 246px;/*largeur carte*/
-	height: 199px;/*hauteur carte*/
-	border-radius: 20px;/*coins arrondis*/
-	background-color: white;/*fond blanc*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+	width: 335px;/*largeur carte*/
 }
 
 .photos/*photos d'hébergements*/
 {
-	width: 236px;/*largeur*/
-	height: 114px;/*hauteur*/
-	border-radius: 15px 15px 0 0;/*coins supérieurs arrondis*/
-	margin: 5px 5px 0 5px;/*marge ext (entre bords carte et bords photos)*/
+	width: 325px;/*largeur*/
 }
 
 .description/*bloc description de l'hébegement*/
 {
-	margin: 12px 0 0 17px;/*marges ext*/
-	line-height: 7px;/*espace entre lignes de texte*/
+	line-height: 12px;/*espace entre lignes de texte*/
 }
 
-
-/*----------Note-------------*/
-
-.note/*bloc note étoiles*/
-{
-	width: 68px;/*largeur bloc*/
-	height: 12px;/*hauteur bloc*/
-	display: flex;/*disposition flexbox*/
-	flex-direction: row;/*éléments à la suite sur la même ligne*/
-	justify-items: space-between;/*espace entre chaque éléments*/
-	margin-left: 16px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
-}
-
-.bluestar/*étoiles bleues*/
-{
-	color: #0065FC;/*couleur bleue*/
-	width: 12px;/*largeur*/
-	height: 12px;/*hauteur*/
-}
-
-.greystar/*étoiles grises*/
-{
-	color: #F2F2F2;/*couleur grise*/
-	width: 12px;/*largeur*/
-	height: 12px;/*hauteur*/
-}
 
 #afficherplus
 {
-	margin-left: 4px;/*marge ext gauche supplémentaire (entre bord bloc hébérgements et texte)*/
+	margin-left: 1px;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
 }
 
+
+
+
+/*-----------------------------------Populaires----------------------------------*/
+
+
+.populaires/*bloc gris section populaires (titre + cartes)*/
+{
+	width: 375px;/*largeur*/
+	height: 580px;/*hauteur*/
+	border-radius: 0;/*coins pas arrondis*/
+}
+
+#titrepopulaire/*bloc titre + icône*/
+{
+	height: 23px;/*hauteur bloc*/
+	width: 334px;/*largeur bloc*/
+	margin: 41px 20px 0 20px;/*marges ext*/
+}
+
+.fa-chart-line/*icon populaire*/
+{
+	width: 21px;/*largeur icône*/
+}
+
+#cartespopulaires/*bloc cartes*/
+{
+	width: 334px;/*largeur*/
+	height: 453px;/*hauteur*/
+	margin: 26px 21px 37px 0;/*marges ext*/
+}
+
+.cartes2/*cartes blanches populaires (photo + desciption + note)*/
+{
+	width: 334px;/*largeur cartes*/
+}
+
+.description2/*description photos*/
+{
+	height: 58px;/*hauteur*/
+	margin-left: 21px;/*marge ext gauche (entre photo et description)*/
+}
+
+.note2/*bloc note étoiles*/
+{	
+	display: flex;/*disposition flexbox*/
+	flex-direction: row;/*éléments à la suite sur la même ligne*/
+	justify-items: space-between;/*espace entre chaque éléments*/
+	margin-left: 20px;/*marge ext gauche (entre bord photo et 1ere étoile bloc)*/
+}
+
+
+/*-----------------------------Hébergements et Populaires------------------------------*/
+
+.toushebergements/*bloc section hebergements et populaires*/
+{
+	width: 375px;/*largeur*/
+	height: 1967px;/*hauteur*/
+	flex-direction: column-reverse;/*éléments à la suite sur colonne + ordre éléments inversé)*/
+	margin-left: 0;/*pas de marge ext gauche*/
+}
+
+
+
+
+/*----------------------------------------Activités-----------------------------------------------*/
+
+.activités/*bloc section activtés (titre + bloc cartes)*/
+{
+	width: 334px;/*largeur*/
+	height: 1304px;/*hauteur*/
+	margin: 58px 20px 49px 0;/*marge ext*/
+}
+
+.cartesactivités/*bloc cartes*/
+{
+	height: 1255px;/*hauteur*/
+	width: 334px;/*largeur*/
+	flex-direction: column;/*éléments à la suite sur une colonne*/
+	margin-top: 21px;/*marge ext haute (entre haut bloc cartes et titre)*/
+}
+
+.souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
+{
+	display: none;/*bloc annulé*/
+}
+
+.grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp/*toutes les cartes*/
+{
+	width: 334px;/*largeur*/
+	height: 190px;/*hauteur*/
+}
+
+.grandesphotos, #photopomegues, #photofrioul, #photonotredame, #photolongchamp/*toutes les photos*/
+{
+	width: 334px;/*largeur*/
+	height: 134px;/*hauteur*/
+}
+
+.description3/*descriptions photos activités*/
+{
+	margin: 23px 0 17px 20px;/*marge ext*/
+}
+
+
+/*----------------------------------------Pied de Page-----------------------------------------------*/
+
+.pieddepage/*footer*/
+{
+	margin-top: 49px;/*marge ext haute (entre bloc activités et pied de page)*/
+	height: 486px;/*hauteur*/
+	width: 375px;/*largeur*/
+	padding: 49px 121px 46px 29px;/*marges int*/
+	flex-direction: column;/*éléments en colonne*/
+}
+
+ul/*liste d'éléments par partie*/
+{
+	font-size: 17px;/*taille de la police*/
+}
