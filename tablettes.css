@@ -192,7 +192,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-top: 19px;/*marge ext haute (entre bolc carte et titre)*/
 	flex-direction: column;/*élément à la suite sur une colonne*/
 	flex-wrap: nowrap;/*élément flex en une seule colonne*/
-	margin-left: 0;
+	margin-left: 0;/*ajustement visuel*/
 }
 
 .cartes/*cartes (photo + description)*/
