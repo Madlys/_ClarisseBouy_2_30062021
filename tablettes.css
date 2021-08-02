@@ -88,6 +88,7 @@ header
 	height: 79px;/*hauteur cadre*/
 	margin-left: 20px;/*marge ext gauche du bloc*/
 	margin-top: 36px;/*marge ext entre ce bloc et le bloc header*/
+	line-height: 25px;/*ajustement visuel*/
 }
 
 .barrederecherche
@@ -127,7 +128,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 328px;/*largeur*/
 	height: 209px;/*hauteur*/
 	margin: 36px 27px 0 20px;/*marge ext*/
-	flex-wrap: wrap;
+	flex-wrap: wrap;/*élément va à la ligne lorsque plus de place*/
 }
 
 .filtres h2

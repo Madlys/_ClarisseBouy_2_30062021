@@ -91,11 +91,6 @@ header
 	height: 16px;/*hauteur totale du bloc*/
 }
 
-.menucliquable/*partie menu cliquable (hébergements + activités)*/
-{
-	border-top: 2px solid #F2F2F2;
-}
-
 #sinscrire
 {
 	color: #0065FC;/*couleur police en bleu*/
@@ -167,7 +162,6 @@ span.rechercher/*bouton rechercher avec texte*/
 i.fa-search/*bouton rechercher avec icon*/
 {
     display: none;/*disparaît*/
-    
 }
 
 
@@ -187,7 +181,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	display: flex;/*disposition flexbox*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
-	border: 2px solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
+	border: 3px solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
 	border-radius: 30px;/*coins arrondis*/
 	height: 50px;/*hauteur du cadre*/
 	width: 100%;/*occupe toute la largeur de son bloc*/
@@ -196,7 +190,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .filtre:hover/*effet de survol*/
 {
-	box-shadow:  5px 5px 5px #d6d6d6;/*au survol apparaît une ombre grise*/
+	box-shadow: 5px 5px 5px #d6d6d6;/*au survol apparaît une ombre grise*/
 }
 
 #economique/*bloc filtre économique*/
@@ -209,12 +203,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-money-bill-wave/*icon billet*/
 {
-	width: 18px;/*largeur icon*/
-	height: 17px;/*hauteur icon*/
+	font-size: 17px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 17px 16px 16px 16px;/*marges int*/
+	padding: 19px 16px 18px 16px;/*marges int + ajustement visuel*/
 	margin-right: 29px;
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
@@ -228,16 +221,13 @@ i.fa-search/*bouton rechercher avec icon*/
 	position: relative;/*devient l'espace de réf de son icon*/
 }
 
-
 .fa-child/*icon enfant*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 15px;/*largeur icon*/
-	height: 21px;/*hauteur icon*/
+	font-size: 20px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 15px 18px 14px 17px;/*marges int*/
+	padding: 17px 19px 16px 19px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -252,13 +242,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-heart/*icon coeur*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 19px;/*largeur icon*/
-	height: 19px;/*hauteur icon*/
+	font-size: 18px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 17px 15px 14px 16px;/*marges int*/
+	padding: 20px 18px 16px 17px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -273,13 +261,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-dog/*icon chien*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 18px;/*largeur icon*/
-	height: 21px;/*hauteur icon*/
+	font-size: 20px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 15px 16px 14px 16px;/*marges int*/
+	padding: 17px 15px 16px 15px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
