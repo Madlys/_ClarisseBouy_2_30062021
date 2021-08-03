@@ -275,7 +275,6 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-info/*icon info*/
 {
 	font-size: 13px;/*taille icone*/
-	color: #0065FC;/*couleur icon bleu*/
 	margin-right: 12px;/*marge ext droite (entre icon info et texte)*/
 	padding: 5px 8px 4px 8px;/*marge int (entre icon info et bordure)*/
 	border: 2px solid #F2F2F2;/*bordure grise continue de 2px dépaisseur*/
@@ -320,7 +319,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
 	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
 	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
-	gap: 30px 31px;/*espace entre cartes*/
+	grid-gap: 30px 31px;/*espace entre cartes*/
 }
 
 
@@ -334,7 +333,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	height: 199px;/*hauteur carte*/
 	border-radius: 20px;/*coins arrondis*/
 	background-color: white;/*fond blanc*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+	box-shadow: 0px 2px 10px #DCDCDC;/*ombre*/
 }
 
 .photos/*photos d'hébergements*/
@@ -423,7 +422,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	height: 144px;/*hauteur cartes*/
 	border-radius: 20px;/*coins arrondis*/
 	background-color: white;/*couleur de fond*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+	box-shadow: 0px 2px 10px #DCDCDC;/*ombre*/
 }
 
 .photos2/*photos populaires*/
@@ -492,6 +491,11 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-left: 50px;/*marge ext gauche*/
 }
 
+.grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp
+{
+	box-shadow: 0px 2px 10px #DCDCDC;/*ombre*/
+}
+
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 {
 	height: 445px;/*hauteur bloc*/
@@ -509,7 +513,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 446px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 	margin-top: 0;/*ajustement visuel*/
 	margin-left: 0;/*ajustement visuel*/
 }
@@ -531,7 +534,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 301px;/*largeur*/
 	height: 237px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photopomegues/*photo Fort de Pomègues*/
@@ -546,7 +548,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 166px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photofrioul/*photo Ile de Frioul*/
@@ -561,7 +562,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 196px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photonotredame/*photo Notre Dame*/
@@ -576,7 +576,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 209px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photolongchamp/*photo Parc Longchamps*/
@@ -594,19 +593,19 @@ i.fa-search/*bouton rechercher avec icon*/
 footer
 {
 	background-color: #F2F2F2;/*fond gris*/
+	width: 1440px;
 }
 
-.pieddepage/*footer*/
+.pieddepage/*footer int*/
 {
-	margin-left: 50px;
+	margin-left: 50px;/*marge ext gauche*/
 	margin-top: 60px;/*marge ext haute (entre bloc activités et pied de page)*/
 	height: 218px;/*hauteur*/
 	width: 70%;/*largeur*/
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: flex;/*disposion flexbox*/
+	flex-direction: row;/*éléments en ligne*/
+	justify-content: space-between;/*espace entre éléments sur l'axe horizontal*/
 	padding-top: 70px;/*ajustement visuel*/
-
 }
 
 ul/*liste d'éléments par partie*/
