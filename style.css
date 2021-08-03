@@ -593,7 +593,7 @@ i.fa-search/*bouton rechercher avec icon*/
 footer
 {
 	background-color: #F2F2F2;/*fond gris*/
-	width: 1440px;
+	width: 1440px;/*largeur*/
 }
 
 .pieddepage/*footer int*/
