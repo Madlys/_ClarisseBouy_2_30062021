@@ -91,7 +91,6 @@ header
 	height: 16px;/*hauteur totale du bloc*/
 }
 
-
 #sinscrire
 {
 	color: #0065FC;/*couleur police en bleu*/
@@ -155,7 +154,7 @@ span.rechercher/*bouton rechercher avec texte*/
 	background-color: #0065FC;/*couleur fond bleu*/
 	width: 134px;/*largeur bloc*/
 	height: 51px;/*hauteur bloc*/
-	border: none;/*pas de contour apparent*/
+	border: 0px;/*pas de contour apparent*/
 	border-top-right-radius: 15px;/*coin haut droit arrondi*/
 	border-bottom-right-radius: 15px;/*coin bas droit arrondi*/
 }
@@ -176,14 +175,13 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
 	justify-content: space-between;
-
 }
 
 .filtre/*intitulés filtres*/
 {
 	display: flex;/*disposition flexbox*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
-	border: 2px solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
+	border: 3px solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
 	border-radius: 30px;/*coins arrondis*/
 	height: 50px;/*hauteur du cadre*/
 	width: 100%;/*occupe toute la largeur de son bloc*/
@@ -192,7 +190,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .filtre:hover/*effet de survol*/
 {
-	box-shadow:  5px 5px 5px #d6d6d6;/*au survol apparaît une ombre grise*/
+	box-shadow: 5px 5px 5px #d6d6d6;/*au survol apparaît une ombre grise*/
 }
 
 #economique/*bloc filtre économique*/
@@ -205,12 +203,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-money-bill-wave/*icon billet*/
 {
-	width: 18px;/*largeur icon*/
-	height: 17px;/*hauteur icon*/
+	font-size: 17px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 17px 16px 16px 16px;/*marges int*/
+	padding: 19px 16px 18px 16px;/*marges int + ajustement visuel*/
 	margin-right: 29px;
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
@@ -224,16 +221,13 @@ i.fa-search/*bouton rechercher avec icon*/
 	position: relative;/*devient l'espace de réf de son icon*/
 }
 
-
 .fa-child/*icon enfant*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 15px;/*largeur icon*/
-	height: 21px;/*hauteur icon*/
+	font-size: 20px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 15px 18px 14px 17px;/*marges int*/
+	padding: 17px 19px 16px 19px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -248,13 +242,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-heart/*icon coeur*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 19px;/*largeur icon*/
-	height: 19px;/*hauteur icon*/
+	font-size: 18px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 17px 15px 14px 16px;/*marges int*/
+	padding: 20px 18px 16px 17px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -269,13 +261,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-dog/*icon chien*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 18px;/*largeur icon*/
-	height: 21px;/*hauteur icon*/
+	font-size: 20px;/*taille icone ajustement vicuel*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 15px 16px 14px 16px;/*marges int*/
+	padding: 17px 15px 16px 15px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -284,9 +274,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-info/*icon info*/
 {
-	color: #0065FC;/*couleur icon bleu*/
-	width: 4px;/*largeur icon*/
-	height: 12px;/*hauteur icon*/
+	font-size: 13px;/*taille icone*/
 	margin-right: 12px;/*marge ext droite (entre icon info et texte)*/
 	padding: 5px 8px 4px 8px;/*marge int (entre icon info et bordure)*/
 	border: 2px solid #F2F2F2;/*bordure grise continue de 2px dépaisseur*/
@@ -331,7 +319,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
 	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
 	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
-	gap: 30px 31px;/*espace entre cartes*/
+	grid-gap: 30px 31px;/*espace entre cartes*/
 }
 
 
@@ -345,7 +333,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	height: 199px;/*hauteur carte*/
 	border-radius: 20px;/*coins arrondis*/
 	background-color: white;/*fond blanc*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+	box-shadow: 0px 2px 10px #DCDCDC;/*ombre*/
 }
 
 .photos/*photos d'hébergements*/
@@ -359,7 +347,8 @@ i.fa-search/*bouton rechercher avec icon*/
 .description/*bloc description de l'hébegement*/
 {
 	height: 37px;
-	margin: 12px 0 0 17px;/*marges ext*/
+	margin-left: 17px;/*marges ext gauche*/
+	margin-top: -3px;/*ajustement visuel*/
 	line-height: 7px;/*espace entre lignes de texte*/
 }
 
@@ -368,23 +357,23 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .note/*bloc note étoiles*/
 {
-	width: 68px;/*largeur bloc*/
-	height: 12px;/*hauteur bloc*/
+	font-size: 12px;/*taille chaque étoile*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
 	justify-items: space-between;/*espace entre chaque éléments*/
 	margin-left: 16px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
 	margin-bottom: 11px;/*marge ext bas (entre bord carte et note étoiles)*/
+	margin-top: 3px;/*ajustement visuel*/
 }
 
-.fa-star/*étoile*/
+.fa-star
 {
-	width: 12px;/*largeur*/
-	height: 12px;/*hauteur*/
+	margin-right: 2px;/*marge entre étoiles*/
 }
 
 #afficherplus
 {
+	margin-top: -5px;/*ajustement visuel*/
 	margin-left: 4px;/*marge ext gauche supplémentaire (entre bord bloc hébérgements et texte)*/
 }
 
@@ -406,6 +395,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 #titrepopulaire/*bloc titre + icône*/
 {
+	font-size: 22px;/*taille icône*/ 
 	height: 18px;/*hauteur bloc*/
 	width: 343px;/*largeur bloc*/
 	margin: 46px 39px 0 38px;/*marges ext*/
@@ -413,12 +403,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-direction: row;/*éléments alignés sur une même ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
 	align-items: center;/*au centre sur l'axe vertical*/
-}
-
-.fa-chart-line/*icon populaire*/
-{
-	width: 22px;/*largeur icône*/
-	height: 18px;/*hauteur icône*/
 }
 
 #cartespopulaires/*bloc cartes*/
@@ -438,7 +422,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	height: 144px;/*hauteur cartes*/
 	border-radius: 20px;/*coins arrondis*/
 	background-color: white;/*couleur de fond*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+	box-shadow: 0px 2px 10px #DCDCDC;/*ombre*/
 }
 
 .photos2/*photos populaires*/
@@ -460,18 +444,19 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .description2/*description photos*/
 {
+	margin-top: -13px;/*ajustement visuel*/
 	height: 58px;/*hauteur*/
 	margin-left: 20px;/*marge ext gauche (entre photo et description)*/
+	line-height: 7px;/*espace entre lignes*/
 }
 
 .note2/*bloc note étoiles*/
 {	
-	width: 68px;/*largeur bloc*/
-	height: 12px;/*hauteur bloc*/
+	font-size: 12px;
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
-	justify-items: space-between;/*espace entre chaque éléments*/
-	margin: 41px 0 0 21px;/*marge ext*/
+	margin-left: 21px;/*marge ext gauche*/
+	margin-top: 60px;/* marge ext haute (entre note et description)+ajustement visuel*/
 }
 
 
@@ -491,10 +476,10 @@ i.fa-search/*bouton rechercher avec icon*/
 
 /*----------------------------------------Activités-----------------------------------------------*/
 
-.activités/*bloc section activtés*/
+.titreactivites/*titre section activités*/
 {
-	width: 1337px;/*largeur*/
-	margin: 65px 53px 60px 50px;
+	margin-top: 65px;/*marge ext haute*/
+	margin-left: 50px;/*marge ext gauche*/
 }
 
 .cartesactivités/*bloc cartes*/
@@ -503,16 +488,24 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 1337px;/*largeur*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
-	margin-top: 30px;/*marge ext haute*/
+	margin-left: 50px;/*marge ext gauche*/
+}
+
+.grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp
+{
+	box-shadow: 0px 2px 10px #DCDCDC;/*ombre*/
 }
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 {
-	height: 445px;
-	width: 302px;
+	height: 445px;/*hauteur bloc*/
+	width: 302px;/*largeur bloc*/
 	display: flex;/*dispositon flexbox*/
 	flex-direction: column;/*en colonne*/
 	align-items: center;/*éléments alignés sur l'axe horizontal*/
+	margin-top: -15px;/*ajustement visuel*/
+	margin-right: 50px;/*ajustement visuel*/
+	grid-gap: 14px;/*ajustement visuel*/
 }
 
 .grandescartes/*carte vieux port + carte calanques*/
@@ -520,7 +513,8 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 446px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
+	margin-top: 0;/*ajustement visuel*/
+	margin-left: 0;/*ajustement visuel*/
 }
 
 .grandesphotos/*photo vieux port + photo calanques*/
@@ -540,7 +534,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 301px;/*largeur*/
 	height: 237px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photopomegues/*photo Fort de Pomègues*/
@@ -555,7 +548,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 166px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photofrioul/*photo Ile de Frioul*/
@@ -570,7 +562,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 196px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photonotredame/*photo Notre Dame*/
@@ -585,7 +576,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 302px;/*largeur*/
 	height: 209px;/*hauteur*/
 	border-radius: 20px;/*coins arrondis*/
-	box-shadow: 2px 4px 20px 5px #DCDCDC;/*ombre*/
 }
 
 #photolongchamp/*photo Parc Longchamps*/
@@ -600,16 +590,22 @@ i.fa-search/*bouton rechercher avec icon*/
  
 /*----------------------------------------Pied de Page-----------------------------------------------*/
 
-.pieddepage/*footer*/
+footer
 {
 	background-color: #F2F2F2;/*fond gris*/
+	width: 1440px;/*largeur*/
+}
+
+.pieddepage/*footer int*/
+{
+	margin-left: 50px;/*marge ext gauche*/
 	margin-top: 60px;/*marge ext haute (entre bloc activités et pied de page)*/
 	height: 218px;/*hauteur*/
-	width: 1440px;/*largeur*/
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: space-between;
+	width: 70%;/*largeur*/
+	display: flex;/*disposion flexbox*/
+	flex-direction: row;/*éléments en ligne*/
+	justify-content: space-between;/*espace entre éléments sur l'axe horizontal*/
+	padding-top: 70px;/*ajustement visuel*/
 }
 
 ul/*liste d'éléments par partie*/
@@ -617,6 +613,7 @@ ul/*liste d'éléments par partie*/
 	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
 	font-size: 16px;/*taille de la police*/
 	list-style-type: none;/*pas de puce*/
+	margin-top: 25px;/*ajustement visuel*/
 }
 
 li/*éléments listes*/

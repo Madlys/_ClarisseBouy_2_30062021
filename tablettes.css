@@ -88,6 +88,7 @@ header
 	height: 79px;/*hauteur cadre*/
 	margin-left: 20px;/*marge ext gauche du bloc*/
 	margin-top: 36px;/*marge ext entre ce bloc et le bloc header*/
+	line-height: 25px;/*ajustement visuel*/
 }
 
 .barrederecherche
@@ -127,7 +128,8 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 328px;/*largeur*/
 	height: 209px;/*hauteur*/
 	margin: 36px 27px 0 20px;/*marge ext*/
-	flex-wrap: wrap;
+	flex-wrap: wrap;/*élément va à la ligne lorsque plus de place*/
+	grid-gap: 10px;/*ajustement visuel*/
 }
 
 .filtres h2
@@ -161,11 +163,9 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .infotexte/*icon info + texte*/
 {
-	display: flex;/*disposition flexbox*/
-	flex-direction: row;/*éléments à la suite sur une même ligne*/
-	align-content: flex-start;/*éléments centrés sur l'axe verticale*/
+	align-items: baseline;/*éléments flexibles alignés sur la ligne de départ de l'axe vertical*/
 	margin-left: 20px;/*marge ext grauche (entre icon info et bord de la page)*/
-	margin-top: 31px;/*marge ext haut (entre ce bloc et bloc filtres)*/
+	margin-top: 63px;/*marge ext haut (entre ce bloc et bloc filtres) + ajustement visuel*/
 	height: 41px;/*hauteur*/
 	width: 331px;/*largeur*/
 }
@@ -192,7 +192,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-top: 19px;/*marge ext haute (entre bolc carte et titre)*/
 	flex-direction: column;/*élément à la suite sur une colonne*/
 	flex-wrap: nowrap;/*élément flex en une seule colonne*/
-	margin-left: 0;
+	margin-left: 0;/*ajustement visuel*/
 }
 
 .cartes/*cartes (photo + description)*/
@@ -283,11 +283,10 @@ i.fa-search/*bouton rechercher avec icon*/
 
 /*----------------------------------------Activités-----------------------------------------------*/
 
-.activités/*bloc section activtés (titre + bloc cartes)*/
+.titreactivites
 {
-	width: 334px;/*largeur*/
-	height: 1304px;/*hauteur*/
-	margin: 58px 20px 49px 0;/*marge ext*/
+	margin-bottom: 20px;/*marge ext bas*/
+	margin-left: 25px;/*marge ext gauche*/
 }
 
 .cartesactivités/*bloc cartes*/
@@ -296,11 +295,18 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 334px;/*largeur*/
 	flex-direction: column;/*éléments à la suite sur une colonne*/
 	margin-top: 21px;/*marge ext haute (entre haut bloc cartes et titre)*/
+	grid-gap: 14px;/*ajustement visuel*/
+}
+
+.grandescartes/*carte vieux port + carte calanques*/
+{
+	margin-left: -25px;/*ajustement visuel*/
 }
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 {
-	display: none;/*bloc annulé*/
+	margin-left: -10px;/*ajustement visuel*/
+	grid-gap: 0;/*ajustement visuel*/
 }
 
 .grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp/*toutes les cartes*/
@@ -317,22 +323,31 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .description3/*descriptions photos activités*/
 {
-	margin: 23px 0 17px 20px;/*marge ext*/
+	margin: 20px 0 17px 20px;/*marge ext*/
 }
 
 
 /*----------------------------------------Pied de Page-----------------------------------------------*/
 
-.pieddepage/*footer*/
+footer
 {
-	margin-top: 49px;/*marge ext haute (entre bloc activités et pied de page)*/
+	margin-top: 70px;/*marge ext haute*/
+	width: 375px;/*largeur*/
+}
+
+.pieddepage/*footer int*/
+{
+	padding-top: 30px;/*marge int haute*/
+	padding-bottom: 20px;/*marge int bas*/
+	margin-left: 30px;/*marge ext gauche*/
 	height: 486px;/*hauteur*/
 	width: 375px;/*largeur*/
-	padding: 49px 121px 46px 29px;/*marges int*/
 	flex-direction: column;/*éléments en colonne*/
+	justify-content: space-around;/*espace autour des éléments*/
 }
 
 ul/*liste d'éléments par partie*/
 {
 	font-size: 17px;/*taille de la police*/
+	margin-top: 20px;/*ajustement visuel*/
 }
