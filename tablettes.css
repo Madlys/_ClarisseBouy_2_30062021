@@ -175,10 +175,9 @@ i.fa-search/*bouton rechercher avec icon*/
 /*--------------------------------Hébergements----------------------------------*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
-{
-	background-color: red;/*fond blanc = pas de fond*/
-	padding: 42px 20px 20px 34px;/*marge int*/
-	position: relative;
+{	
+	height: 0;/*pas de fond*/
+	left: 21px;/*positon gauche en fonction du bloc de référence*/top: 580px;/*ajustement visuel*/
 }
 
 #titrehebergements/*titre*/
@@ -188,12 +187,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .carteshebergements/*bloc cartes*/
 {
-	width: 335px;/*largeur bloc*/
-	height: 1254px;/*hauteur bloc*/
-	margin-top: 19px;/*marge ext haute (entre bolc carte et titre)*/
-	flex-direction: column;/*élément à la suite sur une colonne*/
+	margin-top: 19px;/*marge ext haute (entre bloc cartes et titre)*/
+	flex-direction: column;/*éléments à la suite sur une colonne*/
 	flex-wrap: nowrap;/*élément flex en une seule colonne*/
 	margin-left: 0;/*ajustement visuel*/
+	grid-gap: 12px;/*espace entre cartes*/
 }
 
 .cartes/*cartes (photo + description)*/
@@ -340,7 +338,7 @@ footer
 
 .pieddepage/*footer int*/
 {
-	padding-top: 30px;/*marge int haute*/
+	padding-top: 25px;/*marge int haute*/
 	padding-bottom: 20px;/*marge int bas*/
 	margin-left: 30px;/*marge ext gauche*/
 	height: 486px;/*hauteur*/
