@@ -296,7 +296,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
-	height: 625px;
+	height: 625px;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 20px;/*coins arrondis*/
 	position: absolute;/*position en fonction du bloc de référence*/
@@ -305,7 +305,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 #titrehebergements/*titre*/
 {
-	margin-top: 47px;
+	margin-top: 47px;/*marge ext haute*/
 	margin-left: 41px;/*marge ext gauche (entre bord section et titre)*/
 }
 
@@ -321,7 +321,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
 	grid-gap: 30px 31px;/*espace entre cartes*/
 }
-
 
 .cartes/*cartes (photo + description)*/
 {
@@ -346,7 +345,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .description/*bloc description de l'hébegement*/
 {
-	height: 37px;
+	height: 37px;/*hauteur*/
 	margin-left: 17px;/*marges ext gauche*/
 	margin-top: -3px;/*ajustement visuel*/
 	line-height: 7px;/*espace entre lignes de texte*/
@@ -366,7 +365,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-top: 3px;/*ajustement visuel*/
 }
 
-.fa-star
+.fa-star/*icone étoile*/
 {
 	margin-right: 2px;/*marge entre étoiles*/
 }
@@ -447,7 +446,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-top: -13px;/*ajustement visuel*/
 	height: 58px;/*hauteur*/
 	margin-left: 20px;/*marge ext gauche (entre photo et description)*/
-	line-height: 7px;/*espace entre lignes*/
 }
 
 .note2/*bloc note étoiles*/
@@ -456,7 +454,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
 	margin-left: 21px;/*marge ext gauche*/
-	margin-top: 60px;/* marge ext haute (entre note et description)+ajustement visuel*/
+	margin-top: 50px;/* marge ext haute (entre note et description)+ajustement visuel*/
 }
 
 

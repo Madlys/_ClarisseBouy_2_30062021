@@ -176,8 +176,9 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
-	background-color: white;/*fond blanc = pas de fond*/
+	background-color: red;/*fond blanc = pas de fond*/
 	padding: 42px 20px 20px 34px;/*marge int*/
+	position: relative;
 }
 
 #titrehebergements/*titre*/
@@ -227,13 +228,14 @@ i.fa-search/*bouton rechercher avec icon*/
 	width: 375px;/*largeur*/
 	height: 580px;/*hauteur*/
 	border-radius: 0;/*coins pas arrondis*/
+	margin-top: 10px;/*ajustement visuel*/
 }
 
 #titrepopulaire/*bloc titre + icône*/
 {
-	height: 23px;/*hauteur bloc*/
+	height: 90px;/*hauteur bloc*/
 	width: 334px;/*largeur bloc*/
-	margin: 41px 20px 0 20px;/*marges ext*/
+	margin: -20px 20px 20px 21px;/*marges ext + ajustement visuel*/
 }
 
 .fa-chart-line/*icon populaire*/
@@ -245,12 +247,13 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 334px;/*largeur*/
 	height: 453px;/*hauteur*/
-	margin: 26px 21px 37px 0;/*marges ext*/
+	margin: -10px 21px -10px 19px;/*marges ext + ajustement visuel*/
 }
 
 .cartes2/*cartes blanches populaires (photo + desciption + note)*/
 {
 	width: 334px;/*largeur cartes*/
+	margin-top: -15px;/*ajustement visuel*/
 }
 
 .description2/*description photos*/
