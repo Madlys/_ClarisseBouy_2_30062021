@@ -71,6 +71,7 @@ a/*tous les liens cliquables de la page*/
 header
 {
 	margin: 51px 77px 0 53px;/*marges ext*/
+	width: 1310px;/*largeur bloc*/
 }	
 
 nav/*=header*/
@@ -78,7 +79,7 @@ nav/*=header*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
 	justify-content: space-between;/*espace entre les mots*/
-	width: 1310px;/*largeur bloc*/
+	
 }
 
 .reservia/*logo (image)*/
@@ -90,6 +91,7 @@ nav/*=header*/
 .menu/*hébergements,activités,s'inscrire*/
 {
 	display: flex;/*disposition flexbox*/
+	flex-direction: row;
 	justify-content: space-between;/*espace entre les mots*/
 	width: 242px;/*largeur totale du bloc*/
 	margin-left: 834px;/*marge ext gauche (entre logo et "hébergements")*/

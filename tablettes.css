@@ -72,12 +72,36 @@ a/*tous les liens cliquables de la page*/
 header
 {
 	margin: 32px 21px 0 20px;/*marges ext*/
+	width: 375px;/*largeur*/
+	height: 100px;/*hauteur*/
 }	
+
+nav/*=header*/
+{
+	flex-wrap: wrap; /*disposition des éléments flexibles*/
+}
+
+.reservia/*logo*/
+{
+	margin-left: 20px;/*marge ext gauche*/
+	order: 1;
+}
 
 .menu/*hébergements,activités,s'inscrire*/
 {
-	display: inline-block;
-	margin-left: 168px;/*marge ext gauche (entre texte et logo)*/
+	justify-content: space-around;/*espace entre et autour des éléments*/
+	width: 375px;/*largeur*/
+	margin-left: 0;/*marge ext gauche annulée*/
+	order: 3;
+	border-bottom: 3px solid;/*souligné*/
+	border-color: #0065FC;/*en bleu*/
+}
+
+#sinscrire
+{
+	margin-right: 21px;/*marge ext droite*/
+	margin-left: 0;/*marge ext gauche annulée*/
+	order: 2;
 }
 
 /*--------------------------Barre de recherche ---------------------------*/
