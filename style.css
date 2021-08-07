@@ -70,31 +70,36 @@ a/*tous les liens cliquables de la page*/
 
 header
 {
+	margin: 51px 77px 0 53px;/*marges ext*/
+}	
+
+nav/*=header*/
+{
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
-	margin-right: 77px;/*marge ext droite du bloc*/
-	margin-top: 51px;/*marge ext haute du bloc*/
-	margin-left: 53px;/*marge ext gauche du bloc*/
-}	
+	justify-content: space-between;/*espace entre les mots*/
+	width: 1310px;/*largeur bloc*/
+}
 
 .reservia/*logo (image)*/
 {
-	width: 25%;/*largeur par rapport au bloc menu*/
-	height: 181,25%;/*hauteur par rapport au bloc menu*/
+	width: 96px;/*largeur*/
+	height: 39px;/*hauteur + ajustement visuel*/
 }
 
 .menu/*hébergements,activités,s'inscrire*/
 {
 	display: flex;/*disposition flexbox*/
 	justify-content: space-between;/*espace entre les mots*/
-	width: 380px;/*largeur totale du bloc*/
-	height: 16px;/*hauteur totale du bloc*/
+	width: 242px;/*largeur totale du bloc*/
+	margin-left: 834px;/*marge ext gauche (entre logo et "hébergements")*/
 }
 
 #sinscrire
 {
 	color: #0065FC;/*couleur police en bleu*/
 	font-weight: bold;/*en gras*/
+	margin-left: 68px;/*marge est gauche (entre bloc menu et "s'inscrire")*/
 }
 
 
@@ -148,7 +153,7 @@ section input/*bloc de saisie*/
 	border: none;/*pas de contour apparent*/
 }
 
-span.rechercher/*bouton rechercher avec texte*/
+.barrederecherche button span/*bouton rechercher avec texte*/
 {
 	color: white;/*couleur texte*/
 	background-color: #0065FC;/*couleur fond bleu*/

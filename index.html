@@ -12,17 +12,17 @@
 
         <!-----------------------------En-tête----------------------------->
 
-        <header><!--En-tête-->
-            <div class="logo">
+        <header class="container"><!--En-tête-->
+            <nav>
                 <img class="reservia" src="Reservia@3x.png" /><!--Logo-->
-            </div>
-            <div class="menu"><!--Menu-->
-                    <p><a href="#hébergements">Hébergements</a></p><!--ancre vers section hébergements-->
+                <div class="menu"><!--Menu-->
+                    <p><a href="#hébergements" class="active">Hébergements</a></p><!--ancre vers section hébergements-->
                     <p><a href="#activités">Activités</a></p><!--ancre vers section activités-->
-                <div id="sinscrire">
-                    <p>S'inscrire</p>
                 </div>
+            <div id="sinscrire">
+                <p>S'inscrire</p>
             </div>
+            </nav>
         </header>
 
         <!------------------------------Recherche------------------------>
@@ -35,15 +35,17 @@
 
             <!--------------Barre de recherche----------->
             
-            <form class="barrederecherche"><!--Barre de recherche-->
+            <form><!--Barre de recherche-->
+                <div  class="barrederecherche">
                 <div class="blockicon">
                     <i class="fas fa-map-marker-alt"></i><!--Icon marker map-->
                 </div>
                 <input type="search" id="destination" name="q" placeholder="Marseille, France"><!--Champ de saisie-->
                 <button type="button">
                     <i class="fas fa-search"></i>
-                    <span class="rechercher">Rechercher</span>
+                    <span>Rechercher</span>
                 </button>
+                </div>
             </form>
 
             <!------------------Filtres----------------->
