@@ -83,18 +83,32 @@ nav/*=header*/
 
 .reservia/*logo*/
 {
-	margin-left: 20px;/*marge ext gauche*/
 	order: 1;
 }
 
-.menu/*hébergements,activités,s'inscrire*/
+.menu/*"hébergements" et "activités"*/
 {
 	justify-content: space-around;/*espace entre et autour des éléments*/
 	width: 375px;/*largeur*/
-	margin-left: 0;/*marge ext gauche annulée*/
+	margin-left: -20px;/*marge ext gauche annulée*/
 	order: 3;
+}
+
+
+
+#menuhebergements, #menuactivites
+{
+	width: 187px;/*largeur bloc texte*/
+	text-align: center;/*texte centré*/
 	border-bottom: 3px solid;/*souligné*/
-	border-color: #0065FC;/*en bleu*/
+	border-color: #F2F2F2;/*en gris*/
+	padding-bottom: 13px;/*espace entre texte et soulignement*/
+}
+
+#menuhebergements:active, #menuactivites:active
+{
+	color: #0065FC;/*texte en bleu*/;
+	border-color: #0065FC;/*ligne en bleu*/
 }
 
 #sinscrire
