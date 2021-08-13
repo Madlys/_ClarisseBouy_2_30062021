@@ -174,23 +174,35 @@ i.fa-search/*bouton rechercher avec icon*/
 
 /*-----------------------------------Filtres---------------------------------*/
 
-.filtres/*bloc filtres*/
+.blocfiltre/*bloc filtres*/
+{
+	display: flex;/*dispositon flexbox*/
+	flex-direction: row;/*éléments à la suite sur une même ligne*/
+}
+
+.titreblocfiltres
+{
+	margin-left: 63px;/*marge ext gauche*/
+	margin-top: 49px;/*marge ext haute*/
+}
+
+.filtres/*filtres sans titre général*/
 {
 	width: 929px;/*largeur*/
-	margin: 31px 448px 0 63px;/*marge ext*/
+	margin: 31px 448px 0 32px;/*marge ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
 	justify-content: space-between;
 }
 
-.filtre/*intitulés filtres*/
+.filtre/*intitulés filtres + contour gris*/
 {
 	display: flex;/*disposition flexbox*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
 	border: 3px solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
 	border-radius: 30px;/*coins arrondis*/
-	height: 50px;/*hauteur du cadre*/
+	height: 47px;/*hauteur du cadre*/
 	width: 100%;/*occupe toute la largeur de son bloc*/
 	padding-left: 63px;/*marge int gauche*/
 }
@@ -210,12 +222,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-money-bill-wave/*icon billet*/
 {
-	font-size: 17px;/*taille icone ajustement vicuel*/
+	font-size: 18px;/*taille icone*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 19px 16px 18px 16px;/*marges int + ajustement visuel*/
-	margin-right: 29px;
+	padding: 17px 14px 16px 14px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -230,11 +241,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-child/*icon enfant*/
 {
-	font-size: 20px;/*taille icone ajustement vicuel*/
+	font-size: 21px;/*taille icone*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 17px 19px 16px 19px;/*marges int + ajustement visuel*/
+	padding: 15px 18px 14px 17px;/*marges int*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -249,11 +260,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-heart/*icon coeur*/
 {
-	font-size: 18px;/*taille icone ajustement vicuel*/
+	font-size: 19px;/*taille icone*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 20px 18px 16px 17px;/*marges int + ajustement visuel*/
+	padding: 17px 16px 14px 14px;/*marges int + ajustement visuel*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
@@ -268,11 +279,11 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-dog/*icon chien*/
 {
-	font-size: 20px;/*taille icone ajustement vicuel*/
+	font-size: 21px;/*taille icone*/
 	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
-	padding: 17px 15px 16px 15px;/*marges int + ajustement visuel*/
+	padding: 15px 16px 14px 16px;/*marges int*/
 	position: absolute;/*positon dans son bloc filtre*/
 	left: 0;/*tout à gauche*/
 }
