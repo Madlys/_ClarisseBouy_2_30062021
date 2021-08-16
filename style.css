@@ -155,8 +155,9 @@ section input/*bloc de saisie*/
 	border: none;/*pas de contour apparent*/
 }
 
-.barrederecherche button span/*bouton rechercher avec texte*/
+.barrederecherche button/*bouton rechercher avec texte*/
 {
+	font-size: 18px;
 	color: white;/*couleur texte*/
 	background-color: #0065FC;/*couleur fond bleu*/
 	width: 134px;/*largeur bloc*/

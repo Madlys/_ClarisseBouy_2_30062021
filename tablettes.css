@@ -129,32 +129,41 @@ nav/*=header*/
 
 .barrederecherche
 {
-	width: 334px;/*largeur bloc*/
+	width: 327px;/*largeur bloc -ajustement visuel*/
 	margin-top: 35px;/*marge ext haute (entre barre de recherche et titre)*/
 	margin-left: 21px;/*marge ext gauche (entre barre de recherche et bord de la page)*/
+	position: relative;/*devient l'espace de réf du bouton rechercher avec icon*/ 
 }
 
-section input/*bloc de saisie*/
+.blockicon/*icône marker map bloc*/
 {
-	width: 230px;/*largeur bloc*/
+	width: 0;/*ajustement visuel*/
 }
 
-.barrederecherche button span/*bouton rechercher avec texte*/
+#destination/*champ de saisie*/
+{
+	margin-left: 60px;/*ajustement visuel*/
+	margin-right: -10px;/*ajustement visuel*/
+}
+
+span/*bouton rechercher avec texte*/
 {
 	display: none;/*diparaît*/
 }
 
 i.fa-search/*bouton rechercher avec icon*/
 {
-	display: inline-block;/*visible*/
-	color: white;/*couleur texte*/
+	font-size: 17px;/*taille icon*/
+	display: flex;/*visible et en disposition flexbox*/
+	align-items: center;/*icon au centre sur l'axe vertical*/
+	justify-content: center;/*icon au centre sur l'axe horizontal*/
+	color: white;/*couleur icon*/
 	background-color: #0065FC;/*couleur fond bleu*/
-	width: 17px;/*largeur bloc*/
-	height: 17px;/*hauteur bloc*/
+	width: 51px;/*largeur bloc*/
+	height: 51px;/*hauteur bloc*/
 	border-radius: 15px;/*coins arrondis*/
-	border: none;
-	border: 1px solid #0065FC;/*contour ligne continue épaisseure 1px bleue clair*/
-	text-align: center;
+	position: absolute;/*placement dans espace de réf (barrederecherche)*/
+	right: 0;/*distance droite*/ top: 0;/*...et haut*/
 }
 
 /*-----------------------------------Filtres---------------------------------*/
