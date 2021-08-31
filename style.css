@@ -65,7 +65,6 @@ a/*tous les liens cliquables de la page*/
 }
 
 
-
 /*-------------------------------En-tête----------------------------------*/
 
 header
@@ -181,6 +180,16 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 }
 
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+	color: #0065FC;
+	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
+	background-color: #DEEBFF;/*fond bleu clair*/
+	border-radius: 90%;/*coins arrondis (forme un cercle)*/
+	position: absolute;/*positon dans son bloc filtre*/
+	left: 0;/*tout à gauche*/
+}
+
 .titreblocfiltres
 {
 	margin-left: 63px;/*marge ext gauche*/
@@ -224,12 +233,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-money-bill-wave/*icon billet*/
 {
 	font-size: 18px;/*taille icone*/
-	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
-	background-color: #DEEBFF;/*fond bleu clair*/
-	border-radius: 90%;/*coins arrondis (forme un cercle)*/
 	padding: 17px 14px 16px 14px;/*marges int + ajustement visuel*/
-	position: absolute;/*positon dans son bloc filtre*/
-	left: 0;/*tout à gauche*/
 }
 
 #familial/*bloc filtre familial*/
@@ -243,12 +247,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-child/*icon enfant*/
 {
 	font-size: 21px;/*taille icone*/
-	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
-	background-color: #DEEBFF;/*fond bleu clair*/
-	border-radius: 90%;/*coins arrondis (forme un cercle)*/
 	padding: 15px 18px 14px 17px;/*marges int*/
-	position: absolute;/*positon dans son bloc filtre*/
-	left: 0;/*tout à gauche*/
 }
 
 #romantique/*bloc filtre romantique*/
@@ -262,12 +261,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-heart/*icon coeur*/
 {
 	font-size: 19px;/*taille icone*/
-	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
-	background-color: #DEEBFF;/*fond bleu clair*/
-	border-radius: 90%;/*coins arrondis (forme un cercle)*/
 	padding: 17px 16px 14px 14px;/*marges int + ajustement visuel*/
-	position: absolute;/*positon dans son bloc filtre*/
-	left: 0;/*tout à gauche*/
 }
 
 #animaux/*bloc filtre animaux autorisés*/
@@ -281,12 +275,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-dog/*icon chien*/
 {
 	font-size: 21px;/*taille icone*/
-	border: 1px solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
-	background-color: #DEEBFF;/*fond bleu clair*/
-	border-radius: 90%;/*coins arrondis (forme un cercle)*/
 	padding: 15px 16px 14px 16px;/*marges int*/
-	position: absolute;/*positon dans son bloc filtre*/
-	left: 0;/*tout à gauche*/
 }
 
 /*---------------------------Info------------------------------*/
@@ -294,6 +283,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-info/*icon info*/
 {
 	font-size: 13px;/*taille icone*/
+	color: #0065FC;
 	margin-right: 12px;/*marge ext droite (entre icon info et texte)*/
 	padding: 5px 8px 4px 8px;/*marge int (entre icon info et bordure)*/
 	border: 2px solid #F2F2F2;/*bordure grise continue de 2px dépaisseur*/
@@ -382,11 +372,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-left: 16px;/*marge ext gauche (entre bord carte et 1ere étoile)*/
 	margin-bottom: 11px;/*marge ext bas (entre bord carte et note étoiles)*/
 	margin-top: 3px;/*ajustement visuel*/
-}
-
-.fa-star/*icone étoile*/
-{
-	margin-right: 2px;/*marge entre étoiles*/
 }
 
 #afficherplus
@@ -489,6 +474,22 @@ i.fa-search/*bouton rechercher avec icon*/
 	margin-left: 50px;/*marge ext gauche*/
 	position: relative;/*devient l'espace de référence de son contenu*/
 }
+
+.fa-star/*icone étoile note*/
+{
+	margin-right: 2px;/*marge entre étoiles*/
+}
+
+.bluestar
+{
+	color: #0065FC;
+}
+
+.greystar
+{
+	color: #F2F2F2;
+}
+
 
 
 /*----------------------------------------Activités-----------------------------------------------*/
