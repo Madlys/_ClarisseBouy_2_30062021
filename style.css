@@ -475,18 +475,15 @@ i.fa-search/*bouton rechercher avec icon*/
 	position: relative;/*devient l'espace de référence de son contenu*/
 }
 
-.fa-star/*icone étoile note*/
+.fa-star.bluestar/*icone étoile bleue note*/
 {
 	margin-right: 2px;/*marge entre étoiles*/
-}
-
-.bluestar
-{
 	color: #0065FC;
 }
 
-.greystar
+.fa-star.greystar/*icone étoile grise note*/
 {
+	margin-right: 2px;/*marge entre étoiles*/
 	color: #F2F2F2;
 }
 
