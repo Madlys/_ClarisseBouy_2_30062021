@@ -103,9 +103,9 @@ nav/*=header*/
 	padding-bottom: 13px;/*espace entre texte et soulignement*/
 }
 
-#menuhebergements:active, #menuactivites:active
+#menuhebergements:hover, #menuactivites:hover
 {
-	color: #0065FC;/*texte en bleu*/;
+	text-decoration-color: #0065FC;/*texte en bleu*/;
 	border-color: #0065FC;/*ligne en bleu*/
 }
 
