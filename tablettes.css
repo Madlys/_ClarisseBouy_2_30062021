@@ -28,7 +28,7 @@
 
 html
 {
-	font-size: 100%;/*calcul rem basé sur un root font-size 16px*/
+	font-size: 55%;
 }
 
 body/*Sur toute la page*/
@@ -70,3 +70,4 @@ a/*tous les liens cliquables de la page*/
 }
 
 
+/*-------------------------------En-tête----------------------------------*/

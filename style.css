@@ -26,11 +26,6 @@
 
 /*--------------------------Règles générales---------------------------*/
 
-html
-{
-	font-size: 100%;/*calcul rem basé sur un root font-size 16px*/
-}
-
 body/*Sur toute la page*/
 {
 	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
@@ -134,7 +129,7 @@ nav/*=header*/
 .barrederecherche
 {
 	background-color: #F2F2F2;/*fond du bloc gris*/
-	border: 0.1rem solid #F2F2F2;/*bordure 1px d'épaisseur, ligne continue, grise*/
+	border: 0.1rem solid #F2F2F2;/*bordure grise*/
 	width: 26.2rem;/*largeur bloc*/
 	height: 3.1rem;/*hauteur bloc*/
 	margin-top: 1.2rem;/*marge ext haute (entre barre de recherche et titre)*/
@@ -199,7 +194,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
 	color: #0065FC;
-	border: 0.1rem solid #DEEBFF;/*contour ligne continue épaisseure 1px bleue clair*/
+	border: 0.1rem solid #DEEBFF;/*contour bleu clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
 	position: absolute;/*positon dans son bloc filtre*/
@@ -214,7 +209,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .filtres/*filtres sans titre général*/
 {
-	width: 58.1rem;/*largeur*/
+	width: 52rem;/*largeur*/
 	margin: 1.9rem 28rem 0 2rem;/*marge ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
@@ -226,11 +221,11 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	display: flex;/*disposition flexbox*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
-	border: 0.2rem solid #F2F2F2;/*cadre ligne continue épaisseur 2px grise*/
+	border: 0.1rem solid #F2F2F2;/*cadre gris*/
 	border-radius: 1.8rem;/*coins arrondis*/
-	height: 2.9rem;/*hauteur du cadre*/
+	height: 2.7rem;/*hauteur du cadre*/
 	width: 100%;/*occupe toute la largeur de son bloc*/
-	padding-left: 3.9rem;/*marge int gauche*/
+	padding-left: 3.5rem;/*marge int gauche*/
 }
 
 .filtre:hover/*effet de survol*/
@@ -242,42 +237,42 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
-	width: 12.1rem;/*largeur*/
+	width: 11.6rem;/*largeur*/
 	position: relative;/*devient l'espace de réf de son icon*/
 }
 
 .fa-money-bill-wave/*icon billet*/
 {
-	font-size: 1.2rem;/*taille icone*/
-	padding: 1rem 0.8rem 0.9rem 0.8rem;/*marges int + ajustement visuel*/
+	font-size: 1rem;/*taille icone*/
+	padding: 0.9rem 0.7rem 0.8rem 0.7rem;/*marges int + ajustement visuel*/
 }
 
 #familial/*bloc filtre familial*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
-	width: 9.5rem;/*largeur*/
+	width: 9rem;/*largeur*/
 	position: relative;/*devient l'espace de réf de son icon*/
 }
 
 .fa-child/*icon enfant*/
 {
-	font-size: 1.3rem;/*taille icone*/
-	padding: 0.9rem 1.1rem 0.9rem 1.1rem;/*marges int*/
+	font-size: 1.2rem;/*taille icone*/
+	padding: 0.75rem 0.9rem 0.75rem 0.9rem;/*marges int*/
 }
 
 #romantique/*bloc filtre romantique*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
-	width: 11.5rem;/*largeur*/
+	width: 11rem;/*largeur*/
 	position: relative;/*devient l'espace de réf de l'icon*/
 }
 
 .fa-heart/*icon coeur*/
 {
-	font-size: 1.3rem;/*taille icone*/
-	padding: 1rem 0.9rem 0.8rem 0.8rem;/*marges int + ajustement visuel*/
+	font-size: 1.1rem;/*taille icone*/
+	padding: 0.9rem 0.85rem 0.7rem 0.75rem;/*marges int + ajustement visuel*/
 }
 
 #animaux/*bloc filtre animaux autorisés*/
@@ -290,8 +285,8 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-dog/*icon chien*/
 {
-	font-size: 1.4rem;/*taille icone*/
-	padding: 0.85rem;/*marges int*/
+	font-size: 1.2rem;/*taille icone*/
+	padding: 0.75rem;/*marges int*/
 }
 
 /*---------------------------Info------------------------------*/
@@ -302,7 +297,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	color: #0065FC;
 	margin-right: 0.8rem;/*marge ext droite (entre icon info et texte)*/
 	padding: 0.3rem 0.5rem 0.3rem 0.5rem;/*marge int (entre icon info et bordure)*/
-	border: 0.1rem solid #F2F2F2;/*bordure grise continue de 2px dépaisseur*/
+	border: 0.1rem solid #F2F2F2;/*bordure grise*/
 	border-radius: 90%;/*angles bordure arrondis à 90%*/
 }
 
@@ -357,7 +352,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	height: 12.4rem;/*hauteur carte*/
 	border-radius: 1.3rem;/*coins arrondis*/
 	background-color: white;/*fond blanc*/
-	box-shadow: 0px 0.1rem 0.6rem #DCDCDC;/*ombre*/
+	box-shadow: 0 0.1rem 0.6rem #DCDCDC;/*ombre*/
 }
 
 .photos/*photos d'hébergements*/
@@ -441,7 +436,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	height: 9rem;/*hauteur cartes*/
 	border-radius: 1.3rem;/*coins arrondis*/
 	background-color: white;/*couleur de fond*/
-	box-shadow: 0px 0.1rem 0.6rem #DCDCDC;/*ombre*/
+	box-shadow: 0 0.1rem 0.6rem #DCDCDC;/*ombre*/
 }
 
 .photos2/*photos populaires*/
@@ -524,7 +519,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp
 {
-	box-shadow: 0px 0.1rem 0.6rem #DCDCDC;/*ombre*/
+	box-shadow: 0 0.1rem 0.6rem #DCDCDC;/*ombre*/
 }
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
@@ -624,7 +619,7 @@ i.fa-search/*bouton rechercher avec icon*/
 footer
 {
 	background-color: #F2F2F2;/*fond gris*/
-	width: 100%;/*toute la largeur de la page*/
+	width: 90rem;/*toute la largeur de la page*/
 }
 
 .pieddepage/*footer int*/
