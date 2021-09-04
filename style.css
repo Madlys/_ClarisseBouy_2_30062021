@@ -83,8 +83,6 @@ nav/*=header*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*disposition des éléments sur la même ligne*/
-	justify-content: space-between;/*espace entre les mots*/
-	
 }
 
 .reservia/*logo (image)*/
@@ -93,26 +91,33 @@ nav/*=header*/
 	height: 2.9rem;/*hauteur + ajustement visuel*/
 }
 
-.menu/*hébergements,activités,s'inscrire*/
+.menu/*hébergements,activités*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;
-	justify-content: space-between;/*espace entre les mots*/
-	width: 15.1rem;/*largeur totale du bloc*/
-	margin-left: 52.1rem;/*marge ext gauche (entre logo et "hébergements")*/
+	width: 20rem;/*largeur totale du bloc*/
+	margin-left: 51.3rem;/*marge ext gauche (entre logo et "hébergements")*/
 }
 
-#menuhebergements:active, #menuactivites:active
+#menuhebergements, #menuactivites
 {
-	color: #0065FC;/*texte en bleu*/;
-	border-color: #0065FC;/*ligne en bleu*/
+	text-align: center;/*texte centré*/
+	width: 10rem;/*largeur bloc texte*/
+}
+
+#menuhebergements:hover, #menuactivites:hover
+{
+	color: #0065FC;/*texte en bleu*/
+	border-top: 0.1rem solid #0065FC;/*ligne en bleu*/
+	padding-top: 3.9rem;/*espace entre texte et border top*/
+	margin-top: -3rem;/*ajustement visuel*/
 }
 
 #sinscrire
 {
 	color: #0065FC;/*couleur police en bleu*/
 	font-weight: bold;/*en gras*/
-	margin-left: 4.3rem;/*marge est gauche (entre bloc menu et "s'inscrire")*/
+	margin-left: 1.5rem;/*marge ext gauche (entre bloc menu et "s'inscrire")*/
 }
 
 

@@ -105,7 +105,7 @@ nav/*=header*/
 
 #menuhebergements:hover, #menuactivites:hover
 {
-	text-decoration-color: #0065FC;/*texte en bleu*/;
+	color: #0065FC;/*texte en bleu*/;
 	border-color: #0065FC;/*ligne en bleu*/
 }
 
