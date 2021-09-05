@@ -388,23 +388,21 @@ i.fa-search/*bouton rechercher avec icon*/
 #afficherplus
 {
 	margin-top: -0.3rem;/*ajustement visuel*/
-	margin-left: 0.3rem;/*marge ext gauche supplémentaire (entre bord bloc hébérgements et texte)*/
+	margin-left: 0.3rem;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
 }
 
 
 /*-----------------------------------Populaires----------------------------------*/
 
-
 .populaires/*bloc gris section populaires (titre + cartes)*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: column;/*éléments à la suite sur la même colonne*/
-	align-content: space-between;/*espace entre chaque éléments*/
 	justify-content: center;/*éléments centrés sur l'axe vertical*/
 	width: 26.3rem;/*largeur*/
 	height: 39.1rem;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
-	border-radius: 0.3rem;/*coins arrondis*/
+	border-radius: 1.3rem;/*coins arrondis*/
 }
 
 #titrepopulaire/*bloc titre + icône*/
@@ -486,7 +484,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	position: relative;/*devient l'espace de référence de son contenu*/
 }
 
-.fa-tar.bluestar/*icone étoile bleue note*/
+.fa-star.bluestar/*icone étoile bleue note*/
 {
 	margin-right: 0.1rem;/*marge entre étoiles*/
 	color: #0065FC;

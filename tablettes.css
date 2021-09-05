@@ -26,48 +26,136 @@
 
 /*--------------------------Règles générales---------------------------*/
 
-html
-{
-	font-size: 55%;
-}
-
-body/*Sur toute la page*/
-{
-	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
-}
-
 h1/*titres principaux des sections*/
 {
-	font-size: 1.3rem;/*taille de la police*/
-	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
-	font-weight: bold;/*en gras*/
+	font-size: 1.5rem;/*taille de la police*/
 }
 
 h2/*Sous-titres*/
 {
+	font-size: 1.2rem;/*taille de la police*/
+}
+
+h3/*Titres de photos*/, p/*texte de base*/
+{
 	font-size: 1.1rem;/*taille de la police*/
-	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
-	font-weight: bold;/*en gras*/
 }
-
-h3/*Titres de photos*/
-{
-	font-size: 1rem;/*taille de la police*/
-	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
-	font-weight: bold;/*en gras*/
-	line-height: 0.4rem;/*espace entre les deux lignes*/
-}
-
-p/*texte de base*/
-{
-	font-size: 1rem;/*taille de la police*/
-}
-
-a/*tous les liens cliquables de la page*/
-{
-	text-decoration: none;/*perd soulignement défini par défaut*/
-	color: black;/*perd couleur définie bleu par défaut*/
-}
-
 
 /*-------------------------------En-tête----------------------------------*/
+
+.menu/*hébergements,activités*/
+{
+	/*à changer
+	margin-left: 51.3rem;/*marge ext gauche (entre logo et "hébergements")*/
+}
+
+
+/*--------------------------Barre de recherche ---------------------------*/
+
+.vacancesdereve/*titre barre de recherche*/
+{
+	line-height: 0.7rem;/*espace entre les lignes de texte*/
+}
+
+.barrederecherche
+{
+	/*à changer
+	width: 26.2rem;/*largeur bloc*/
+	/*
+	height: 3.1rem;/*hauteur bloc*/
+	margin-top: 1.5rem;/*marge ext haute (entre barre de recherche et titre)*/
+}
+
+
+
+/*-----------------------------------Filtres---------------------------------*/
+
+.blocfiltre/*bloc filtres*/
+{
+	flex-direction: column;/*éléments à la suite en colonne*/
+}
+
+.titreblocfiltres
+{
+	margin-top: 3rem;/*marge ext haute*/
+}
+
+.filtres/*filtres sans titre général*/
+{
+	/*à changer
+	width: 52rem;/*largeur*/
+	margin: 0 28rem 0 3.5rem;/*marge ext*/
+}
+
+
+/*--------------------------------Hébergements----------------------------------*/
+
+.hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
+{
+	height: 51.5rem;/*hauteur*/
+	top: 25rem;/*position en haut en fonction du bloc de référence*/
+}
+
+.carteshebergements/*bloc cartes*/
+{
+	width: 34.6rem;/*largeur bloc*/
+	/*à changer
+	margin: 1.4rem 2.5rem 2.7rem 2.5rem;/*marge ext*/
+	/*
+	grid-gap: 1.9rem 1.9rem;/*espace entre cartes*/
+}
+
+
+
+/*-----------------------------------Populaires----------------------------------*/
+
+.populaires/*bloc gris section populaires (titre + cartes)*/
+{
+	width: 69.1rem;/*largeur*/
+	height: 18rem;/*hauteur*/
+}
+
+i.fa-chart-line/*icone populaires*/
+{
+	display: none;/*icone disparaît*/
+}
+
+#cartespopulaires/*bloc cartes*/
+{
+	background-color: lightblue;
+	flex-direction: row;/*en colonne*/
+	width: 68.3rem;/*largeur*/
+	height: 13.1rem;/*hauteur*/
+	margin: 1rem 2.5rem 2.1rem 0.4rem;/*marges ext*/
+
+}
+
+.cartes2/*cartes blanches populaires (photo + desciption + note)*/
+{
+	width: 22rem;/*largeur cartes*/
+}
+
+
+.description2/*description photos*/
+{
+	margin-left: 0.5rem;/*marge ext gauche (entre photo et description)*/
+}
+
+.note2/*bloc note étoiles*/
+{	
+	margin-left: 0.8rem;/*marge ext gauche*/
+	margin-top: 3.5rem;/* marge ext haute (entre note et description)+ajustement visuel*/
+}
+
+
+
+/*-----------------------------Hébergements et Populaires------------------------------*/
+
+.toushebergements/*bloc section hebergements et populaires*/
+{
+	/*
+	width: 83.8rem;/*largeur*/
+	/*
+	height: 39.1rem;/*hauteur*/
+	flex-direction: column-reverse;/*éléments à la suite sur une ligne*/
+}

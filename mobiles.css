@@ -25,6 +25,11 @@
 
 /*--------------------------Règles générales---------------------------*/
 
+html
+{
+	font-size: 100%;
+}
+
 body/*Sur toute la page*/
 {
 	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
