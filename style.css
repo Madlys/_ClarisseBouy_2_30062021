@@ -51,6 +51,7 @@ h3/*Titres de photos*/
 	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
 	line-height: 0.4rem;/*espace entre les deux lignes*/
+	flex-wrap: wrap;
 }
 
 p/*texte de base*/
@@ -451,14 +452,21 @@ i.fa-search/*bouton rechercher avec icon*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: column;/*en colonne*/
 	align-items: start;
-	margin-top: 1.2rem;/*marge ext haute*/
+	margin-top: 1.3rem;/*marge ext haute*/
 }
 
 .description2/*description photos*/
 {
-	margin-top: -0.8rem;/*ajustement visuel*/
+	margin-top: -1.3rem;/*ajustement visuel*/
 	height: 3.6rem;/*hauteur*/
-	margin-left: 1.6rem;/*marge ext gauche (entre photo et description)*/
+	width: 10rem;/*largeur*/
+	margin-left: 1rem;/*marge ext gauche (entre photo et description)*/
+}
+
+.description2 h3/*texte lieu*/
+{
+	line-height: 1.1rem;/*espace entre lignes*/
+	margin-bottom: -0.5rem;/*marge ext bas (entre lieu et prix)*/
 }
 
 .note2/*bloc note étoiles*/
@@ -466,8 +474,8 @@ i.fa-search/*bouton rechercher avec icon*/
 	font-size: 0.8rem;
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
-	margin-left: 1.3rem;/*marge ext gauche*/
-	margin-top: 3.1rem;/* marge ext haute (entre note et description)+ajustement visuel*/
+	margin-left: 1rem;/*marge ext gauche*/
+	margin-top: 3.8rem;/* marge ext haute (entre note et description)+ajustement visuel*/
 }
 
 

@@ -92,17 +92,18 @@ h3/*Titres de photos*/, p/*texte de base*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
-	height: 51.5rem;/*hauteur*/
-	top: 25rem;/*position en haut en fonction du bloc de référence*/
+	height: 53.5rem;/*hauteur*/
 }
 
 .carteshebergements/*bloc cartes*/
 {
-	width: 34.6rem;/*largeur bloc*/
-	/*à changer
-	margin: 1.4rem 2.5rem 2.7rem 2.5rem;/*marge ext*/
-	/*
-	grid-gap: 1.9rem 1.9rem;/*espace entre cartes*/
+	width: 33rem;/*largeur bloc*/
+}
+
+.cartes/*cartes (photo + description)*/
+{
+	width: 15.4rem;/*largeur carte*/
+	height: 12.4rem;/*hauteur carte*/
 }
 
 
@@ -111,51 +112,89 @@ h3/*Titres de photos*/, p/*texte de base*/
 
 .populaires/*bloc gris section populaires (titre + cartes)*/
 {
-	width: 69.1rem;/*largeur*/
-	height: 18rem;/*hauteur*/
+	width: 25rem;/*largeur*/
+	height: 53.5rem;/*hauteur*/
 }
 
-i.fa-chart-line/*icone populaires*/
+#titrepopulaire/*bloc titre + icône*/
 {
-	display: none;/*icone disparaît*/
+	width: 19.6rem;/*largeur bloc*/
 }
 
 #cartespopulaires/*bloc cartes*/
 {
-	background-color: lightblue;
-	flex-direction: row;/*en colonne*/
-	width: 68.3rem;/*largeur*/
-	height: 13.1rem;/*hauteur*/
-	margin: 1rem 2.5rem 2.1rem 0.4rem;/*marges ext*/
-
+	height: 45rem;/*hauteur*/
+	margin-left: 1.7rem;
 }
 
 .cartes2/*cartes blanches populaires (photo + desciption + note)*/
 {
-	width: 22rem;/*largeur cartes*/
+	width: 20rem;/*largeur cartes*/
+	height: 42rem;/*hauteur cartes*/
 }
 
+.photos2/*photos populaires*/
+{
+	width: 19.4rem;/*largeur photos*/
+	height: 8rem;/*hauteur photo*/
+	float: none;/*photo suit la dispo flexbox*/
+	border-radius: 0.9rem 0.9rem 0 0;/*coins gauches arrondis*/
+}
+
+.sansphoto/*description + note*/
+{
+	margin-top: 0.7rem;/*marge ext haute*/
+}
 
 .description2/*description photos*/
+{	
+	height: 1rem;/*none*/
+	width: 19.4rem;/*largeur*/
+}
+
+.description2 h3/*texte description photo lieu*/
 {
-	margin-left: 0.5rem;/*marge ext gauche (entre photo et description)*/
+	margin-bottom: -0.8rem;/*marge ext bas (entre lieu et prix)*/
 }
 
 .note2/*bloc note étoiles*/
-{	
-	margin-left: 0.8rem;/*marge ext gauche*/
-	margin-top: 3.5rem;/* marge ext haute (entre note et description)+ajustement visuel*/
+{
+	margin-top: 3rem;/*marge ext haute (entre note et description)*/
+	margin-bottom: 0.8rem;/*marge ext bas*/
 }
 
 
 
-/*-----------------------------Hébergements et Populaires------------------------------*/
+/*----------------------Hébergements et Populaires------------------------------*/
 
 .toushebergements/*bloc section hebergements et populaires*/
 {
-	/*
-	width: 83.8rem;/*largeur*/
-	/*
-	height: 39.1rem;/*hauteur*/
-	flex-direction: column-reverse;/*éléments à la suite sur une ligne*/
+	width: 65.7rem;/*largeur*/
+	margin-bottom: 18rem;/*marge ext basse entre bloc et activités*/
+}
+
+
+
+/*----------------------------------------Activités-----------------------------------------------*/
+
+.cartesactivités/*bloc cartes*/
+{
+	background-color: lightblue;
+	flex-wrap: wrap;
+	width: 65.7rem;/*largeur*/
+}
+
+#cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp
+{
+	height: 27.9rem;/*hauteur*/
+}
+
+#cartefrioul
+{
+	margin-top: -0.7rem;
+}
+
+#photopomegues, #photofrioul, #photonotredame, #photolongchamp
+{
+	height: 24.4rem;/*hauteur*/
 }
