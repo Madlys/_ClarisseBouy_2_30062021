@@ -54,9 +54,10 @@ h3/*Titres de photos*/
 	flex-wrap: wrap;
 }
 
-p/*texte de base*/
+p, li/*texte de base*/
 {
 	font-size: 1rem;/*taille de la police*/
+	font-family: "Raleway-Light", sans-serif;
 }
 
 a/*tous les liens cliquables de la page*/
@@ -137,7 +138,7 @@ nav/*=header*/
 	background-color: #F2F2F2;/*fond du bloc gris*/
 	border: 0.1rem solid #F2F2F2;/*bordure grise*/
 	width: 26.2rem;/*largeur bloc*/
-	height: 3.1rem;/*hauteur bloc*/
+	height: 3.2rem;/*hauteur bloc*/
 	margin-top: 1.2rem;/*marge ext haute (entre barre de recherche et titre)*/
 	margin-left: 3.4rem;/*marge ext gauche (entre barre de recherche et bord de la page)*/
 	display: flex;/*disposition flexbox*/
@@ -167,7 +168,7 @@ section input/*bloc de saisie*/
 	font-weight: bold;/*en gras*/
 	padding-left: 1.1rem;/*marge int gauche (entre cadre et écriture)*/
 	width: 14.6rem;/*largeur bloc*/
-	height: 3.1rem;/*hauteur bloc*/
+	height: 3.2rem;/*hauteur bloc*/
 	border: none;/*pas de contour apparent*/
 }
 
@@ -199,7 +200,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
 {
-	color: #0065FC;
+	color: #0065FC;/*couleur*/
 	border: 0.1rem solid #DEEBFF;/*contour bleu clair*/
 	background-color: #DEEBFF;/*fond bleu clair*/
 	border-radius: 90%;/*coins arrondis (forme un cercle)*/
@@ -227,7 +228,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	display: flex;/*disposition flexbox*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
-	border: 0.1rem solid #F2F2F2;/*cadre gris*/
+	border: 0.15rem solid #F2F2F2;/*cadre gris*/
 	border-radius: 1.8rem;/*coins arrondis*/
 	height: 2.7rem;/*hauteur du cadre*/
 	width: 100%;/*occupe toute la largeur de son bloc*/

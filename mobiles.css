@@ -34,7 +34,6 @@
 	#menuhebergements, #menuactivites
 	{
 		width: 11.7rem;/*largeur bloc texte*/
-		text-align: center;/*texte centré*/
 		border-bottom: 0.2rem solid;/*souligné*/
 		border-color: #F2F2F2;/*en gris*/
 		padding-bottom: 0.8rem;/*espace entre texte et soulignement*/
@@ -42,14 +41,15 @@
 
 	#menuhebergements:hover, #menuactivites:hover
 	{
-		color: #0065FC;/*texte en bleu*/;
+		color: #0065FC;
+		border-top: none;/*ligne en bleu*/
 		border-color: #0065FC;/*ligne en bleu*/
 	}
 
 	#sinscrire
 	{
 		margin-right: 1.3rem;/*marge ext droite*/
-		margin-left: 0;/*marge ext gauche annulée*/
+		margin-left: 10rem;/*marge ext gauche*/
 		order: 2;
 	}
 
@@ -79,8 +79,8 @@
 
 	#destination/*champ de saisie*/
 	{
-		margin-left: 3.8rem;/*ajustement visuel*/
-		margin-right: -0.6rem;/*ajustement visuel*/
+		margin-left: 3.2rem;/*ajustement visuel*/
+		margin-right: 1rem;/*ajustement visuel*/
 	}
 
 	span/*bouton rechercher avec texte*/
@@ -167,12 +167,6 @@
 		width: 10.1rem;/*ajustement visuel*/
 	}
 
-	.fa-dog/*icon chien*/
-	{
-		padding: 0.9rem 0.8rem 0.9rem 0.8rem;/*marges int + ajustement visuel*/
-	}
-
-
 	/*---------------------------Info------------------------------*/
 
 	.infotexte/*icon info + texte*/
@@ -218,18 +212,11 @@
 		width: 20.3rem;/*largeur*/
 	}
 
-	.description/*bloc description de l'hébegement*/
-	{
-		line-height: 0.8rem;/*espace entre lignes de texte*/
-	}
-
-
 	#afficherplus
 	{
+		margin-top: 0.7rem;/*marge ext haute*/
 		margin-left: 0.1rem;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
 	}
-
-
 
 
 	/*-----------------------------------Populaires----------------------------------*/
