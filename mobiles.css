@@ -25,11 +25,6 @@
 
 /*--------------------------Règles générales---------------------------*/
 
-html
-{
-	font-size: 100%;
-}
-
 body/*Sur toute la page*/
 {
 	font-family: "Raleway", sans-serif;/*police Raleway, sans empatements*/
@@ -37,29 +32,29 @@ body/*Sur toute la page*/
 
 h1/*titres principaux des sections*/
 {
-	font-size: 21px;/*taille de la police*/
+	font-size: 1.3rem;/*taille de la police*/
 	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
 }
 
 h2/*Sous-titres*/
 {
-	font-size: 18px;/*taille de la police*/
+	font-size: 1.1rem;/*taille de la police*/
 	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
 }
 
 h3/*Titres de photos*/
 {
-	font-size: 16px;/*taille de la police*/
+	font-size: 1rem;/*taille de la police*/
 	font-family: "Raleway-ExtraBold", sans-serif;/*police Raleway plus grasse, sans empatement*/
 	font-weight: bold;/*en gras*/
-	line-height: 6px;/*espace entre les deux lignes*/
+	line-height: 0.4rem;/*espace entre les deux lignes*/
 }
 
 p/*texte de base*/
 {
-	font-size: 16px;/*taille de la police*/
+	font-size: 1rem;/*taille de la police*/
 }
 
 a/*tous les liens cliquables de la page*/
@@ -76,9 +71,9 @@ a/*tous les liens cliquables de la page*/
 
 header
 {
-	margin: 32px 21px 0 20px;/*marges ext*/
-	width: 375px;/*largeur*/
-	height: 100px;/*hauteur*/
+	margin: 2rem 1.3rem 0 1.3rem;/*marges ext*/
+	width: 23.4rem;/*largeur*/
+	height: 6.3rem;/*hauteur*/
 }	
 
 nav/*=header*/
@@ -94,18 +89,18 @@ nav/*=header*/
 .menu/*"hébergements" et "activités"*/
 {
 	justify-content: space-around;/*espace entre et autour des éléments*/
-	width: 375px;/*largeur*/
-	margin-left: -20px;/*marge ext gauche annulée*/
+	width: 23.4rem;/*largeur*/
+	margin-left: -1.3rem;/*marge ext gauche annulée*/
 	order: 3;
 }
 
 #menuhebergements, #menuactivites
 {
-	width: 187px;/*largeur bloc texte*/
+	width: 11.7rem;/*largeur bloc texte*/
 	text-align: center;/*texte centré*/
-	border-bottom: 3px solid;/*souligné*/
+	border-bottom: 0.2rem solid;/*souligné*/
 	border-color: #F2F2F2;/*en gris*/
-	padding-bottom: 13px;/*espace entre texte et soulignement*/
+	padding-bottom: 0.8rem;/*espace entre texte et soulignement*/
 }
 
 #menuhebergements:hover, #menuactivites:hover
@@ -116,7 +111,7 @@ nav/*=header*/
 
 #sinscrire
 {
-	margin-right: 21px;/*marge ext droite*/
+	margin-right: 1.3rem;/*marge ext droite*/
 	margin-left: 0;/*marge ext gauche annulée*/
 	order: 2;
 }
@@ -125,18 +120,18 @@ nav/*=header*/
 
 .vacancesdereve/*titre barre de recherche*/
 {
-	width: 292px;/*largeur bloc*/
-	height: 79px;/*hauteur cadre*/
-	margin-left: 20px;/*marge ext gauche du bloc*/
-	margin-top: 36px;/*marge ext entre ce bloc et le bloc header*/
-	line-height: 25px;/*ajustement visuel*/
+	width: 18.3rem;/*largeur bloc*/
+	height: 4.9rem;/*hauteur cadre*/
+	margin-left: 1.3rem;/*marge ext gauche du bloc*/
+	margin-top: 2.3rem;/*marge ext entre ce bloc et le bloc header*/
+	line-height: 1.6rem;/*ajustement visuel*/
 }
 
 .barrederecherche
 {
-	width: 327px;/*largeur bloc -ajustement visuel*/
-	margin-top: 35px;/*marge ext haute (entre barre de recherche et titre)*/
-	margin-left: 21px;/*marge ext gauche (entre barre de recherche et bord de la page)*/
+	width: 20.4rem;/*largeur bloc -ajustement visuel*/
+	margin-top: 2.2rem;/*marge ext haute (entre barre de recherche et titre)*/
+	margin-left: 1.3rem;/*marge ext gauche (entre barre de recherche et bord de la page)*/
 	position: relative;/*devient l'espace de réf du bouton rechercher avec icon*/ 
 }
 
@@ -147,8 +142,8 @@ nav/*=header*/
 
 #destination/*champ de saisie*/
 {
-	margin-left: 60px;/*ajustement visuel*/
-	margin-right: -10px;/*ajustement visuel*/
+	margin-left: 3.8rem;/*ajustement visuel*/
+	margin-right: -0.6rem;/*ajustement visuel*/
 }
 
 span/*bouton rechercher avec texte*/
@@ -158,15 +153,15 @@ span/*bouton rechercher avec texte*/
 
 i.fa-search/*bouton rechercher avec icon*/
 {
-	font-size: 17px;/*taille icon*/
+	font-size: 1.1rem;/*taille icon*/
 	display: flex;/*visible et en disposition flexbox*/
 	align-items: center;/*icon au centre sur l'axe vertical*/
 	justify-content: center;/*icon au centre sur l'axe horizontal*/
 	color: white;/*couleur icon*/
 	background-color: #0065FC;/*couleur fond bleu*/
-	width: 51px;/*largeur bloc*/
-	height: 51px;/*hauteur bloc*/
-	border-radius: 15px;/*coins arrondis*/
+	width: 3.2rem;/*largeur bloc*/
+	height: 3.2rem;/*hauteur bloc*/
+	border-radius: 0.9rem;/*coins arrondis*/
 	position: absolute;/*placement dans espace de réf (barrederecherche)*/
 	right: 0;/*distance droite*/ top: 0;/*...et haut*/
 }
@@ -179,65 +174,65 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .titreblocfiltres
 {
-	margin-top: 36px;/*marge ext haute*/
-	margin-left: 23px;/*marge ext gauche*/
-	margin-bottom: -10px;/*ajustement visuel*/
+	margin-top: 2.3rem;/*marge ext haute*/
+	margin-left: 1.4rem;/*marge ext gauche*/
+	margin-bottom: -0.6rem;/*ajustement visuel*/
 }
 
 .filtres/*bloc filtres*/
 {
-	width: 339px;/*largeur + ajustement visuel*/
-	height: 209px;/*hauteur*/
-	margin: 18px 27px 0 20px;/*marge ext + ajustement visuel*/
+	width: 20.6rem;/*largeur + ajustement visuel*/
+	height: 13.1rem;/*hauteur*/
+	margin: 1.1rem 1.7rem 0 1.3rem;/*marge ext + ajustement visuel*/
 	flex-wrap: wrap;/*élément va à la ligne lorsque plus de place*/
 }
 
 .filtre/*intitulés filtres + contour gris*/
 {
-	padding-left: 40px;/*ajustement visuel*/
+	padding-left: 2.5rem;/*ajustement visuel*/
 }
 
 .filtre h2/*intitulés filtres*/
 {
-	margin-left: 60px;/*marge est gauche (entre bord contour et gris et intitulé)*/
-	margin-right: 30px;/*ajustement visuel*/
+	margin-left: 3.8rem;/*marge est gauche (entre bord contour et gris et intitulé)*/
+	margin-right: 1.9rem;/*ajustement visuel*/
 }
 
 #economique/*bloc filtre économique*/
 {
-	width: 177px;/*largeur*/
+	width: 11.1rem;/*largeur*/
 }
 
 #familial/*bloc filtre familial*/
 {
-	margin-left: 11px;/*marge ext gauche (entre filtre eco et familial)*/
-	width: 141px;/*largeur*/
+	margin-left: 0.7rem;/*marge ext gauche (entre filtre eco et familial)*/
+	width: 8.8rem;/*largeur*/
 }
 
 #romantique/*bloc filtre romantique*/
 {
-	width: 169px;/*largeur*/
+	width: 10.6rem;/*largeur*/
 }
 
 #economique h2, #familial h2, #romantique h2, #animaux h2
 {
-	margin-left: 20px;/*ajustement visuel*/
-	margin-right: 14px;/*marge ext droite*/
+	margin-left: 1.3rem;/*ajustement visuel*/
+	margin-right: 0.9rem;/*marge ext droite*/
 }
 
 #animaux/*bloc filtre animaux autorisés*/
 {
-	width: 220px;/*largeur*/
+	width: 13.8rem;/*largeur*/
 }
 
 #animaux h2/*"animaux autorisés"*/
 {
-	width: 162px;/*ajustement visuel*/
+	width: 10.1rem;/*ajustement visuel*/
 }
 
 .fa-dog/*icon chien*/
 {
-	padding: 15px 12px 14px 12px;/*marges int + ajustement visuel*/
+	padding: 0.9rem 0.8rem 0.9rem 0.8rem;/*marges int + ajustement visuel*/
 }
 
 
@@ -246,10 +241,10 @@ i.fa-search/*bouton rechercher avec icon*/
 .infotexte/*icon info + texte*/
 {
 	align-items: baseline;/*éléments flexibles alignés sur la ligne de départ de l'axe vertical*/
-	margin-left: 20px;/*marge ext grauche (entre icon info et bord de la page)*/
-	margin-top: 10px;/*marge ext haut (entre ce bloc et bloc filtres) + ajustement visuel*/
-	height: 41px;/*hauteur*/
-	width: 331px;/*largeur*/
+	margin-left: 1.3rem;/*marge ext grauche (entre icon info et bord de la page)*/
+	margin-top: 0.6rem;/*marge ext haut (entre ce bloc et bloc filtres) + ajustement visuel*/
+	height: 2.6rem;/*hauteur*/
+	width: 20.7rem;/*largeur*/
 }
 
 
@@ -259,7 +254,7 @@ i.fa-search/*bouton rechercher avec icon*/
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {	
 	height: 0;/*pas de fond*/
-	left: 21px;/*positon gauche en fonction du bloc de référence*/top: 580px;/*ajustement visuel*/
+	left: 1.3rem;/*positon gauche en fonction du bloc de référence*/top: 36.3rem;/*ajustement visuel*/
 }
 
 #titrehebergements/*titre*/
@@ -269,32 +264,32 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .carteshebergements/*bloc cartes*/
 {
-	margin-top: 19px;/*marge ext haute (entre bloc cartes et titre)*/
+	margin-top: 1.2rem;/*marge ext haute (entre bloc cartes et titre)*/
 	flex-direction: column;/*éléments à la suite sur une colonne*/
 	flex-wrap: nowrap;/*élément flex en une seule colonne*/
 	margin-left: 0;/*ajustement visuel*/
-	grid-gap: 12px;/*espace entre cartes*/
+	grid-gap: 0.8rem;/*espace entre cartes*/
 }
 
 .cartes/*cartes (photo + description)*/
 {
-	width: 335px;/*largeur carte*/
+	width: 20.9rem;/*largeur carte*/
 }
 
 .photos/*photos d'hébergements*/
 {
-	width: 325px;/*largeur*/
+	width: 20.3rem;/*largeur*/
 }
 
 .description/*bloc description de l'hébegement*/
 {
-	line-height: 12px;/*espace entre lignes de texte*/
+	line-height: 0.8rem;/*espace entre lignes de texte*/
 }
 
 
 #afficherplus
 {
-	margin-left: 1px;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
+	margin-left: 0.1rem;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
 }
 
 
@@ -305,41 +300,41 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .populaires/*bloc gris section populaires (titre + cartes)*/
 {
-	width: 375px;/*largeur*/
-	height: 580px;/*hauteur*/
+	width: 23.4rem;/*largeur*/
+	height: 36.3rem;/*hauteur*/
 	border-radius: 0;/*coins pas arrondis*/
-	margin-top: 10px;/*ajustement visuel*/
+	margin-top: 0.6rem;/*ajustement visuel*/
 }
 
 #titrepopulaire/*bloc titre + icône*/
 {
-	height: 90px;/*hauteur bloc*/
-	width: 334px;/*largeur bloc*/
-	margin: -20px 20px 20px 21px;/*marges ext + ajustement visuel*/
+	height: 5.6rem;/*hauteur bloc*/
+	width: 20.9rem;/*largeur bloc*/
+	margin: -1.3rem 1.3rem 1.3rem 1.3rem;/*marges ext + ajustement visuel*/
 }
 
 .fa-chart-line/*icon populaire*/
 {
-	width: 21px;/*largeur icône*/
+	width: 1.3rem;/*largeur icône*/
 }
 
 #cartespopulaires/*bloc cartes*/
 {
-	width: 334px;/*largeur*/
-	height: 453px;/*hauteur*/
-	margin: -10px 21px -10px 19px;/*marges ext + ajustement visuel*/
+	width: 20.9rem;/*largeur*/
+	height: 28.3rem;/*hauteur*/
+	margin: -0.6rem 1.3rem -0.6rem 1.2rem;/*marges ext + ajustement visuel*/
 }
 
 .cartes2/*cartes blanches populaires (photo + desciption + note)*/
 {
-	width: 334px;/*largeur cartes*/
-	margin-top: -15px;/*ajustement visuel*/
+	width: 20.9rem;/*largeur cartes*/
+	margin-top: -0.9rem;/*ajustement visuel*/
 }
 
 .description2/*description photos*/
 {
-	height: 58px;/*hauteur*/
-	margin-left: 21px;/*marge ext gauche (entre photo et description)*/
+	height: 3.6rem;/*hauteur*/
+	margin-left: 1.3rem;/*marge ext gauche (entre photo et description)*/
 }
 
 .note2/*bloc note étoiles*/
@@ -347,7 +342,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
 	justify-items: space-between;/*espace entre chaque éléments*/
-	margin-left: 20px;/*marge ext gauche (entre bord photo et 1ere étoile bloc)*/
+	margin-left: 1.3rem;/*marge ext gauche (entre bord photo et 1ere étoile bloc)*/
 }
 
 
@@ -355,8 +350,8 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .toushebergements/*bloc section hebergements et populaires*/
 {
-	width: 375px;/*largeur*/
-	height: 1967px;/*hauteur*/
+	width: 23.4rem;/*largeur*/
+	height: 122.9rem;/*hauteur*/
 	flex-direction: column-reverse;/*éléments à la suite sur colonne + ordre éléments inversé)*/
 	margin-left: 0;/*pas de marge ext gauche*/
 }
@@ -368,45 +363,45 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .titreactivites
 {
-	margin-bottom: 20px;/*marge ext bas*/
-	margin-left: 25px;/*marge ext gauche*/
+	margin-bottom: 1.3rem;/*marge ext bas*/
+	margin-left: 1.6rem;/*marge ext gauche*/
 }
 
 .cartesactivités/*bloc cartes*/
 {
-	height: 1255px;/*hauteur*/
-	width: 334px;/*largeur*/
+	height: 78.4rem;/*hauteur*/
+	width: 20.9rem;/*largeur*/
 	flex-direction: column;/*éléments à la suite sur une colonne*/
-	margin-top: 21px;/*marge ext haute (entre haut bloc cartes et titre)*/
-	grid-gap: 14px;/*ajustement visuel*/
+	margin-top: 1.3rem;/*marge ext haute (entre haut bloc cartes et titre)*/
+	grid-gap: 0.9rem;/*ajustement visuel*/
 }
 
 .grandescartes/*carte vieux port + carte calanques*/
 {
-	margin-left: -25px;/*ajustement visuel*/
+	margin-left: -1.6rem;/*ajustement visuel*/
 }
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 {
-	margin-left: -10px;/*ajustement visuel*/
+	margin-left: -0.6rem;/*ajustement visuel*/
 	grid-gap: 0;/*ajustement visuel*/
 }
 
 .grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp/*toutes les cartes*/
 {
-	width: 334px;/*largeur*/
-	height: 190px;/*hauteur*/
+	width: 20.9rem;/*largeur*/
+	height: 11.9rem;/*hauteur*/
 }
 
 .grandesphotos, #photopomegues, #photofrioul, #photonotredame, #photolongchamp/*toutes les photos*/
 {
-	width: 334px;/*largeur*/
-	height: 134px;/*hauteur*/
+	width: 20.9rem;/*largeur*/
+	height: 8.4rem;/*hauteur*/
 }
 
 .description3/*descriptions photos activités*/
 {
-	margin: 20px 0 17px 20px;/*marge ext*/
+	margin: 1.3rem 0 1.1rem 1.3rem;/*marge ext*/
 }
 
 
@@ -414,23 +409,23 @@ i.fa-search/*bouton rechercher avec icon*/
 
 footer
 {
-	margin-top: 70px;/*marge ext haute*/
-	width: 375px;/*largeur*/
+	margin-top: 4.4rem;/*marge ext haute*/
+	width: 23.4rem;/*largeur*/
 }
 
 .pieddepage/*footer int*/
 {
-	padding-top: 25px;/*marge int haute*/
-	padding-bottom: 20px;/*marge int bas*/
-	margin-left: 30px;/*marge ext gauche*/
-	height: 486px;/*hauteur*/
-	width: 375px;/*largeur*/
+	padding-top: 1.6rem;/*marge int haute*/
+	padding-bottom: 1.3rem;/*marge int bas*/
+	margin-left: 1.9rem;/*marge ext gauche*/
+	height: 30.4rem;/*hauteur*/
+	width: 23.4rem;/*largeur*/
 	flex-direction: column;/*éléments en colonne*/
 	justify-content: space-around;/*espace autour des éléments*/
 }
 
 ul/*liste d'éléments par partie*/
 {
-	font-size: 17px;/*taille de la police*/
-	margin-top: 20px;/*ajustement visuel*/
+	font-size: 1.1rem;/*taille de la police*/
+	margin-top: 1.3rem;/*ajustement visuel*/
 }
