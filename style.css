@@ -3,7 +3,7 @@
 
 @font-face {
 	font-family: "Raleway";
-	src: url("static/Raleway-Thin.ttf") format("truetype"),
+	src: url("Raleway/static/Raleway-Thin.ttf") format("truetype"),
 		  url("Raleway/static/Raleway-ExtraLight.ttf") format("truetype"),
 		  url("Raleway/static/Raleway-Light.ttf") format("truetype"),
 		  url("Raleway/static/Raleway-Regular.ttf") format("truetype"),
@@ -20,7 +20,7 @@
 		  url("Raleway/static/Raleway-SemiBoldItalic.ttf") format("truetype"),
 		  url("Raleway/static/Raleway-BoldItalic.ttf") format("truetype"),
 		  url("Raleway/static/Raleway-ExtraBoldItalic.ttf") format("truetype"),
-		  url("Raleway/static/Raleway-BlackItalic.ttf)") format("truetype");
+		  url("Raleway/static/Raleway-BlackItalic.ttf") format("truetype");
 }
 
 
