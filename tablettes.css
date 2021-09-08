@@ -43,10 +43,14 @@ h3/*Titres de photos*/, p/*texte de base*/
 
 /*-------------------------------En-tête----------------------------------*/
 
+header
+{
+	width: 65.5rem;/*largeur bloc*/
+}	
+
 .menu/*hébergements,activités*/
 {
-	/*à changer
-	margin-left: 51.3rem;/*marge ext gauche (entre logo et "hébergements")*/
+	margin-left: 33rem;/*marge ext gauche (entre logo et "hébergements")*/
 }
 
 
@@ -197,4 +201,19 @@ h3/*Titres de photos*/, p/*texte de base*/
 #photopomegues, #photofrioul, #photonotredame, #photolongchamp
 {
 	height: 24.4rem;/*hauteur*/
+}
+
+
+
+/*----------------------------------------Pied de Page-----------------------------------------------*/
+
+footer
+{
+	width: 72.5rem;/*largeur*/
+}
+
+.pieddepage/*footer int*/
+{
+	/*à changer
+	margin-top: 3.8rem;/*marge ext haute (entre bloc activités et pied de page)*/
 }
