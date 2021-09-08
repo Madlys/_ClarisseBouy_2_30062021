@@ -103,11 +103,16 @@ nav/*=header*/
 
 #menuhebergements:hover, #menuactivites:hover
 {
-	color: #0065FC;/*texte en bleu*/
 	border-top: 0.1rem solid #0065FC;/*ligne en bleu*/
 	padding-top: 3.9rem;/*espace entre texte et border top*/
 	margin-top: -3rem;/*ajustement visuel*/
 }
+
+#menuhebergements a:hover, #menuactivites a:hover
+{
+	color: #0065FC;/*texte en bleu*/
+}
+
 
 #sinscrire
 {
@@ -360,6 +365,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 14.8rem;/*largeur*/
 	height: 7.1rem;/*hauteur*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 0.9rem 0.9rem 0 0;/*coins supérieurs arrondis*/
 	margin: 0.3rem 0.3rem 0 0.3rem;/*marge ext (entre bords carte et bords photos)*/
 }
@@ -442,6 +448,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 7.9rem;/*largeur photos*/
 	height: 8.4rem;/*hauteur photos*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	float: left;
 	border-radius: 0.9rem 0 0 0.9rem;/*coins gauches arrondis*/
 	margin: 0.3rem 0 0.3rem 0.3rem;/*marges ext (entre photo et bords carte)*/
@@ -553,6 +560,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 18.9rem;/*largeur*/
 	height: 24.4rem;/*hauteur*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
 }
 
@@ -572,6 +580,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 18.8rem;/*largeur*/
 	height: 11.3rem;/*hauteur*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
 }
 
@@ -586,6 +595,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 18.8rem;/*largeur*/
 	height: 6.8rem;/*hauteur*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
 }
 
@@ -600,6 +610,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 18.9rem;/*largeur*/
 	height: 8.8rem;/*hauteur*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
 }
 
@@ -614,6 +625,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	width: 18.9rem;/*largeur*/
 	height: 9.6rem;/*hauteur*/
+	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
 }
 
