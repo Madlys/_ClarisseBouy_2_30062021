@@ -36,15 +36,12 @@
 
 	.vacancesdereve/*titre barre de recherche*/
 	{
+		width: 60rem;/*largeur*/
 		line-height: 0.7rem;/*espace entre les lignes de texte*/
 	}
 
 	.barrederecherche
 	{
-		/*à changer
-		width: 26.2rem;/*largeur bloc*/
-		/*
-		height: 3.1rem;/*hauteur bloc*/
 		margin-top: 1.5rem;/*marge ext haute (entre barre de recherche et titre)*/
 	}
 
@@ -64,8 +61,7 @@
 
 	.filtres/*filtres sans titre général*/
 	{
-		/*à changer
-		width: 52rem;/*largeur*/
+		width: 53rem;/*largeur*/
 		margin: 0 28rem 0 3.5rem;/*marge ext*/
 	}
 
@@ -161,9 +157,10 @@
 
 	.cartesactivités/*bloc cartes*/
 	{
-		background-color: lightblue;
-		flex-wrap: wrap;
+		flex-wrap: wrap;/*carte passe à la ligne lorsqu'il n'y a plus de place*/
 		width: 65.7rem;/*largeur*/
+		height: 57rem;/*hauteur*/
+		row-gap: 1rem;/*espace entre cartes*/
 	}
 
 	#cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp
@@ -171,9 +168,21 @@
 		height: 27.9rem;/*hauteur*/
 	}
 
-	#cartefrioul
+	.souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 	{
-		margin-top: -0.7rem;
+		flex-direction: row;/*en colonne*/
+		margin-top: 0;/*ajustement visuel*/
+		margin-right: 9.1rem;/*marge ext droite*/
+	}
+
+	#cartefrioul, #cartelongchamp
+	{
+		margin-left: 0rem;/*ajustement visuel*/
+	}
+
+	.grandescartes/*carte vieux port + carte calanques*/
+	{
+		margin-right: 1rem;/*ajustement visuel*/
 	}
 
 	#photopomegues, #photofrioul, #photonotredame, #photolongchamp
@@ -189,10 +198,5 @@
 	{
 		width: 72.5rem;/*largeur*/
 	}
-
-	.pieddepage/*footer int*/
-	{
-		/*à changer
-		margin-top: 3.8rem;/*marge ext haute (entre bloc activités et pied de page)*/
-	}
+	
 }
