@@ -23,12 +23,13 @@
 
 	header
 	{
-		width: 65.5rem;/*largeur bloc*/
+		margin-left: 6%;
+		width: 190%;/*largeur bloc*/
 	}
 
 	.menu/*hébergements,activités*/
 	{
-		margin-left: 33rem;/*marge ext gauche (entre logo et "hébergements")*/
+		margin-left: 35%;/*marge ext gauche (entre logo et "hébergements")*/
 	}
 
 
@@ -36,12 +37,14 @@
 
 	.vacancesdereve/*titre barre de recherche*/
 	{
-		width: 60rem;/*largeur*/
+		width: 140%;/*largeur*/
+		margin-left: 6%;/*marge ext gauche du bloc*/
 		line-height: 0.7rem;/*espace entre les lignes de texte*/
 	}
 
 	.barrederecherche
 	{
+		margin-left: 6%;/*marge ext gauche (entre barre de recherche et bord de la page)*/
 		margin-top: 1.5rem;/*marge ext haute (entre barre de recherche et titre)*/
 	}
 
@@ -51,6 +54,7 @@
 
 	.blocfiltre/*bloc filtres*/
 	{
+		width: 140%;
 		flex-direction: column;/*éléments à la suite en colonne*/
 	}
 
@@ -61,8 +65,13 @@
 
 	.filtres/*filtres sans titre général*/
 	{
-		width: 53rem;/*largeur*/
-		margin: 0 28rem 0 3.5rem;/*marge ext*/
+		width: 80%;/*largeur*/
+		margin: 0 0 0 4%;/*marge ext*/
+	}
+
+	.infotexte/*icon info + texte*/
+	{
+		margin-left: 5.5%;/*marge ext gauche*/
 	}
 
 
@@ -70,50 +79,56 @@
 
 	.hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 	{
+		width: 58%;/*largeur*/
 		height: 53.5rem;/*hauteur*/
+	}
+
+	#titrehebergements/*titre*/
+	{
+		margin-left: 7%;/*marge ext gauche (entre bord section et titre)*/
 	}
 
 	.carteshebergements/*bloc cartes*/
 	{
-		width: 33rem;/*largeur bloc*/
+		width: 90%;/*largeur bloc*/
 	}
 
 	.cartes/*cartes (photo + description)*/
 	{
-		width: 15.4rem;/*largeur carte*/
+		width: 47%;/*largeur carte*/
 		height: 12.4rem;/*hauteur carte*/
 	}
 
-
+	.description/*bloc description de l'hébegement*/
+	{
+		background-color: lightcoral;
+		width: 97%;
+		margin-left: 0.7rem;/*marges ext gauche*/
+	}
 
 	/*-----------------------------------Populaires----------------------------------*/
 
 	.populaires/*bloc gris section populaires (titre + cartes)*/
 	{
-		width: 25rem;/*largeur*/
+		width: 37%;/*largeur*/
 		height: 53.5rem;/*hauteur*/
-	}
-
-	#titrepopulaire/*bloc titre + icône*/
-	{
-		width: 19.6rem;/*largeur bloc*/
 	}
 
 	#cartespopulaires/*bloc cartes*/
 	{
+		width: 81%;/*largeur*/
 		height: 45rem;/*hauteur*/
-		margin-left: 1.7rem;
+		margin-left: 10%;/*marge ext gauche*/
 	}
 
 	.cartes2/*cartes blanches populaires (photo + desciption + note)*/
 	{
-		width: 20rem;/*largeur cartes*/
 		height: 42rem;/*hauteur cartes*/
 	}
 
 	.photos2/*photos populaires*/
 	{
-		width: 19.4rem;/*largeur photos*/
+		width: 97%;/*largeur photos*/
 		height: 8rem;/*hauteur photo*/
 		float: none;/*photo suit la dispo flexbox*/
 		border-radius: 0.9rem 0.9rem 0 0;/*coins gauches arrondis*/
@@ -147,7 +162,9 @@
 
 	.toushebergements/*bloc section hebergements et populaires*/
 	{
-		width: 65.7rem;/*largeur*/
+		background-color: lightblue;
+		width: 140%;/*largeur*/
+		margin-left: 5.5%;/*marge ext gauche*/
 		margin-bottom: 18rem;/*marge ext basse entre bloc et activités*/
 	}
 
