@@ -72,8 +72,8 @@ a/*tous les liens cliquables de la page*/
 
 header
 {
-	margin: 3.2rem 4.8rem 0 3.3rem;/*marges ext*/
-	width: 81.9rem;/*largeur bloc*/
+	margin: 3.2rem 0 0 3%;/*marges ext*/
+	width: 95%;/*largeur bloc*/
 }	
 
 nav/*=header*/
@@ -92,8 +92,8 @@ nav/*=header*/
 {
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;
-	width: 20rem;/*largeur totale du bloc*/
-	margin-left: 51.3rem;/*marge ext gauche (entre logo et "hébergements")*/
+	width: 25%;/*largeur totale du bloc*/
+	margin-left: 60%;/*marge ext gauche (entre logo et "hébergements")*/
 }
 
 #menuhebergements, #menuactivites
@@ -119,7 +119,7 @@ nav/*=header*/
 {
 	color: #0065FC;/*couleur police en bleu*/
 	font-weight: bold;/*en gras*/
-	margin-left: 1.5rem;/*marge ext gauche (entre bloc menu et "s'inscrire")*/
+	margin-left: -1%;/*marge ext gauche (entre bloc menu et "s'inscrire")*/
 }
 
 
@@ -129,7 +129,7 @@ nav/*=header*/
 .vacancesdereve/*titre barre de recherche*/
 {
 	line-height: 1rem;/*espace entre les lignes de texte*/
-	margin-left: 3.4rem;/*marge ext gauche du bloc*/
+	margin-left: 3.6%;/*marge ext gauche du bloc*/
 	margin-top: 3.1rem;/*marge ext entre ce bloc et le bloc header*/
 }
 
@@ -140,7 +140,7 @@ nav/*=header*/
 	width: 26.2rem;/*largeur bloc*/
 	height: 3.2rem;/*hauteur bloc*/
 	margin-top: 1.2rem;/*marge ext haute (entre barre de recherche et titre)*/
-	margin-left: 3.4rem;/*marge ext gauche (entre barre de recherche et bord de la page)*/
+	margin-left: 3.6%;/*marge ext gauche (entre barre de recherche et bord de la page)*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
@@ -158,7 +158,7 @@ nav/*=header*/
 {
 	font-size: 1.2rem;/*taille icone*/
 	position: absolute;/*placement dans espace de réf (blockicon)*/
-	top: 1rem;/*distance haut*/ right: 1.3rem;/*...droite*/ bottom: 1.1rem;/*...bas*/ left: 1.2rem;/*...gauche*/
+	top: 1rem;/*distance haut*/ bottom: 1.1rem;/*...bas*/ left: 1.2rem;/*...gauche*/
 }
 
 section input/*bloc de saisie*/
@@ -210,14 +210,14 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .titreblocfiltres
 {
-	margin-left: 3.9rem;/*marge ext gauche*/
+	margin-left: 4%;/*marge ext gauche*/
 	margin-top: 3.1rem;/*marge ext haute*/
 }
 
 .filtres/*filtres sans titre général*/
 {
 	width: 52rem;/*largeur*/
-	margin: 1.9rem 28rem 0 2rem;/*marge ext*/
+	margin: 1.9rem 0 0 2%;/*marge ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe vertical*/
@@ -302,7 +302,7 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	font-size: 0.8rem;/*taille icone*/
 	color: #0065FC;
-	margin-right: 0.8rem;/*marge ext droite (entre icon info et texte)*/
+	margin-right: 0.8%;/*marge ext droite (entre icon info et texte)*/
 	padding: 0.3rem 0.5rem 0.3rem 0.5rem;/*marge int (entre icon info et bordure)*/
 	border: 0.1rem solid #F2F2F2;/*bordure grise*/
 	border-radius: 90%;/*angles bordure arrondis à 90%*/
@@ -313,7 +313,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une même ligne*/
 	align-items: center;/*éléments centrés sur l'axe verticale*/
-	margin: 2.1rem 0 2.3rem 3.8rem;/*marge ext*/
+	margin: 2.1rem 0 2.3rem 3.8%;/*marge ext*/
 	height: 1.5rem;/*hauteur*/
 }
 
@@ -323,6 +323,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .hebergements/*bloc section hébergements (titre + cartes + afficherplus)*/
 {
+	width: 68%;/*largeur*/
 	height: 39.1rem;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 1.3rem;/*coins arrondis*/
@@ -333,20 +334,20 @@ i.fa-search/*bouton rechercher avec icon*/
 #titrehebergements/*titre*/
 {
 	margin-top: 2.9rem;/*marge ext haute*/
-	margin-left: 2.6rem;/*marge ext gauche (entre bord section et titre)*/
+	margin-left: 5%;/*marge ext gauche (entre bord section et titre)*/
 }
 
 .carteshebergements/*bloc cartes*/
 {
-	width: 50rem;/*largeur bloc*/
+	width: 90%;/*largeur bloc*/
 	height: 26.8rem;/*hauteur bloc*/
-	margin: 1.4rem 2.5rem 2.7rem 2.5rem;/*marge ext*/
+	margin: 1.4rem 5% 2.7rem 5%;/*marge ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*élément à la suite sur une ligne*/
 	flex-wrap: wrap;/*élément passe à la ligne lorsque sort du cadre*/
 	justify-content: space-between;/*espace entre les éléments sur l'axe horizontal*/
 	align-content: space-between;/*espace entre les éléments sur l'axe vertical*/
-	grid-gap: 1.9rem 1.9rem;/*espace entre cartes*/
+	grid-gap: 1.9rem 1%;/*espace entre cartes*/
 }
 
 .cartes/*cartes (photo + description)*/
@@ -355,7 +356,7 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-direction: column;/*éléments à la suite en colonne*/
 	align-items: center;/*éléments centrés sur l'axe horizontal*/
 	justify-content: center;/*éléments centrés sur l'axe vertical*/
-	width: 15.4rem;/*largeur carte*/
+	width: 30%;/*largeur carte*/
 	height: 12.4rem;/*hauteur carte*/
 	border-radius: 1.3rem;/*coins arrondis*/
 	background-color: white;/*fond blanc*/
@@ -364,7 +365,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .photos/*photos d'hébergements*/
 {
-	width: 14.8rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 7.1rem;/*hauteur*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 0.9rem 0.9rem 0 0;/*coins supérieurs arrondis*/
@@ -373,6 +374,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .description/*bloc description de l'hébegement*/
 {
+	width: 93%;
 	height: 2.3rem;/*hauteur*/
 	margin-left: 1.1rem;/*marges ext gauche*/
 	margin-top: -0.2rem;/*ajustement visuel*/
@@ -396,7 +398,7 @@ i.fa-search/*bouton rechercher avec icon*/
 #afficherplus
 {
 	margin-top: -0.3rem;/*ajustement visuel*/
-	margin-left: 0.3rem;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
+	margin-left: 0.3%;
 }
 
 
@@ -404,10 +406,12 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .populaires/*bloc gris section populaires (titre + cartes)*/
 {
+	position: absolute;/*position en fonction du bloc de référence*/
+	right: 0; top: 0;/*tout en haut à droite*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: column;/*éléments à la suite sur la même colonne*/
 	justify-content: center;/*éléments centrés sur l'axe vertical*/
-	width: 26.3rem;/*largeur*/
+	width: 30%;/*largeur*/
 	height: 39.1rem;/*hauteur*/
 	background-color: #F2F2F2;/*fond gris*/
 	border-radius: 1.3rem;/*coins arrondis*/
@@ -417,8 +421,8 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	font-size: 1.4rem;/*taille icône*/ 
 	height: 1.1rem;/*hauteur bloc*/
-	width: 21.4rem;/*largeur bloc*/
-	margin: 2.9rem 2.4rem 0 2.4rem;/*marges ext*/
+	width: 80%;/*largeur bloc*/
+	margin: 2.9rem 10% 0 10%;/*marges ext*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments alignés sur une même ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
@@ -431,14 +435,14 @@ i.fa-search/*bouton rechercher avec icon*/
 	flex-direction: column;/*en colonne*/
 	align-items: center;/*élément alignés au centre sur l'axe horizontal*/
 	justify-content: space-evenly;/*éléments espacés equitablement*/
-	width: 21.4rem;/*largeur*/
+	width: 80%;/*largeur*/
 	height: 31.1rem;/*hauteur*/
-	margin: 1.6rem 2.5rem 2.1rem 2.3rem;/*marges ext*/
+	margin: 1.6rem 10% 2.1rem 10%;/*marges ext*/
 }
 
 .cartes2/*cartes blanches populaires (photo + desciption + note)*/
 {
-	width: 21.4rem;/*largeur cartes*/
+	width: 100%;/*largeur cartes*/
 	height: 9rem;/*hauteur cartes*/
 	border-radius: 1.3rem;/*coins arrondis*/
 	background-color: white;/*couleur de fond*/
@@ -447,7 +451,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .photos2/*photos populaires*/
 {
-	width: 7.9rem;/*largeur photos*/
+	width: 37%;/*largeur photos*/
 	height: 8.4rem;/*hauteur photos*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	float: left;
@@ -467,8 +471,8 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	margin-top: -1.3rem;/*ajustement visuel*/
 	height: 3.6rem;/*hauteur*/
-	width: 10rem;/*largeur*/
-	margin-left: 1rem;/*marge ext gauche (entre photo et description)*/
+	width: 70%;/*largeur*/
+	margin-left: 7%;/*marge ext gauche (entre photo et description)*/
 }
 
 .description2 h3/*texte lieu*/
@@ -478,11 +482,11 @@ i.fa-search/*bouton rechercher avec icon*/
 }
 
 .note2/*bloc note étoiles*/
-{	
+{
 	font-size: 0.8rem;
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur la même ligne*/
-	margin-left: 1rem;/*marge ext gauche*/
+	margin-left: 6%;/*marge ext gauche*/
 	margin-top: 3.8rem;/* marge ext haute (entre note et description)+ajustement visuel*/
 }
 
@@ -491,12 +495,12 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .toushebergements/*bloc section hebergements et populaires*/
 {
-	width: 83.8rem;/*largeur*/
+	width: 93%;/*largeur*/
 	height: 39.1rem;/*hauteur*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
-	margin-left: 3.1rem;/*marge ext gauche*/
+	margin-left: 3.3%;/*marge ext gauche*/
 	position: relative;/*devient l'espace de référence de son contenu*/
 }
 
@@ -519,16 +523,16 @@ i.fa-search/*bouton rechercher avec icon*/
 .titreactivites/*titre section activités*/
 {
 	margin-top: 4.1rem;/*marge ext haute*/
-	margin-left: 3.1rem;/*marge ext gauche*/
+	margin-left: 3.2%;/*marge ext gauche*/
 }
 
 .cartesactivités/*bloc cartes*/
 {
+	width: 93%;/*largeur*/
 	height: 27.8rem;/*hauteur*/
-	width: 83.6rem;/*largeur*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
-	margin-left: 3.1rem;/*marge ext gauche*/
+	margin: 0 3.2% 0 3.2%;/*marge ext*/
 }
 
 .grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp
@@ -538,19 +542,19 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 {
+	width: 30%;/*largeur bloc*/
 	height: 27.8rem;/*hauteur bloc*/
-	width: 18.9rem;/*largeur bloc*/
 	display: flex;/*dispositon flexbox*/
 	flex-direction: column;/*en colonne*/
 	align-items: center;/*éléments alignés sur l'axe horizontal*/
 	margin-top: -0.9rem;/*ajustement visuel*/
-	margin-right: 3.1rem;/*ajustement visuel*/
+	margin-right: 3.2%;/*ajustement visuel*/
 	grid-gap: 0.9rem;/*ajustement visuel*/
 }
 
 .grandescartes/*carte vieux port + carte calanques*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 30%;/*largeur*/
 	height: 27.9rem;/*hauteur*/
 	border-radius: 1.3rem;/*coins arrondis*/
 	margin-top: 0;/*ajustement visuel*/
@@ -559,7 +563,7 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .grandesphotos/*photo vieux port + photo calanques*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 24.4rem;/*hauteur*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
@@ -572,14 +576,14 @@ i.fa-search/*bouton rechercher avec icon*/
 
 #cartepomegues/*carte Fort de Pomègues (photo + descptiption)*/
 {
-	width: 18.8rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 14.8rem;/*hauteur*/
 	border-radius: 1.3rem;/*coins arrondis*/
 }
 
 #photopomegues/*photo Fort de Pomègues*/
 {
-	width: 18.8rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 11.3rem;/*hauteur*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
@@ -587,14 +591,14 @@ i.fa-search/*bouton rechercher avec icon*/
 
 #cartefrioul/*carte Ile de Frioul (photo + descptiption)*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 10.4rem;/*hauteur*/
 	border-radius: 1.3rem;/*coins arrondis*/
 }
 
 #photofrioul/*photo Ile de Frioul*/
 {
-	width: 18.8rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 6.8rem;/*hauteur*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
@@ -602,14 +606,14 @@ i.fa-search/*bouton rechercher avec icon*/
 
 #cartenotredame/*carte Notre Dame (photo + descptiption)*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 12.3rem;/*hauteur*/
 	border-radius: 1.3rem;/*coins arrondis*/
 }
 
 #photonotredame/*photo Notre Dame*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 8.8rem;/*hauteur*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
@@ -617,14 +621,14 @@ i.fa-search/*bouton rechercher avec icon*/
 
 #cartelongchamp/*carte Parc Longchamps (photo + descptiption)*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 13.1rem;/*hauteur*/
 	border-radius: 1.3rem;/*coins arrondis*/
 }
 
 #photolongchamp/*photo Parc Longchamps*/
 {
-	width: 18.9rem;/*largeur*/
+	width: 100%;/*largeur*/
 	height: 9.6rem;/*hauteur*/
 	object-fit: cover;/*rognage photo dans cadre*/
 	border-radius: 1.3rem 1.3rem 0 0;/*coins supérieurs arrondis*/
@@ -632,13 +636,12 @@ i.fa-search/*bouton rechercher avec icon*/
 
 
 
- 
 /*----------------------------------------Pied de Page-----------------------------------------------*/
 
 footer
 {
 	background-color: #F2F2F2;/*fond gris*/
-	width: 90rem;/*la largeur*/
+	width: 100%;/*la largeur*/
 }
 
 .pieddepage/*footer int*/
