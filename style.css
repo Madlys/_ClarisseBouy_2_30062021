@@ -363,6 +363,12 @@ i.fa-search/*bouton rechercher avec icon*/
 	box-shadow: 0 0.1rem 0.6rem #DCDCDC;/*ombre*/
 }
 
+.cartes figure
+{
+	width: 96%;
+	margin-left: 1.3rem;
+}
+
 .photos/*photos d'hébergements*/
 {
 	width: 100%;/*largeur*/
