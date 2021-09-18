@@ -8,8 +8,8 @@
 
 	header
 	{
-		margin: 2rem 1.3rem 0 1.3rem;/*marges ext*/
-		width: 23.4rem;/*largeur*/
+		margin: 2rem 3% 0 0%;/*marges ext*/
+		width: 75%;/*largeur*/
 		height: 6.3rem;/*hauteur*/
 	}
 
@@ -20,14 +20,15 @@
 
 	.reservia/*logo*/
 	{
+		margin-left: 7%;
 		order: 1;
 	}
 
 	.menu/*"hébergements" et "activités"*/
 	{
 		justify-content: space-around;/*espace entre et autour des éléments*/
-		width: 23.4rem;/*largeur*/
-		margin-left: -1.3rem;/*marge ext gauche annulée*/
+		width: 100%;/*largeur*/
+		margin-left: 0;/*marge ext gauche annulée*/
 		order: 3;
 	}
 
@@ -48,8 +49,7 @@
 
 	#sinscrire
 	{
-		margin-right: 1.3rem;/*marge ext droite*/
-		margin-left: 10rem;/*marge ext gauche*/
+		margin-left: 40%;/*marge ext gauche*/
 		order: 2;
 	}
 
@@ -57,9 +57,9 @@
 
 	.vacancesdereve/*titre barre de recherche*/
 	{
-		width: 18.3rem;/*largeur bloc*/
+		width: 56%;/*largeur bloc*/
 		height: 4.9rem;/*hauteur cadre*/
-		margin-left: 1.3rem;/*marge ext gauche du bloc*/
+		margin-left: 5%;/*marge ext gauche du bloc*/
 		margin-top: 2.3rem;/*marge ext entre ce bloc et le bloc header*/
 		line-height: 1.6rem;/*ajustement visuel*/
 	}
@@ -103,7 +103,10 @@
 		right: 0;/*distance droite*/ top: 0;/*...et haut*/
 	}
 
+
+
 	/*-----------------------------------Filtres---------------------------------*/
+	
 	.blocfiltre/*bloc filtres*/
 	{
 		display: inline-block;
@@ -111,22 +114,23 @@
 
 	.titreblocfiltres
 	{
+		width: 88%;
 		margin-top: 2.3rem;/*marge ext haute*/
-		margin-left: 1.4rem;/*marge ext gauche*/
+		margin-left: 4%;/*marge ext gauche*/
 		margin-bottom: -0.6rem;/*ajustement visuel*/
 	}
 
 	.filtres/*bloc filtres*/
 	{
-		width: 20.6rem;/*largeur + ajustement visuel*/
+		width: 66%;/*largeur + ajustement visuel*/
 		height: 13.1rem;/*hauteur*/
-		margin: 1.1rem 1.7rem 0 1.3rem;/*marge ext + ajustement visuel*/
+		margin: 1.1rem 0 0 4%;/*marge ext + ajustement visuel*/
 		flex-wrap: wrap;/*élément va à la ligne lorsque plus de place*/
 	}
 
 	.filtre/*intitulés filtres + contour gris*/
 	{
-		padding-left: 2.5rem;/*ajustement visuel*/
+		padding-left: 2rem;/*ajustement visuel*/
 	}
 
 	.filtre h2/*intitulés filtres*/
@@ -172,10 +176,10 @@
 	.infotexte/*icon info + texte*/
 	{
 		align-items: baseline;/*éléments flexibles alignés sur la ligne de départ de l'axe vertical*/
-		margin-left: 1.3rem;/*marge ext grauche (entre icon info et bord de la page)*/
+		margin-left: 4%;/*marge ext grauche (entre icon info et bord de la page)*/
 		margin-top: 0.6rem;/*marge ext haut (entre ce bloc et bloc filtres) + ajustement visuel*/
 		height: 2.6rem;/*hauteur*/
-		width: 20.7rem;/*largeur*/
+		width: 65%;/*largeur*/
 	}
 
 
@@ -190,7 +194,8 @@
 
 	#titrehebergements/*titre*/
 	{
-		margin-left: 0;/*marge ext gauche (entre bord section et titre)*/
+		width: 120%;
+		margin-left: -1%;/*marge ext gauche (entre bord section et titre)*/
 	}
 
 	.carteshebergements/*bloc cartes*/
@@ -204,18 +209,17 @@
 
 	.cartes/*cartes (photo + description)*/
 	{
-		width: 20.9rem;/*largeur carte*/
+		width: 147%;/*largeur carte*/
 	}
 
 	.photos/*photos d'hébergements*/
 	{
-		width: 20.3rem;/*largeur*/
+		width: 100%;/*largeur*/
 	}
 
 	#afficherplus
 	{
 		margin-top: 0.7rem;/*marge ext haute*/
-		margin-left: 0.1rem;/*marge ext gauche supplémentaire (entre bord bloc hébergements et texte)*/
 	}
 
 
@@ -224,7 +228,7 @@
 
 	.populaires/*bloc gris section populaires (titre + cartes)*/
 	{
-		width: 23.4rem;/*largeur*/
+		width: 100%;/*largeur*/
 		height: 36.3rem;/*hauteur*/
 		border-radius: 0;/*coins pas arrondis*/
 		margin-top: 0.6rem;/*ajustement visuel*/
@@ -233,8 +237,8 @@
 	#titrepopulaire/*bloc titre + icône*/
 	{
 		height: 5.6rem;/*hauteur bloc*/
-		width: 20.9rem;/*largeur bloc*/
-		margin: -1.3rem 1.3rem 1.3rem 1.3rem;/*marges ext + ajustement visuel*/
+		width: 88%;/*largeur bloc*/
+		margin: -1.3rem 6% 1.3rem 6%;/*marges ext + ajustement visuel*/
 	}
 
 	.fa-chart-line/*icon populaire*/
@@ -244,21 +248,21 @@
 
 	#cartespopulaires/*bloc cartes*/
 	{
-		width: 20.9rem;/*largeur*/
+		width: 88%;/*largeur*/
 		height: 28.3rem;/*hauteur*/
-		margin: -0.6rem 1.3rem -0.6rem 1.2rem;/*marges ext + ajustement visuel*/
+		margin: -0.6rem 6% -0.6rem 6%;/*marges ext + ajustement visuel*/
 	}
 
 	.cartes2/*cartes blanches populaires (photo + desciption + note)*/
 	{
-		width: 20.9rem;/*largeur cartes*/
+		width: 100%;/*largeur cartes*/
 		margin-top: -0.9rem;/*ajustement visuel*/
 	}
 
 	.description2/*description photos*/
 	{
 		height: 3.6rem;/*hauteur*/
-		margin-left: 1.3rem;/*marge ext gauche (entre photo et description)*/
+		margin-left: 8%;/*marge ext gauche (entre photo et description)*/
 	}
 
 	.note2/*bloc note étoiles*/
@@ -266,7 +270,7 @@
 		display: flex;/*disposition flexbox*/
 		flex-direction: row;/*éléments à la suite sur la même ligne*/
 		justify-items: space-between;/*espace entre chaque éléments*/
-		margin-left: 1.3rem;/*marge ext gauche (entre bord photo et 1ere étoile bloc)*/
+		margin-left: 8%;/*marge ext gauche (entre bord photo et 1ere étoile bloc)*/
 	}
 
 
@@ -274,7 +278,7 @@
 
 	.toushebergements/*bloc section hebergements et populaires*/
 	{
-		width: 23.4rem;/*largeur*/
+		width: 74%;/*largeur*/
 		height: 122.9rem;/*hauteur*/
 		flex-direction: column-reverse;/*éléments à la suite sur colonne + ordre éléments inversé)*/
 		margin-left: 0;/*pas de marge ext gauche*/
@@ -287,45 +291,42 @@
 
 	.titreactivites
 	{
+		width: 65%;
 		margin-bottom: 1.3rem;/*marge ext bas*/
-		margin-left: 1.6rem;/*marge ext gauche*/
+		margin-left: 4.5%;/*marge ext gauche*/
 	}
 
 	.cartesactivités/*bloc cartes*/
 	{
 		height: 78.4rem;/*hauteur*/
-		width: 20.9rem;/*largeur*/
+		width: 68%;/*largeur*/
 		flex-direction: column;/*éléments à la suite sur une colonne*/
 		margin-top: 1.3rem;/*marge ext haute (entre haut bloc cartes et titre)*/
 		grid-gap: 0.9rem;/*ajustement visuel*/
 	}
 
-	.grandescartes/*carte vieux port + carte calanques*/
-	{
-		margin-left: -1.6rem;/*ajustement visuel*/
-	}
-
 	.souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 	{
-		margin-left: -0.6rem;/*ajustement visuel*/
+		width: 100%;/*largeur bloc*/
+		margin-left: 2%;
 		grid-gap: 0;/*ajustement visuel*/
 	}
 
 	.grandescartes, #cartepomegues, #cartefrioul, #cartenotredame, #cartelongchamp/*toutes les cartes*/
 	{
-		width: 20.9rem;/*largeur*/
+		width: 100%;/*largeur*/
 		height: 11.9rem;/*hauteur*/
 	}
 
 	.grandesphotos, #photopomegues, #photofrioul, #photonotredame, #photolongchamp/*toutes les photos*/
 	{
-		width: 20.9rem;/*largeur*/
+		width: 100%;
 		height: 8.4rem;/*hauteur*/
 	}
 
 	.description3/*descriptions photos activités*/
 	{
-		margin: 1.3rem 0 1.1rem 1.3rem;/*marge ext*/
+		margin: 1.3rem 0 1.1rem 6%;/*marge ext*/
 	}
 
 
@@ -334,16 +335,16 @@
 	footer
 	{
 		margin-top: 4.4rem;/*marge ext haute*/
-		width: 23.4rem;/*largeur*/
+		width: 78%;/*largeur*/
 	}
 
 	.pieddepage/*footer int*/
 	{
 		padding-top: 1.6rem;/*marge int haute*/
 		padding-bottom: 1.3rem;/*marge int bas*/
-		margin-left: 1.9rem;/*marge ext gauche*/
+		margin-left: 6%;/*marge ext gauche*/
 		height: 30.4rem;/*hauteur*/
-		width: 23.4rem;/*largeur*/
+		width: 86%;/*largeur*/
 		flex-direction: column;/*éléments en colonne*/
 		justify-content: space-around;/*espace autour des éléments*/
 	}
