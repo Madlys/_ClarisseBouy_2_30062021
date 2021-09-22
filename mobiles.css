@@ -2,7 +2,6 @@
 
 @media all and (min-width: 200px) and (max-width: 680px) {
 
-
 	/*-------------------------------En-tête----------------------------------*/
 
 
@@ -57,18 +56,18 @@
 
 	.vacancesdereve/*titre barre de recherche*/
 	{
-		width: 56%;/*largeur bloc*/
+		width: 57%;/*largeur bloc*/
 		height: 4.9rem;/*hauteur cadre*/
 		margin-left: 5%;/*marge ext gauche du bloc*/
 		margin-top: 2.3rem;/*marge ext entre ce bloc et le bloc header*/
-		line-height: 1.6rem;/*ajustement visuel*/
+		line-height: 1.5rem;/*espace entre les lignes*/
 	}
 
 	.barrederecherche
 	{
 		width: 20.4rem;/*largeur bloc -ajustement visuel*/
 		margin-top: 2.2rem;/*marge ext haute (entre barre de recherche et titre)*/
-		margin-left: 1.3rem;/*marge ext gauche (entre barre de recherche et bord de la page)*/
+		margin-left: 3.5%;/*marge ext gauche (entre barre de recherche et bord de la page)*/
 		position: relative;/*devient l'espace de réf du bouton rechercher avec icon*/
 	}
 
@@ -122,7 +121,7 @@
 
 	.filtres/*bloc filtres*/
 	{
-		width: 66%;/*largeur + ajustement visuel*/
+		width: 66%;/*largeur*/
 		height: 13.1rem;/*hauteur*/
 		margin: 1.1rem 0 0 4%;/*marge ext + ajustement visuel*/
 		flex-wrap: wrap;/*élément va à la ligne lorsque plus de place*/
@@ -146,7 +145,6 @@
 
 	#familial/*bloc filtre familial*/
 	{
-		margin-left: 0.7rem;/*marge ext gauche (entre filtre eco et familial)*/
 		width: 8.8rem;/*largeur*/
 	}
 
@@ -179,7 +177,7 @@
 		margin-left: 4%;/*marge ext grauche (entre icon info et bord de la page)*/
 		margin-top: 0.6rem;/*marge ext haut (entre ce bloc et bloc filtres) + ajustement visuel*/
 		height: 2.6rem;/*hauteur*/
-		width: 65%;/*largeur*/
+		width: 67%;/*largeur*/
 	}
 
 
@@ -308,7 +306,6 @@
 	.souscarte/*sous bloc carte (pomègues+Frioul et notre-dame+Longchamp)*/
 	{
 		width: 100%;/*largeur bloc*/
-		margin-left: 2%;
 		grid-gap: 0;/*ajustement visuel*/
 	}
 
