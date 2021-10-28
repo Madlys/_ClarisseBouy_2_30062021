@@ -552,8 +552,8 @@ i.fa-search/*bouton rechercher avec icon*/
 {
 	border: solid red;
 	max-width: 20%;
-	margin: auto;
-	height: 28.5rem;/*hauteur*/
+	margin: auto;  
+	height: 28.5rem;/*hauteurr*/
 	border-radius: 1.3rem;/*coins arrondis*/
 	
 }
