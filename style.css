@@ -490,9 +490,8 @@ i.fa-search/*bouton rechercher avec icon*/
 
 .toushebergements/*bloc section hebergements et populaires*/
 {
-	border: solid;
 	width: 93%;/*largeur*/
-	height: 39.1rem;/*hauteur*/
+	height: 39.5rem;/*hauteur*/
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	justify-content: space-between;/*espace entre les éléments*/
@@ -527,7 +526,6 @@ i.fa-search/*bouton rechercher avec icon*/
 	border: solid;
 	width: 93%;/*largeur*/
 	height: 28.5rem;/*hauteur*/
-	margin-left: 3.3%;
 	display: flex;/*disposition flexbox*/
 	flex-direction: row;/*éléments à la suite sur une ligne*/
 	justify-content: space-between;

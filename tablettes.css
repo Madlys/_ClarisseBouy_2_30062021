@@ -20,19 +20,13 @@
 
 	/*-------------------------------En-tête----------------------------------*/
 
-	header
-	{
-		width: 100%;
-		margin-left: 6%;/*marge ext gauche*/
-	}
-
-	.menu/*hébergements,activités*/
-	{
-		margin-left: 50%;/*marge ext gauche (entre logo et "hébergements")*/
-	}
+body
+{
+	border: solid;
+}
 
 
-	/*--------------------------Barre de recherche ---------------------------*/
+------------------------Barre de recherche ---------------------------*/
 
 	.vacancesdereve/*titre barre de recherche*/
 	{
